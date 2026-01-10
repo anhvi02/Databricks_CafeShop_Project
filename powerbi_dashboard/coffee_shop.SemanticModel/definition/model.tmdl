@@ -8,7 +8,7 @@ model Model
 
 annotation __PBI_TimeIntelligenceEnabled = 1
 
-annotation PBI_QueryOrder = ["dim_employee","dim_store","fact_roster","dim_datetime","fact_transaction"]
+annotation PBI_QueryOrder = ["dim_employee","dim_store","fact_roster","fact_transaction","Table_Weeks_Back"]
 
 annotation PBI_ProTooling = ["DevMode"]
 
@@ -28,12 +28,13 @@ ref table LocalDateTable_67164842-c8d2-49a1-b297-45e88541c2c5
 ref table LocalDateTable_3256d035-c1b9-4cf5-aa49-0dffa6247dcf
 ref table LocalDateTable_39e1d567-c35f-4f1d-938b-12dcf37f254f
 ref table LocalDateTable_58b2dd87-80d8-45f9-b608-0b5ef02c3b05
-ref table dim_datetime
 ref table fact_transaction
 ref table LocalDateTable_1a9dcc23-738f-40f8-8c6a-149a84e56b93
 ref table LocalDateTable_5dedfe77-fa05-47c4-94f8-b08b7eaacf71
 ref table LocalDateTable_cc8b7386-d6a9-4a04-b2dc-ebe2aee10a4f
-ref table LocalDateTable_f21c6352-e6f7-4e03-86d9-6709713ccba1
+ref table dim_datetime
+ref table LocalDateTable_a8a38932-233f-4d33-ab60-5cb471b090dd
+ref table Table_Weeks_Back
 
 ref cultureInfo en-US
 

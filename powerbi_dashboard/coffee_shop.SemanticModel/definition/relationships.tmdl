@@ -85,20 +85,20 @@ relationship AutoDetected_871d737b-2435-4b66-86d4-de932c3e9c10
 	fromColumn: fact_transaction.location_id
 	toColumn: dim_store.location_id
 
-relationship eb605ac0-35a6-bc27-4979-530d715f90ee
-	fromColumn: fact_roster.start_time
-	toColumn: dim_datetime.date_key
-
 relationship 2ee977fe-9e84-c100-623e-380c9f7dfe9b
 	fromColumn: fact_roster.area_department
 	toColumn: dim_store.location_id
 
-relationship 1ffaa975-1f8d-4e71-b936-4ac4380037ea
+relationship d0f7eea1-4d4b-18af-5482-c5722f6a90d0
+	fromColumn: fact_roster.start_time
+	toColumn: dim_datetime.Date
+
+relationship 65d5eb08-fb3c-4a6b-91b1-923d1972c419
 	joinOnDateBehavior: datePartOnly
 	fromColumn: fact_transaction.transaction_datetime
-	toColumn: LocalDateTable_f21c6352-e6f7-4e03-86d9-6709713ccba1.Date
+	toColumn: LocalDateTable_a8a38932-233f-4d33-ab60-5cb471b090dd.Date
 
-relationship 735472dd-5e44-1c0e-1883-3664c73f05f0
+relationship 1001ae60-46fb-0860-fdd4-29f01d64ae61
 	fromColumn: fact_transaction.transaction_date
-	toColumn: dim_datetime.date_key
+	toColumn: dim_datetime.Date
 

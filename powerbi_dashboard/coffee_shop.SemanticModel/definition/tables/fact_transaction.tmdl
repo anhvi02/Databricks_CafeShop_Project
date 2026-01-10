@@ -1,6 +1,25 @@
 table fact_transaction
 	lineageTag: 81a4d5f7-2699-4f89-80ad-435f8f3c2a22
 
+	measure Measure_Sales_Same_Day_Last_Week =
+			
+			CALCULATE(
+			    SUM(fact_transaction[line_total]),
+			    DATEADD('dim_datetime'[Date], -7, DAY)
+			)
+		lineageTag: 595764ff-a9ee-4416-9dc8-cdf6e214f140
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure Measure_Sales_Change_By_Product_Text =
+			
+			VAR _sales_product_this_week = SUM(fact_transaction[line_total])
+			VAR _sales_product_last_week = CALCULATE(SUM(fact_transaction[line_total]), DATEADD(dim_datetime[Date], -7, DAY))
+			VAR _change_percent = ((_sales_product_this_week - _sales_product_last_week) / _sales_product_last_week) * 100
+			VAR _sign = IF(_change_percent > 0, "+", "")
+			RETURN _sign & FORMAT(_change_percent, "0.00") & "%"
+		lineageTag: 9d7f19c3-4065-4149-83a6-6119d299ffcc
+
 	column transaction_id
 		dataType: string
 		lineageTag: 158caa0a-6418-43b8-bafa-520cf12538da
@@ -26,8 +45,8 @@ table fact_transaction
 
 		variation Variation
 			isDefault
-			relationship: 1ffaa975-1f8d-4e71-b936-4ac4380037ea
-			defaultHierarchy: LocalDateTable_f21c6352-e6f7-4e03-86d9-6709713ccba1.'Date Hierarchy'
+			relationship: 65d5eb08-fb3c-4a6b-91b1-923d1972c419
+			defaultHierarchy: LocalDateTable_a8a38932-233f-4d33-ab60-5cb471b090dd.'Date Hierarchy'
 
 		annotation SummarizationSetBy = Automatic
 
@@ -213,4 +232,6 @@ table fact_transaction
 				    fact_transaction_View
 
 	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
 

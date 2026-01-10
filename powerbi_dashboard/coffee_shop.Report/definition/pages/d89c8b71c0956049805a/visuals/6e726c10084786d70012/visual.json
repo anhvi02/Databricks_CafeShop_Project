@@ -2,18 +2,18 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "6e726c10084786d70012",
   "position": {
-    "x": 612.274368231047,
-    "y": 321.15523465703973,
+    "x": 0,
+    "y": 359.51912568306011,
     "z": 2000,
-    "height": 196.38989169675091,
-    "width": 441.29963898916969,
+    "height": 360.91803278688525,
+    "width": 600.13114754098365,
     "tabOrder": 2000
   },
   "visual": {
-    "visualType": "tableEx",
+    "visualType": "clusteredColumnChart",
     "query": {
       "queryState": {
-        "Values": {
+        "Category": {
           "projections": [
             {
               "field": {
@@ -23,12 +23,17 @@
                       "Entity": "dim_datetime"
                     }
                   },
-                  "Property": "day_name"
+                  "Property": "DayName"
                 }
               },
-              "queryRef": "dim_datetime.day_name",
-              "nativeQueryRef": "day_name"
-            },
+              "queryRef": "dim_datetime.DayName",
+              "nativeQueryRef": "DayName",
+              "active": true
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
             {
               "field": {
                 "Aggregation": {
@@ -46,35 +51,49 @@
                 }
               },
               "queryRef": "Sum(fact_transaction.line_total)",
-              "nativeQueryRef": "Sum of line_total"
+              "nativeQueryRef": "This Week",
+              "displayName": "This Week"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fact_transaction"
+                    }
+                  },
+                  "Property": "Measure_Sales_Same_Day_Last_Week"
+                }
+              },
+              "queryRef": "fact_transaction.Measure_Sales_Same_Day_Last_Week",
+              "nativeQueryRef": "Last Week",
+              "displayName": "Last Week"
             }
           ]
         }
-      },
-      "sortDefinition": {
-        "sort": [
-          {
-            "field": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "dim_datetime"
-                  }
-                },
-                "Property": "day_name"
-              }
-            },
-            "direction": "Ascending"
-          }
-        ]
       }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Sales by Day of Week'"
+                }
+              }
+            }
+          }
+        }
+      ]
     },
     "drillFilterOtherVisuals": true
   },
   "filterConfig": {
     "filters": [
       {
-        "name": "a5afec7b0e0622b64824",
+        "name": "f89dd180157be0e78418",
         "field": {
           "Column": {
             "Expression": {
@@ -82,13 +101,13 @@
                 "Entity": "dim_datetime"
               }
             },
-            "Property": "day_name"
+            "Property": "DayName"
           }
         },
         "type": "Categorical"
       },
       {
-        "name": "132324815bb5432a9d25",
+        "name": "74a0c10e80a6be3c3188",
         "field": {
           "Aggregation": {
             "Expression": {

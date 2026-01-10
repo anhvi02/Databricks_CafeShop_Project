@@ -1,0 +1,8 @@
+Date Connection Check = 
+VAR FactMinDate = CALCULATE(MIN('fact_transaction'[trandaction_datetime]), ALL('fact_transaction'))
+VAR FactMaxDate = CALCULATE(MAX('fact_transaction'[trandaction_datetime]), ALL('fact_transaction'))
+VAR DimMinDate = MIN('dim_datetime'[Date])
+VAR DimMaxDate = MAX('dim_datetime'[Date])
+RETURN
+"Fact dates: " & FactMinDate & " to " & FactMaxDate & " | " &
+"Dim dates: " & DimMinDate & " to " & DimMaxDate

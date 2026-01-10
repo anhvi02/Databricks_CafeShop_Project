@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "05ac9d563081523ddb2e",
   "position": {
-    "x": 0,
-    "y": 256.41357027463653,
+    "x": 758.20765027322409,
+    "y": 465.8360655737705,
     "z": 0,
-    "height": 261.58319870759289,
-    "width": 527.30210016155092,
+    "height": 254.60109289617486,
+    "width": 521.79234972677591,
     "tabOrder": 0
   },
   "visual": {
@@ -27,26 +27,8 @@
                 }
               },
               "queryRef": "fact_transaction.derived_drink_by_ingredient",
-              "nativeQueryRef": "derived_drink_by_ingredient"
-            },
-            {
-              "field": {
-                "Aggregation": {
-                  "Expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "fact_transaction"
-                        }
-                      },
-                      "Property": "transaction_id"
-                    }
-                  },
-                  "Function": 2
-                }
-              },
-              "queryRef": "fact_transaction.transaction_id",
-              "nativeQueryRef": "Count of transaction_id"
+              "nativeQueryRef": "Product Line",
+              "displayName": "Product Line"
             },
             {
               "field": {
@@ -65,11 +47,116 @@
                 }
               },
               "queryRef": "Sum(fact_transaction.line_total)",
-              "nativeQueryRef": "Sum of line_total"
+              "nativeQueryRef": "Sales",
+              "displayName": "Sales"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fact_transaction"
+                    }
+                  },
+                  "Property": "Measure_Sales_Change_By_Product_Text"
+                }
+              },
+              "queryRef": "fact_transaction.Measure_Sales_Change_By_Product",
+              "nativeQueryRef": "% Week Over Week",
+              "displayName": "% Week Over Week"
             }
           ]
         }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "fact_transaction"
+                  }
+                },
+                "Property": "Measure_Sales_Change_By_Product_Text"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ]
       }
+    },
+    "objects": {
+      "columnHeaders": [
+        {
+          "properties": {
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "columnFormatting": [
+        {
+          "properties": {
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "fact_transaction.derived_drink_by_ingredient"
+          }
+        },
+        {
+          "properties": {
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Sum(fact_transaction.line_total)"
+          }
+        },
+        {
+          "properties": {
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "fact_transaction.Measure_Sales_Change_By_Product"
+          }
+        }
+      ],
+      "total": [
+        {
+          "properties": {
+            "totals": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
     },
     "drillFilterOtherVisuals": true
   }

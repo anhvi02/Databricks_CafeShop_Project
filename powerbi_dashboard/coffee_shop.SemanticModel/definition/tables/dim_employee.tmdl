@@ -118,3 +118,7 @@ table dim_employee
 				in
 				    dim_employee_View
 
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

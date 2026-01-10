@@ -4,27 +4,14 @@
     {
       "ordinal": 0,
       "scrollPosition": {
-        "x": 0,
-        "y": 0
+        "x": 571,
+        "y": 105.44267874979232
       },
       "nodes": [
         {
           "location": {
-            "x": 1136.5580401778161,
-            "y": 198.70587140155857
-          },
-          "nodeIndex": "dim_datetime",
-          "nodeLineageTag": "5eb92a27-a4dd-4156-8399-e9159a5c771a",
-          "size": {
-            "height": 300,
-            "width": 234
-          },
-          "zIndex": 0
-        },
-        {
-          "location": {
-            "x": 334.18269278110949,
-            "y": 222.2172850085073
+            "x": 201.18269278110949,
+            "y": 230.2333369037122
           },
           "nodeIndex": "dim_employee",
           "nodeLineageTag": "619810fa-9b16-40a0-9cfa-6f71fe1df0c4",
@@ -36,8 +23,8 @@
         },
         {
           "location": {
-            "x": 902.55804017781611,
-            "y": -50
+            "x": 1105.5580401778161,
+            "y": 261.0160518952049
           },
           "nodeIndex": "dim_store",
           "nodeLineageTag": "68d82e8d-93e5-4244-9521-4771d0cc349f",
@@ -49,8 +36,8 @@
         },
         {
           "location": {
-            "x": 50,
-            "y": 347.41174280311719
+            "x": 201,
+            "y": 640.427794698322
           },
           "nodeIndex": "fact_roster",
           "nodeLineageTag": "b332a548-9a07-4314-ab11-1cc1f44b8eca",
@@ -63,7 +50,7 @@
         {
           "location": {
             "x": 618.38448636284193,
-            "y": 71.334036245538641
+            "y": 233.35008814074354
           },
           "nodeIndex": "fact_transaction",
           "nodeLineageTag": "81a4d5f7-2699-4f89-80ad-435f8f3c2a22",
@@ -72,11 +59,37 @@
             "width": 234
           },
           "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 894.55804017781611,
+            "y": 588.11328079250984
+          },
+          "nodeIndex": "dim_datetime",
+          "nodeLineageTag": "b47d4b9f-6c53-4d50-9f9f-0183e035212d",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1271.5580401778161,
+            "y": 367.8416745318757
+          },
+          "nodeIndex": "Table_Weeks_Back",
+          "nodeLineageTag": "9a3b7892-b87e-4b70-931d-61eb36f4fc31",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
         }
       ],
       "name": "All tables",
       "zoomValue": 100,
-      "pinKeyFieldsToTop": false,
+      "pinKeyFieldsToTop": true,
       "showExtraHeaderInfo": false,
       "hideKeyFieldsWhenCollapsed": false,
       "tablesLocked": false

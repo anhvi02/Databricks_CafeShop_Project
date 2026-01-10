@@ -1,139 +1,92 @@
 table dim_datetime
-	lineageTag: 5eb92a27-a4dd-4156-8399-e9159a5c771a
+	lineageTag: b47d4b9f-6c53-4d50-9f9f-0183e035212d
 	dataCategory: Time
 
-	column date_key
-		dataType: dateTime
+	column Date
 		isKey
 		formatString: Long Date
-		lineageTag: 544714b3-e166-4be7-9fbe-1f197a109bd8
+		lineageTag: 7c4a1c63-e7bd-4ffc-ad99-b2ea925be8b8
 		summarizeBy: none
-		sourceColumn: date_key
+		isNameInferred
+		sourceColumn: [Date]
 
 		annotation SummarizationSetBy = Automatic
 
 		annotation UnderlyingDateTimeDataType = Date
 
-	column year
-		dataType: int64
+	column Year
 		formatString: 0
-		lineageTag: f4495b5a-1521-443a-b972-9ee753d2d81a
+		lineageTag: c2f267e5-4421-48bb-9b2c-ed51e0888661
 		summarizeBy: sum
-		sourceColumn: year
+		isNameInferred
+		sourceColumn: [Year]
 
 		annotation SummarizationSetBy = Automatic
 
-	column quarter
-		dataType: int64
+	column Month
 		formatString: 0
-		lineageTag: 91e64b60-1b0a-4463-8217-5d3df69cad8e
+		lineageTag: af176cea-830a-4d2c-8f6f-53295f111769
 		summarizeBy: sum
-		sourceColumn: quarter
+		isNameInferred
+		sourceColumn: [Month]
 
 		annotation SummarizationSetBy = Automatic
 
-	column month
-		dataType: int64
-		formatString: 0
-		lineageTag: 7b667554-345a-4b56-a3df-f2a4fb0229eb
-		summarizeBy: sum
-		sourceColumn: month
-
-		annotation SummarizationSetBy = Automatic
-
-	column week_of_year
-		dataType: int64
-		formatString: 0
-		lineageTag: a969cb01-7691-454c-bead-1a35631fed95
-		summarizeBy: sum
-		sourceColumn: week_of_year
-
-		annotation SummarizationSetBy = Automatic
-
-	column day_of_week
-		dataType: int64
-		formatString: 0
-		lineageTag: 7a0e9124-ca0a-48cb-9b14-26330e7ea20e
-		summarizeBy: sum
-		sourceColumn: day_of_week
-
-		annotation SummarizationSetBy = Automatic
-
-	column day_name
-		dataType: string
-		lineageTag: 8e557dff-a6d2-4c5a-8036-92d94152f977
+	column MonthName
+		lineageTag: da268647-9ea9-4e13-b788-1164a23b8f3b
 		summarizeBy: none
-		sourceColumn: day_name
-		sortByColumn: day_of_week
-
-		changedProperty = SortByColumn
+		isNameInferred
+		sourceColumn: [MonthName]
 
 		annotation SummarizationSetBy = Automatic
 
-	column is_weekend
-		dataType: boolean
-		formatString: """TRUE"";""TRUE"";""FALSE"""
-		lineageTag: 4d977ab7-f052-4dfc-b7bf-72c232970ec6
+	column Quarter
+		lineageTag: 70d4e963-7188-4d3b-8b8e-aa5efc13e499
 		summarizeBy: none
-		sourceColumn: is_weekend
+		isNameInferred
+		sourceColumn: [Quarter]
 
 		annotation SummarizationSetBy = Automatic
 
-	column is_business_day
-		dataType: boolean
-		formatString: """TRUE"";""TRUE"";""FALSE"""
-		lineageTag: 968129a1-86b3-4e86-9197-ee3b9cee18fd
-		summarizeBy: none
-		sourceColumn: is_business_day
-
-		annotation SummarizationSetBy = Automatic
-
-	column fiscal_year
-		dataType: int64
+	column Week
 		formatString: 0
-		lineageTag: 8cba8a14-5a86-4ec3-9c50-afe21dd9005a
+		lineageTag: 9c501e4e-a82e-4e64-b10d-f08f88d2c44a
 		summarizeBy: sum
-		sourceColumn: fiscal_year
+		isNameInferred
+		sourceColumn: [Week]
 
 		annotation SummarizationSetBy = Automatic
 
-	column fiscal_quarter
-		dataType: int64
+	column DayOfWeek
 		formatString: 0
-		lineageTag: 07647641-a3d1-4126-8f61-4650103d5193
+		lineageTag: 0b70daa8-ebb9-415f-80db-cc97715f69b5
 		summarizeBy: sum
-		sourceColumn: fiscal_quarter
+		isNameInferred
+		sourceColumn: [DayOfWeek]
 
 		annotation SummarizationSetBy = Automatic
 
-	column year_month
-		dataType: string
-		lineageTag: d3fc2665-47bd-431d-b947-4b36c310b280
+	column DayName
+		lineageTag: ee00090a-049a-434a-9194-bb03b7ae8ccc
 		summarizeBy: none
-		sourceColumn: year_month
+		isNameInferred
+		sourceColumn: [DayName]
+		sortByColumn: DayOfWeekSort
 
 		annotation SummarizationSetBy = Automatic
 
-	column year_week
-		dataType: string
-		lineageTag: 74d8c391-90f3-4d3e-9ef8-e3ea327e70f2
-		summarizeBy: none
-		sourceColumn: year_week
+	column DayOfWeekSort
+		formatString: 0
+		lineageTag: 4185cb35-0bed-4a58-99ee-cbc75c7c0ca4
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [DayOfWeekSort]
 
 		annotation SummarizationSetBy = Automatic
 
-	partition dim_datetime = m
+	partition dim_datetime = calculated
 		mode: import
-		source =
-				let
-				    Source = DatabricksMultiCloud.Catalogs("dbc-6da80bf3-23a8.cloud.databricks.com", "/sql/1.0/warehouses/df90c145035c5f8f", [Catalog="coffee_shop", Database=null, QueryTags=null, EnableAutomaticProxyDiscovery=null, Implementation=null]),
-				    coffee_shop_Database = Source{[Name="coffee_shop",Kind="Database"]}[Data],
-				    layer_gold_Schema = coffee_shop_Database{[Name="layer_gold",Kind="Schema"]}[Data],
-				    dim_datetime_Table = layer_gold_Schema{[Name="dim_datetime",Kind="Table"]}[Data]
-				in
-				    dim_datetime_Table
+		source = ADDCOLUMNS( CALENDAR(DATE(2024, 1, 1), DATE(2027, 12, 31)), "Year", YEAR([Date]), "Month", MONTH([Date]), "MonthName", FORMAT([Date], "MMMM"), "Quarter", "Q" & QUARTER([Date]), "Week", WEEKNUM([Date]), "DayOfWeek", WEEKDAY([Date]), "DayName", FORMAT([Date], "dddd"), "DayOfWeekSort", WEEKDAY([Date], 2) )
 
-	annotation PBI_ResultType = Table
-
-	annotation PBI_NavigationStepName = Navigation
+	annotation PBI_Id = 8a1b932c22134cf7a7db94a5aed5f2b4
 
