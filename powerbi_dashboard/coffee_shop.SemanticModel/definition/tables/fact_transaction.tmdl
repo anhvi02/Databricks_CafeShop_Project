@@ -20,6 +20,34 @@ table fact_transaction
 			RETURN _sign & FORMAT(_change_percent, "0.00") & "%"
 		lineageTag: 9d7f19c3-4065-4149-83a6-6119d299ffcc
 
+	measure Measure_Color_Sales_Change_By_Product_Text =
+			
+			VAR _sales_product_this_week = SUM(fact_transaction[line_total])
+			VAR _sales_product_last_week = CALCULATE(SUM(fact_transaction[line_total]), DATEADD(dim_datetime[Date], -7, DAY))
+			VAR _diff_percentage = ((_sales_product_this_week - _sales_product_last_week)/_sales_product_last_week)*100
+			RETURN _diff_percentage
+		lineageTag: 9ac6e423-e6be-45e0-8e10-29b9cf4793d9
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Sum of line_total divided by Count of transaction_id' =
+			
+			DIVIDE(
+				SUM('fact_transaction'[line_total]),
+				DISTINCTCOUNT('fact_transaction'[transaction_id])
+			)
+		lineageTag: 825ac370-7079-4e41-9c01-ef18401c0ad3
+
+		extendedProperty MeasureTemplate =
+				{
+				  "version": 0,
+				  "daxTemplateName": "MathematicalDivision"
+				}
+
+		changedProperty = FormatString
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
 	column transaction_id
 		dataType: string
 		lineageTag: 158caa0a-6418-43b8-bafa-520cf12538da

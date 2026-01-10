@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "6e726c10084786d70012",
   "position": {
-    "x": 0,
-    "y": 359.51912568306011,
+    "x": 69.258517034068134,
+    "y": 357.83567134268537,
     "z": 2000,
-    "height": 360.91803278688525,
-    "width": 600.13114754098365,
+    "height": 361.68336673346693,
+    "width": 600.24048096192382,
     "tabOrder": 2000
   },
   "visual": {
@@ -73,6 +73,41 @@
         }
       }
     },
+    "objects": {
+      "legend": [
+        {
+          "properties": {
+            "position": {
+              "expr": {
+                "Literal": {
+                  "Value": "'TopCenter'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "labels": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "labelPosition": {
+              "expr": {
+                "Literal": {
+                  "Value": "'InsideBase'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
     "visualContainerObjects": {
       "title": [
         {
@@ -83,48 +118,18 @@
                   "Value": "'Sales by Day of Week'"
                 }
               }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
             }
           }
         }
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "f89dd180157be0e78418",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "dim_datetime"
-              }
-            },
-            "Property": "DayName"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "74a0c10e80a6be3c3188",
-        "field": {
-          "Aggregation": {
-            "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "fact_transaction"
-                  }
-                },
-                "Property": "line_total"
-              }
-            },
-            "Function": 0
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }
