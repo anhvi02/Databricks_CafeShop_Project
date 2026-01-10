@@ -81,42 +81,5 @@
       }
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "9426773cd7d5884205c9",
-        "field": {
-          "Aggregation": {
-            "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "fact_transaction"
-                  }
-                },
-                "Property": "transaction_id"
-              }
-            },
-            "Function": 5
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "2bdbaff53bcd10091890",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "fact_transaction"
-              }
-            },
-            "Property": "payment_method"
-          }
-        },
-        "type": "Categorical"
-      }
-    ]
   }
 }

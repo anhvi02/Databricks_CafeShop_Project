@@ -38,23 +38,5 @@
       }
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "ec3341fe5c539194275e",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "dim_datetime"
-              }
-            },
-            "Property": "day_of_week"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }
