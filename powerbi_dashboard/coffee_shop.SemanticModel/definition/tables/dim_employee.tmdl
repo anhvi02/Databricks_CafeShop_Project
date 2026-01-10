@@ -1,0 +1,120 @@
+table dim_employee
+	lineageTag: 619810fa-9b16-40a0-9cfa-6f71fe1df0c4
+
+	column employee_id
+		dataType: string
+		lineageTag: 687bb88e-4c1d-4eee-bdec-cbec44788357
+		summarizeBy: none
+		sourceColumn: employee_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column employee_name
+		dataType: string
+		lineageTag: 9b8b7f58-fea3-4965-a8cf-eefd17c610e1
+		summarizeBy: none
+		sourceColumn: employee_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column role
+		dataType: string
+		lineageTag: 7cd46d9d-a462-4b48-8457-d48275cfd6f6
+		summarizeBy: none
+		sourceColumn: role
+
+		annotation SummarizationSetBy = Automatic
+
+	column primary_location
+		dataType: string
+		lineageTag: ac11b95e-5b84-4291-b165-4e7aab390b7c
+		summarizeBy: none
+		sourceColumn: primary_location
+
+		annotation SummarizationSetBy = Automatic
+
+	column pay_rate
+		dataType: double
+		lineageTag: 35747bf1-9f72-40fd-90ed-c3bb9ce10ba1
+		summarizeBy: sum
+		sourceColumn: pay_rate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column work_pattern
+		dataType: string
+		lineageTag: 3aad50ee-529e-45cd-a40d-ff4a28c46e50
+		summarizeBy: none
+		sourceColumn: work_pattern
+
+		annotation SummarizationSetBy = Automatic
+
+	column silver_processing_time
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 559b31fe-99e3-464f-a696-a8a6c9cd6738
+		summarizeBy: none
+		sourceColumn: silver_processing_time
+
+		variation Variation
+			isDefault
+			relationship: 318b8a0a-b726-49b1-b35c-211017e54099
+			defaultHierarchy: LocalDateTable_e5613e14-6a1a-4a4e-8017-fcf1206845d2.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column __START_AT
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 047bc127-7775-4249-b896-2942fa7c26dd
+		summarizeBy: none
+		sourceColumn: __START_AT
+
+		variation Variation
+			isDefault
+			relationship: 1d982f6d-736a-419f-a8a5-ee1904843ed8
+			defaultHierarchy: LocalDateTable_121a0381-f5c0-4e5b-8004-9c7b070cb403.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column __END_AT
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 9948286d-fe60-4fee-b92e-c847c66a7bcf
+		summarizeBy: none
+		sourceColumn: __END_AT
+
+		variation Variation
+			isDefault
+			relationship: d1eedab2-1b9a-45c5-bead-b89697eef26f
+			defaultHierarchy: LocalDateTable_7b136200-c0ce-493a-a3eb-8be700cfef1a.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column gold_processing_time
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 0c9ff0db-f908-4993-b8eb-44b7e74c9a36
+		summarizeBy: none
+		sourceColumn: gold_processing_time
+
+		variation Variation
+			isDefault
+			relationship: 01dfc3d9-12a7-42db-be26-b8d83eb3c3f7
+			defaultHierarchy: LocalDateTable_24083039-11e7-469f-94d2-355a4f61cfb5.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_employee = m
+		mode: import
+		source =
+				let
+				    Source = DatabricksMultiCloud.Catalogs("dbc-6da80bf3-23a8.cloud.databricks.com", "/sql/1.0/warehouses/df90c145035c5f8f", [Catalog="coffee_shop", Database=null, QueryTags=null, EnableAutomaticProxyDiscovery=null, Implementation=null]),
+				    coffee_shop_Database = Source{[Name="coffee_shop",Kind="Database"]}[Data],
+				    layer_gold_Schema = coffee_shop_Database{[Name="layer_gold",Kind="Schema"]}[Data],
+				    dim_employee_View = layer_gold_Schema{[Name="dim_employee",Kind="View"]}[Data]
+				in
+				    dim_employee_View
+

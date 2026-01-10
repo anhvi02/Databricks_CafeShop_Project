@@ -1,0 +1,76 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "05ac9d563081523ddb2e",
+  "position": {
+    "x": 0,
+    "y": 256.41357027463653,
+    "z": 0,
+    "height": 261.58319870759289,
+    "width": 527.30210016155092,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fact_transaction"
+                    }
+                  },
+                  "Property": "derived_drink_by_ingredient"
+                }
+              },
+              "queryRef": "fact_transaction.derived_drink_by_ingredient",
+              "nativeQueryRef": "derived_drink_by_ingredient"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "fact_transaction"
+                        }
+                      },
+                      "Property": "transaction_id"
+                    }
+                  },
+                  "Function": 2
+                }
+              },
+              "queryRef": "fact_transaction.transaction_id",
+              "nativeQueryRef": "Count of transaction_id"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "fact_transaction"
+                        }
+                      },
+                      "Property": "line_total"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(fact_transaction.line_total)",
+              "nativeQueryRef": "Sum of line_total"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

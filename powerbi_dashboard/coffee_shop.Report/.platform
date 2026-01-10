@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "coffee_shop"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "f01be510-9173-4a0c-9d37-21ddce4a36af"
+  }
+}

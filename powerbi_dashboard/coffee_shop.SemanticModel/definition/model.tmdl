@@ -1,0 +1,39 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-US
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_QueryOrder = ["dim_employee","dim_store","fact_roster","dim_datetime","fact_transaction"]
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table dim_employee
+ref table DateTableTemplate_86bd9001-482d-4206-a123-948fc4fc6549
+ref table LocalDateTable_e5613e14-6a1a-4a4e-8017-fcf1206845d2
+ref table LocalDateTable_121a0381-f5c0-4e5b-8004-9c7b070cb403
+ref table LocalDateTable_7b136200-c0ce-493a-a3eb-8be700cfef1a
+ref table LocalDateTable_24083039-11e7-469f-94d2-355a4f61cfb5
+ref table dim_store
+ref table LocalDateTable_ec5be155-50bb-4761-b517-9d995a25d88a
+ref table LocalDateTable_5d1c2fa8-30bf-49f6-8f71-c6fe52499126
+ref table LocalDateTable_c460f1c6-532a-4ae6-91e4-5c137c167fa2
+ref table LocalDateTable_512276f7-ecd2-4906-8b27-2edf3be40a66
+ref table fact_roster
+ref table LocalDateTable_67164842-c8d2-49a1-b297-45e88541c2c5
+ref table LocalDateTable_3256d035-c1b9-4cf5-aa49-0dffa6247dcf
+ref table LocalDateTable_39e1d567-c35f-4f1d-938b-12dcf37f254f
+ref table LocalDateTable_58b2dd87-80d8-45f9-b608-0b5ef02c3b05
+ref table dim_datetime
+ref table fact_transaction
+ref table LocalDateTable_1a9dcc23-738f-40f8-8c6a-149a84e56b93
+ref table LocalDateTable_5dedfe77-fa05-47c4-94f8-b08b7eaacf71
+ref table LocalDateTable_cc8b7386-d6a9-4a04-b2dc-ebe2aee10a4f
+ref table LocalDateTable_f21c6352-e6f7-4e03-86d9-6709713ccba1
+
+ref cultureInfo en-US
+

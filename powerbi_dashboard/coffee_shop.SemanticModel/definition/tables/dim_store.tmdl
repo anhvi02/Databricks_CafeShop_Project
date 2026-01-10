@@ -1,0 +1,94 @@
+table dim_store
+	lineageTag: 68d82e8d-93e5-4244-9521-4771d0cc349f
+
+	column location_id
+		dataType: string
+		lineageTag: 76ebb344-950e-4fcf-9e62-41bb49596146
+		summarizeBy: none
+		sourceColumn: location_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column cafe_name
+		dataType: string
+		lineageTag: 554395e2-957d-4feb-9df8-b1d76e74292d
+		summarizeBy: none
+		sourceColumn: cafe_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column address
+		dataType: string
+		lineageTag: ab8f7ffd-e665-4426-8bdb-dfbd57dbaae9
+		summarizeBy: none
+		sourceColumn: address
+
+		annotation SummarizationSetBy = Automatic
+
+	column silver_processing_time
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 677773ab-238d-4f6b-803f-3db3dc394b58
+		summarizeBy: none
+		sourceColumn: silver_processing_time
+
+		variation Variation
+			isDefault
+			relationship: 1b24f419-1e2c-491f-aa74-4a453cd3d150
+			defaultHierarchy: LocalDateTable_ec5be155-50bb-4761-b517-9d995a25d88a.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column __START_AT
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 633f6541-e4ee-46bc-b526-93f5c17f526b
+		summarizeBy: none
+		sourceColumn: __START_AT
+
+		variation Variation
+			isDefault
+			relationship: 30f2300f-d7bf-46fd-b8a2-4fb5d60e15aa
+			defaultHierarchy: LocalDateTable_5d1c2fa8-30bf-49f6-8f71-c6fe52499126.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column __END_AT
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: cf2e5337-3256-4401-b5a9-5af33c0835a2
+		summarizeBy: none
+		sourceColumn: __END_AT
+
+		variation Variation
+			isDefault
+			relationship: dd55e110-cbae-4202-9af0-539dc24dbd9e
+			defaultHierarchy: LocalDateTable_c460f1c6-532a-4ae6-91e4-5c137c167fa2.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column gold_processing_time
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: f1294ada-1aaa-4044-b082-5eb47f65d721
+		summarizeBy: none
+		sourceColumn: gold_processing_time
+
+		variation Variation
+			isDefault
+			relationship: 3464dfd5-a392-4bd5-8439-2a9a9779f71a
+			defaultHierarchy: LocalDateTable_512276f7-ecd2-4906-8b27-2edf3be40a66.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_store = m
+		mode: import
+		source =
+				let
+				    Source = DatabricksMultiCloud.Catalogs("dbc-6da80bf3-23a8.cloud.databricks.com", "/sql/1.0/warehouses/df90c145035c5f8f", [Catalog="coffee_shop", Database=null, QueryTags=null, EnableAutomaticProxyDiscovery=null, Implementation=null]),
+				    coffee_shop_Database = Source{[Name="coffee_shop",Kind="Database"]}[Data],
+				    layer_gold_Schema = coffee_shop_Database{[Name="layer_gold",Kind="Schema"]}[Data],
+				    dim_store_View = layer_gold_Schema{[Name="dim_store",Kind="View"]}[Data]
+				in
+				    dim_store_View
+

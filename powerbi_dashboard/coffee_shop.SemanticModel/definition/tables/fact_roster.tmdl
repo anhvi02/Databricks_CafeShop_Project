@@ -1,0 +1,147 @@
+table fact_roster
+	lineageTag: b332a548-9a07-4314-ab11-1cc1f44b8eca
+
+	column employee_id
+		dataType: string
+		lineageTag: 182c4d60-93fe-4849-8ee4-c2acbce46c7a
+		summarizeBy: none
+		sourceColumn: employee_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column role
+		dataType: string
+		lineageTag: 316e0146-c2eb-4c4c-8207-ab16a080b26d
+		summarizeBy: none
+		sourceColumn: role
+
+		annotation SummarizationSetBy = Automatic
+
+	column start_time
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 9f86e236-f5be-4d0f-9854-41251a3dc57a
+		summarizeBy: none
+		sourceColumn: start_time
+
+		annotation SummarizationSetBy = Automatic
+
+	column end_time
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: e86c77e1-78a7-422d-998c-2309b30b2eb7
+		summarizeBy: none
+		sourceColumn: end_time
+
+		variation Variation
+			isDefault
+			relationship: e0475d2d-5db3-44bc-b075-6c6e4fd8124b
+			defaultHierarchy: LocalDateTable_67164842-c8d2-49a1-b297-45e88541c2c5.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column area_department
+		dataType: string
+		lineageTag: e2b942bf-57f9-4a74-8418-f1215cc72792
+		summarizeBy: none
+		sourceColumn: area_department
+
+		annotation SummarizationSetBy = Automatic
+
+	column pay_rate
+		dataType: double
+		lineageTag: 1ee5189e-ffd0-4cc2-8488-326ff7adc003
+		summarizeBy: sum
+		sourceColumn: pay_rate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column notes
+		dataType: string
+		lineageTag: 6c925886-84f5-4d8d-a642-a745d2e175a9
+		summarizeBy: none
+		sourceColumn: notes
+
+		annotation SummarizationSetBy = Automatic
+
+	column published
+		dataType: string
+		lineageTag: 0616e6ad-1ddb-49f9-af3c-4a0f0c99e250
+		summarizeBy: none
+		sourceColumn: published
+
+		annotation SummarizationSetBy = Automatic
+
+	column break_duration
+		dataType: double
+		lineageTag: 09c3fc2d-183d-41c1-a7aa-e7a9e2288cd0
+		summarizeBy: sum
+		sourceColumn: break_duration
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column bronze_processing_time
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 7121c499-9e84-427d-930b-56c0d2beed38
+		summarizeBy: none
+		sourceColumn: bronze_processing_time
+
+		variation Variation
+			isDefault
+			relationship: 486356dd-14b6-4ac9-8170-55c3edfa5ff7
+			defaultHierarchy: LocalDateTable_3256d035-c1b9-4cf5-aa49-0dffa6247dcf.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column source_file
+		dataType: string
+		lineageTag: b9d39305-4fe1-4c22-a681-b2dead4d7a25
+		summarizeBy: none
+		sourceColumn: source_file
+
+		annotation SummarizationSetBy = Automatic
+
+	column silver_processing_time
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 85ad346d-f445-4604-b955-f1076cf680c3
+		summarizeBy: none
+		sourceColumn: silver_processing_time
+
+		variation Variation
+			isDefault
+			relationship: e43b5431-5254-46f0-8f48-6f6b4b2b0b5d
+			defaultHierarchy: LocalDateTable_39e1d567-c35f-4f1d-938b-12dcf37f254f.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column gold_processing_time
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 3351fabd-3e67-441a-af0f-c31830e74b2a
+		summarizeBy: none
+		sourceColumn: gold_processing_time
+
+		variation Variation
+			isDefault
+			relationship: 4b4c27e1-31a7-4ca9-8f1f-921e84d0263c
+			defaultHierarchy: LocalDateTable_58b2dd87-80d8-45f9-b608-0b5ef02c3b05.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	partition fact_roster = m
+		mode: import
+		source =
+				let
+				    Source = DatabricksMultiCloud.Catalogs("dbc-6da80bf3-23a8.cloud.databricks.com", "/sql/1.0/warehouses/df90c145035c5f8f", [Catalog="coffee_shop", Database=null, QueryTags=null, EnableAutomaticProxyDiscovery=null, Implementation=null]),
+				    coffee_shop_Database = Source{[Name="coffee_shop",Kind="Database"]}[Data],
+				    layer_gold_Schema = coffee_shop_Database{[Name="layer_gold",Kind="Schema"]}[Data],
+				    fact_roster_View = layer_gold_Schema{[Name="fact_roster",Kind="View"]}[Data]
+				in
+				    fact_roster_View
+

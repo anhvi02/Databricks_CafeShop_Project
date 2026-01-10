@@ -1,0 +1,60 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "31a16549d530dd51c288",
+  "position": {
+    "x": 223.32794830371569,
+    "y": 125.10500807754443,
+    "z": 1000,
+    "height": 277.092084006462,
+    "width": 387.72213247172863,
+    "tabOrder": 1000
+  },
+  "visual": {
+    "visualType": "lineChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_datetime"
+                    }
+                  },
+                  "Property": "day_of_week"
+                }
+              },
+              "queryRef": "dim_datetime.day_of_week",
+              "nativeQueryRef": "day_of_week",
+              "active": true
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "ec3341fe5c539194275e",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "dim_datetime"
+              }
+            },
+            "Property": "day_of_week"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
+  }
+}

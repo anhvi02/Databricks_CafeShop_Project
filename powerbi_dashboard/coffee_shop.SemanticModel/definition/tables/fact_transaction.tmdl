@@ -1,0 +1,216 @@
+table fact_transaction
+	lineageTag: 81a4d5f7-2699-4f89-80ad-435f8f3c2a22
+
+	column transaction_id
+		dataType: string
+		lineageTag: 158caa0a-6418-43b8-bafa-520cf12538da
+		summarizeBy: none
+		sourceColumn: transaction_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column order_id
+		dataType: string
+		lineageTag: aa075b48-1a9e-4925-b432-68ab087e9556
+		summarizeBy: none
+		sourceColumn: order_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column transaction_datetime
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 6131178d-bf99-48de-9643-671e744c5c0c
+		summarizeBy: none
+		sourceColumn: transaction_datetime
+
+		variation Variation
+			isDefault
+			relationship: 1ffaa975-1f8d-4e71-b936-4ac4380037ea
+			defaultHierarchy: LocalDateTable_f21c6352-e6f7-4e03-86d9-6709713ccba1.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column category_name
+		dataType: string
+		lineageTag: 05d7dcc6-8f9c-4f06-a737-9e8a90208ab3
+		summarizeBy: none
+		sourceColumn: category_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column item_name
+		dataType: string
+		lineageTag: 8e22e475-89cb-4846-b43e-e9e724e70e3b
+		summarizeBy: none
+		sourceColumn: item_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column variation_name
+		dataType: string
+		lineageTag: be0c077b-1961-4146-a39c-8ebfd02824da
+		summarizeBy: none
+		sourceColumn: variation_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column derived_drink_by_ingredient
+		dataType: string
+		lineageTag: 48e17c43-9245-4a79-915e-4d2bdfbedc78
+		summarizeBy: none
+		sourceColumn: derived_drink_by_ingredient
+
+		annotation SummarizationSetBy = Automatic
+
+	column size
+		dataType: string
+		lineageTag: 436cb3c5-73a4-4a4b-8af0-d24c4b10f257
+		summarizeBy: none
+		sourceColumn: size
+
+		annotation SummarizationSetBy = Automatic
+
+	column milk_type
+		dataType: string
+		lineageTag: a51a7483-293a-4e69-bffa-5613cf728091
+		summarizeBy: none
+		sourceColumn: milk_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column quantity
+		dataType: int64
+		formatString: 0
+		lineageTag: 6085439b-7ec7-443a-9103-5bf7bb024481
+		summarizeBy: sum
+		sourceColumn: quantity
+
+		annotation SummarizationSetBy = Automatic
+
+	column unit_price
+		dataType: double
+		lineageTag: 446ba7e2-5364-4e63-910d-862428ab5d81
+		summarizeBy: sum
+		sourceColumn: unit_price
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column line_total
+		dataType: double
+		lineageTag: e2a34353-6b2f-448d-8430-68a8e435dc04
+		summarizeBy: sum
+		sourceColumn: line_total
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column modifiers
+		dataType: string
+		lineageTag: a292240a-26ba-438f-804c-2959d88f7d63
+		summarizeBy: none
+		sourceColumn: modifiers
+
+		annotation SummarizationSetBy = Automatic
+
+	column employee_id
+		dataType: string
+		lineageTag: 74d52aa3-5c58-41a1-b917-9f6fe6b8775e
+		summarizeBy: none
+		sourceColumn: employee_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column customer_name
+		dataType: string
+		lineageTag: dc664639-61f2-428d-91db-96f70db06229
+		summarizeBy: none
+		sourceColumn: customer_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column payment_method
+		dataType: string
+		lineageTag: d12a3b72-6142-4eab-a743-fe2a0a23ea29
+		summarizeBy: none
+		sourceColumn: payment_method
+
+		annotation SummarizationSetBy = Automatic
+
+	column location_id
+		dataType: string
+		lineageTag: ab5db579-a782-4405-9e8e-e465ed20d09a
+		summarizeBy: none
+		sourceColumn: location_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column bronze_processing_time
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 0f351e1f-626a-4f6d-b6d3-c01a411b896f
+		summarizeBy: none
+		sourceColumn: bronze_processing_time
+
+		variation Variation
+			isDefault
+			relationship: 6b858054-cc84-4945-9447-7e96abf4b387
+			defaultHierarchy: LocalDateTable_1a9dcc23-738f-40f8-8c6a-149a84e56b93.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column silver_processing_time
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 4c8dd6aa-0c73-4d67-89ec-520ee8b96841
+		summarizeBy: none
+		sourceColumn: silver_processing_time
+
+		variation Variation
+			isDefault
+			relationship: 4f728cb8-0cf8-4b51-8c39-5a3ef440fa0f
+			defaultHierarchy: LocalDateTable_5dedfe77-fa05-47c4-94f8-b08b7eaacf71.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column gold_processing_time
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 9c181580-1f9f-4be2-9a35-d67e0b16c3c9
+		summarizeBy: none
+		sourceColumn: gold_processing_time
+
+		variation Variation
+			isDefault
+			relationship: b195fe0d-3e76-4777-88ce-233874e043ff
+			defaultHierarchy: LocalDateTable_cc8b7386-d6a9-4a04-b2dc-ebe2aee10a4f.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column transaction_date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 845e19ca-4943-418a-808e-f95e8ddf0570
+		summarizeBy: none
+		sourceColumn: transaction_date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	partition fact_transaction = m
+		mode: import
+		source =
+				let
+				    Source = DatabricksMultiCloud.Catalogs("dbc-6da80bf3-23a8.cloud.databricks.com", "/sql/1.0/warehouses/df90c145035c5f8f", [Catalog="coffee_shop", Database=null, QueryTags=null, EnableAutomaticProxyDiscovery=null, Implementation=null]),
+				    coffee_shop_Database = Source{[Name="coffee_shop",Kind="Database"]}[Data],
+				    layer_gold_Schema = coffee_shop_Database{[Name="layer_gold",Kind="Schema"]}[Data],
+				    fact_transaction_View = layer_gold_Schema{[Name="fact_transaction",Kind="View"]}[Data]
+				in
+				    fact_transaction_View
+
+	annotation PBI_ResultType = Table
+
