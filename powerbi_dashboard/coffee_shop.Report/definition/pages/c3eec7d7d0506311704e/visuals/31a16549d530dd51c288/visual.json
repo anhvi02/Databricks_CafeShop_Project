@@ -20,7 +20,7 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "dim_datetime"
+                      "Entity": "dim_date"
                     }
                   },
                   "Property": "day_of_week"

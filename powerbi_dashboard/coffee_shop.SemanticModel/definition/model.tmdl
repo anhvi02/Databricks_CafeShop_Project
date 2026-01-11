@@ -32,7 +32,7 @@ ref table fact_transaction
 ref table LocalDateTable_1a9dcc23-738f-40f8-8c6a-149a84e56b93
 ref table LocalDateTable_5dedfe77-fa05-47c4-94f8-b08b7eaacf71
 ref table LocalDateTable_cc8b7386-d6a9-4a04-b2dc-ebe2aee10a4f
-ref table dim_datetime
+ref table dim_date
 ref table LocalDateTable_a8a38932-233f-4d33-ab60-5cb471b090dd
 ref table Table_Weeks_Back
 

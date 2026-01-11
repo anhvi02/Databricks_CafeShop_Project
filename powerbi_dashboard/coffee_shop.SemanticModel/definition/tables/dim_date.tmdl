@@ -1,4 +1,4 @@
-table dim_datetime
+table dim_date
 	lineageTag: b47d4b9f-6c53-4d50-9f9f-0183e035212d
 	dataCategory: Time
 
@@ -84,7 +84,7 @@ table dim_datetime
 
 		annotation SummarizationSetBy = Automatic
 
-	partition dim_datetime = calculated
+	partition dim_date = calculated
 		mode: import
 		source = ADDCOLUMNS( CALENDAR(DATE(2024, 1, 1), DATE(2027, 12, 31)), "Year", YEAR([Date]), "Month", MONTH([Date]), "MonthName", FORMAT([Date], "MMMM"), "Quarter", "Q" & QUARTER([Date]), "Week", WEEKNUM([Date]), "DayOfWeek", WEEKDAY([Date]), "DayName", FORMAT([Date], "dddd"), "DayOfWeekSort", WEEKDAY([Date], 2) )
 

@@ -15239,7 +15239,7 @@ cultureInfo en-US
 			    "dim_datetime": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "dim_datetime"
+			          "ConceptualEntity": "dim_date"
 			        }
 			      },
 			      "State": "Generated",
@@ -15261,7 +15261,7 @@ cultureInfo en-US
 			    "dim_datetime.date": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "dim_datetime",
+			          "ConceptualEntity": "dim_date",
 			          "ConceptualProperty": "Date"
 			        }
 			      },
@@ -15298,7 +15298,7 @@ cultureInfo en-US
 			    "dim_datetime.year": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "dim_datetime",
+			          "ConceptualEntity": "dim_date",
 			          "ConceptualProperty": "Year"
 			        }
 			      },
@@ -15325,7 +15325,7 @@ cultureInfo en-US
 			    "dim_datetime.month": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "dim_datetime",
+			          "ConceptualEntity": "dim_date",
 			          "ConceptualProperty": "Month"
 			        }
 			      },
@@ -15351,7 +15351,7 @@ cultureInfo en-US
 			    "dim_datetime.month_name": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "dim_datetime",
+			          "ConceptualEntity": "dim_date",
 			          "ConceptualProperty": "MonthName"
 			        }
 			      },
@@ -15424,7 +15424,7 @@ cultureInfo en-US
 			    "dim_datetime.quarter": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "dim_datetime",
+			          "ConceptualEntity": "dim_date",
 			          "ConceptualProperty": "Quarter"
 			        }
 			      },
@@ -15450,7 +15450,7 @@ cultureInfo en-US
 			    "dim_datetime.week": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "dim_datetime",
+			          "ConceptualEntity": "dim_date",
 			          "ConceptualProperty": "Week"
 			        }
 			      },
@@ -15466,7 +15466,7 @@ cultureInfo en-US
 			    "dim_datetime.day_of_week": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "dim_datetime",
+			          "ConceptualEntity": "dim_date",
 			          "ConceptualProperty": "DayOfWeek"
 			        }
 			      },
@@ -15489,7 +15489,7 @@ cultureInfo en-US
 			    "dim_datetime.day_name": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "dim_datetime",
+			          "ConceptualEntity": "dim_date",
 			          "ConceptualProperty": "DayName"
 			        }
 			      },
@@ -15552,7 +15552,7 @@ cultureInfo en-US
 			    "dim_datetime.day_of_week_sort": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "dim_datetime",
+			          "ConceptualEntity": "dim_date",
 			          "ConceptualProperty": "DayOfWeekSort"
 			        }
 			      },
@@ -18808,7 +18808,7 @@ cultureInfo en-US
 			    },
 			    "dim_datetime_has_day_of_week_sort": {
 			      "Binding": {
-			        "ConceptualEntity": "dim_datetime"
+			        "ConceptualEntity": "dim_date"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -18841,7 +18841,7 @@ cultureInfo en-US
 			    },
 			    "dim_datetime_has_day_name": {
 			      "Binding": {
-			        "ConceptualEntity": "dim_datetime"
+			        "ConceptualEntity": "dim_date"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -18874,7 +18874,7 @@ cultureInfo en-US
 			    },
 			    "dim_datetime_has_day_of_week": {
 			      "Binding": {
-			        "ConceptualEntity": "dim_datetime"
+			        "ConceptualEntity": "dim_date"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -18907,7 +18907,7 @@ cultureInfo en-US
 			    },
 			    "dim_datetime_has_week": {
 			      "Binding": {
-			        "ConceptualEntity": "dim_datetime"
+			        "ConceptualEntity": "dim_date"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -18940,7 +18940,7 @@ cultureInfo en-US
 			    },
 			    "dim_datetime_has_quarter": {
 			      "Binding": {
-			        "ConceptualEntity": "dim_datetime"
+			        "ConceptualEntity": "dim_date"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -18973,7 +18973,7 @@ cultureInfo en-US
 			    },
 			    "dim_datetime_has_month_name": {
 			      "Binding": {
-			        "ConceptualEntity": "dim_datetime"
+			        "ConceptualEntity": "dim_date"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -19006,7 +19006,7 @@ cultureInfo en-US
 			    },
 			    "dim_datetime_has_month": {
 			      "Binding": {
-			        "ConceptualEntity": "dim_datetime"
+			        "ConceptualEntity": "dim_date"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -19039,7 +19039,7 @@ cultureInfo en-US
 			    },
 			    "dim_datetime_has_year": {
 			      "Binding": {
-			        "ConceptualEntity": "dim_datetime"
+			        "ConceptualEntity": "dim_date"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -19072,7 +19072,7 @@ cultureInfo en-US
 			    },
 			    "dim_datetime_has_date": {
 			      "Binding": {
-			        "ConceptualEntity": "dim_datetime"
+			        "ConceptualEntity": "dim_date"
 			      },
 			      "State": "Generated",
 			      "Roles": {
