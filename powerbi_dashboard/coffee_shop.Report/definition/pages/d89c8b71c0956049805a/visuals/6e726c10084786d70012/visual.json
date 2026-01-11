@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "6e726c10084786d70012",
   "position": {
-    "x": 175.46067415730337,
-    "y": 174.50187265917603,
+    "x": 263.67797947908446,
+    "y": 102.03630623520127,
     "z": 2000,
-    "height": 325.99250936329588,
-    "width": 649.10861423220979,
+    "height": 325.30386740331488,
+    "width": 648.58721389108132,
     "tabOrder": 2000
   },
   "visual": {
@@ -126,6 +126,42 @@
           },
           "selector": {
             "metadata": "Sum(fact_transaction.line_total)"
+          }
+        }
+      ],
+      "referenceLine": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "displayName": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Average line 1'"
+                }
+              }
+            },
+            "value": {
+              "expr": {
+                "Aggregation": {
+                  "Expression": {
+                    "SelectRef": {
+                      "ExpressionName": "fact_transaction.Measure_Sales_Same_Day_Last_Week"
+                    }
+                  },
+                  "Function": 1
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "fact_transaction.Measure_Sales_Same_Day_Last_Week",
+            "id": "1"
           }
         }
       ]
