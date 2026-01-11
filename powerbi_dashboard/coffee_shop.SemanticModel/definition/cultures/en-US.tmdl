@@ -15197,118 +15197,124 @@ cultureInfo en-US
 			      ],
 			      "SemanticType": "Time"
 			    },
-			    "key_measure.sales_last_week": {
+			    "key_measure.total_sales_last_week": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Key Measures",
-			          "ConceptualProperty": "Sales Last Week"
+			          "ConceptualProperty": "Total Sales Last Week"
 			        }
 			      },
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "sales last week": {
+			          "total sales last week": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "sale last week": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.591
+			          "sales last week": {
+			            "State": "Generated",
+			            "Weight": 0.97
 			          }
 			        },
 			        {
-			          "sale end week": {
+			          "aggregate sale last week": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.591
+			            "Weight": 0.599
 			          }
 			        },
 			        {
-			          "sale final week": {
+			          "overall sale last week": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.591
+			            "Weight": 0.599
 			          }
 			        },
 			        {
-			          "sale closing week": {
+			          "total sale last week": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.591
+			            "Weight": 0.599
 			          }
 			        },
 			        {
-			          "sale concluding week": {
+			          "total sale end week": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.591
+			            "Weight": 0.599
 			          }
 			        },
 			        {
-			          "sale finishing week": {
+			          "total sale final week": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.591
+			            "Weight": 0.599
 			          }
 			        },
 			        {
-			          "sale former week": {
+			          "total sale closing week": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.591
+			            "Weight": 0.599
 			          }
 			        },
 			        {
-			          "sale latest week": {
+			          "total sale concluding week": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.591
+			            "Weight": 0.599
 			          }
 			        },
 			        {
-			          "sale latter week": {
+			          "total sale finishing week": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.591
+			            "Weight": 0.599
 			          }
 			        },
 			        {
-			          "sale past week": {
+			          "total sale former week": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.591
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "total sale latest week": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
 			          }
 			        },
 			        {
@@ -15653,6 +15659,16 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.727
 			          }
+			        },
+			        {
+			          "Day Of Week": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -15849,28 +15865,74 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "key_measure.sales_this_week": {
+			    "key_measure.total_sales": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Key Measures",
-			          "ConceptualProperty": "Sales This Week"
+			          "ConceptualProperty": "Total Sales"
 			        }
 			      },
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "sales this week": {
+			          "total sales": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "sale this week": {
+			          "sales": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "total sale": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.739
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "sale": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "aggregate sale": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "overall sale": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "Sales This Week": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        },
 			        {
@@ -18977,7 +19039,7 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "fact_transaction_has_key_measure_sales_this_week": {
+			    "fact_transaction_has_key_measure_total_sales": {
 			      "Binding": {
 			        "ConceptualEntity": "fact_transaction"
 			      },
@@ -18988,9 +19050,9 @@ cultureInfo en-US
 			            "Entity": "fact_transaction"
 			          }
 			        },
-			        "key_measure.sales_this_week": {
+			        "key_measure.total_sales": {
 			          "Target": {
-			            "Entity": "key_measure.sales_this_week"
+			            "Entity": "key_measure.total_sales"
 			          }
 			        }
 			      },
@@ -19001,12 +19063,12 @@ cultureInfo en-US
 			              "Role": "fact_transaction"
 			            },
 			            "Object": {
-			              "Role": "key_measure.sales_this_week"
+			              "Role": "key_measure.total_sales"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "fact_transactions_have_sales_this_week"
+			          "ID": "fact_transactions_have_total_sales"
 			        }
 			      ]
 			    },
@@ -19457,7 +19519,7 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "fact_transaction_has_key_measure_sales_last_week": {
+			    "fact_transaction_has_key_measure_total_sales_last_week": {
 			      "Binding": {
 			        "ConceptualEntity": "fact_transaction"
 			      },
@@ -19468,9 +19530,9 @@ cultureInfo en-US
 			            "Entity": "fact_transaction"
 			          }
 			        },
-			        "key_measure.sales_last_week": {
+			        "key_measure.total_sales_last_week": {
 			          "Target": {
-			            "Entity": "key_measure.sales_last_week"
+			            "Entity": "key_measure.total_sales_last_week"
 			          }
 			        }
 			      },
@@ -19481,12 +19543,12 @@ cultureInfo en-US
 			              "Role": "fact_transaction"
 			            },
 			            "Object": {
-			              "Role": "key_measure.sales_last_week"
+			              "Role": "key_measure.total_sales_last_week"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "fact_transactions_have_sales_last_week"
+			          "ID": "fact_transactions_have_total_sales_last_week"
 			        }
 			      ]
 			    },

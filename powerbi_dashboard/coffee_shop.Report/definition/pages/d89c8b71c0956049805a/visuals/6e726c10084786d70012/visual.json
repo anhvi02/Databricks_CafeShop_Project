@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "6e726c10084786d70012",
   "position": {
-    "x": 202.40790655884996,
-    "y": 159.85624438454627,
+    "x": 175.46067415730337,
+    "y": 174.50187265917603,
     "z": 2000,
-    "height": 325.46271338724171,
-    "width": 648.62533692722377,
+    "height": 325.99250936329588,
+    "width": 649.10861423220979,
     "tabOrder": 2000
   },
   "visual": {
@@ -27,8 +27,9 @@
                 }
               },
               "queryRef": "dim_datetime.DayName",
-              "nativeQueryRef": "DayName",
-              "active": true
+              "nativeQueryRef": "Day Of Week",
+              "active": true,
+              "displayName": "Day Of Week"
             }
           ]
         },
@@ -62,7 +63,7 @@
                       "Entity": "Key Measures"
                     }
                   },
-                  "Property": "Sales Last Week"
+                  "Property": "Total Sales Last Week"
                 }
               },
               "queryRef": "fact_transaction.Measure_Sales_Same_Day_Last_Week",
@@ -156,7 +157,7 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "6142d95b3ac0ae280a81",
+        "name": "f1fb47b0301709d08604",
         "field": {
           "Column": {
             "Expression": {
@@ -170,7 +171,7 @@
         "type": "Categorical"
       },
       {
-        "name": "92edba80a54257ab46a8",
+        "name": "cfe36980094caaee08ac",
         "field": {
           "Aggregation": {
             "Expression": {
@@ -189,7 +190,7 @@
         "type": "Advanced"
       },
       {
-        "name": "e9cf5d3d6accd6d3b255",
+        "name": "9005d0efde0cd9313d4e",
         "field": {
           "Measure": {
             "Expression": {
@@ -197,7 +198,7 @@
                 "Entity": "Key Measures"
               }
             },
-            "Property": "Sales Last Week"
+            "Property": "Total Sales Last Week"
           }
         },
         "type": "Advanced"

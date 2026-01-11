@@ -12,7 +12,7 @@ table 'Key Measures'
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
-	measure 'Sales This Week' = SUM(fact_transaction[line_total])
+	measure 'Total Sales' = SUM(fact_transaction[line_total])
 		formatString: \$#,0;(\$#,0);\$#,0
 		displayFolder: SimpleMetrics
 		lineageTag: 3be8baf6-259f-45c7-bd8c-0cafc12db5c4
@@ -24,7 +24,7 @@ table 'Key Measures'
 		displayFolder: SimpleMetrics
 		lineageTag: 70a1e5d0-5140-418d-b0b7-69f8a994e90c
 
-	measure 'Sales Last Week' =
+	measure 'Total Sales Last Week' =
 			
 			CALCULATE(
 			    SUM(fact_transaction[line_total]),

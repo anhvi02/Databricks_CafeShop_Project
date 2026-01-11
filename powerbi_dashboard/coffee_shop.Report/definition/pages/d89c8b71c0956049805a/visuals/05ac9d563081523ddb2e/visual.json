@@ -52,7 +52,7 @@
                       "Entity": "Key Measures"
                     }
                   },
-                  "Property": "Sales This Week"
+                  "Property": "Total Sales"
                 }
               },
               "queryRef": "fact_transaction.Mea_Sales This Week",
@@ -253,65 +253,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "3594af72ec04a0599b44",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "fact_transaction"
-              }
-            },
-            "Property": "derived_drink_by_ingredient"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "d14175eee0b8d5e80084",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Key Measures"
-              }
-            },
-            "Property": "Sales Change For Sales By Product"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "71b51533a5d29eb05b30",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Key Measures"
-              }
-            },
-            "Property": "Sales This Week"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "83065fd3310b12d00b21",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Key Measures"
-              }
-            },
-            "Property": "Number Of Transactions"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

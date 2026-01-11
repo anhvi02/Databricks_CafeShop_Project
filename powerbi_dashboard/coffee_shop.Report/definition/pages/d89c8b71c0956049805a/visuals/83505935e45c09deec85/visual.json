@@ -23,7 +23,7 @@
                       "Entity": "Key Measures"
                     }
                   },
-                  "Property": "Sales This Week"
+                  "Property": "Total Sales"
                 }
               },
               "queryRef": "fact_transaction.Mea_Sales This Week",
@@ -44,7 +44,7 @@
                     "Entity": "Key Measures"
                   }
                 },
-                "Property": "Sales This Week"
+                "Property": "Total Sales"
               }
             },
             "direction": "Descending"
@@ -54,23 +54,5 @@
       }
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "c40a3595c60c564c9131",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Key Measures"
-              }
-            },
-            "Property": "Sales This Week"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

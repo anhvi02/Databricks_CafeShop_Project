@@ -43,7 +43,7 @@
                       "Entity": "Key Measures"
                     }
                   },
-                  "Property": "Sales This Week"
+                  "Property": "Total Sales"
                 }
               },
               "queryRef": "fact_transaction.Mea_Sales This Week",
@@ -58,7 +58,7 @@
                       "Entity": "Key Measures"
                     }
                   },
-                  "Property": "Sales Last Week"
+                  "Property": "Total Sales Last Week"
                 }
               },
               "queryRef": "fact_transaction.Measure_Sales_Same_Day_Last_Week",
@@ -78,7 +78,7 @@
                     "Entity": "Key Measures"
                   }
                 },
-                "Property": "Sales This Week"
+                "Property": "Total Sales"
               }
             },
             "direction": "Descending"
@@ -172,51 +172,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "6d3a975495b0cbe9e456",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Key Measures"
-              }
-            },
-            "Property": "Sales Last Week"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "525e5883500223903322",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Key Measures"
-              }
-            },
-            "Property": "Sales This Week"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "b659482be4659d168cdc",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "dim_store"
-              }
-            },
-            "Property": "cafe_name"
-          }
-        },
-        "type": "Categorical"
-      }
-    ]
   }
 }
