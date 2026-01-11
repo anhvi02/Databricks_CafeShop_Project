@@ -58,9 +58,7 @@ FROM
 -- --------------------------------
 -- Total Revenue (by...)
 -- --------------------------------
--- CREATE OR REFRESH MATERIALIZED VIEW coffee_shop.layer_gold.vw_total_revenue
+-- CREATE OR REFRESH TABLE coffee_shop.layer_gold.vw_total_revenue
 -- COMMENT "Total revenue"
 -- TBLPROPERTIES ("quality" = "gold")
--- AS SELECT 
-  
-
+-- AS SELECT

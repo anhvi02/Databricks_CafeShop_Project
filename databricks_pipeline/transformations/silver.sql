@@ -21,6 +21,7 @@ AS SELECT
     
     -- Timestamp
     transaction_datetime,
+    CAST(transaction_datetime AS DATE) as transaction_date,
     
     -- Product information
     category_name,

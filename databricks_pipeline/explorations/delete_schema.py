@@ -31,6 +31,3 @@ for table in tables["tableName"]:
 tables = spark.sql("SHOW TABLES IN coffee_shop.layer_gold").toPandas()
 for table in tables["tableName"]:
     spark.sql(f"DROP TABLE coffee_shop.layer_gold.{table}")
-
-# COMMAND ----------
-
