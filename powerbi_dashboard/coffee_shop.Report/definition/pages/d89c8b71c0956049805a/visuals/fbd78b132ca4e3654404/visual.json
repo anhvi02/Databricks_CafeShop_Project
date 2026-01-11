@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "fbd78b132ca4e3654404",
   "position": {
-    "x": 235.99198396793588,
-    "y": 91.062124248497,
-    "z": 5001,
-    "height": 221.88376753507015,
-    "width": 371.9438877755511,
-    "tabOrder": 5001
+    "x": 0,
+    "y": 358.81401617250674,
+    "z": 5000,
+    "height": 361.11410601976638,
+    "width": 446.21743036837375,
+    "tabOrder": 5000
   },
   "visual": {
     "visualType": "clusteredBarChart",
@@ -20,15 +20,16 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "fact_transaction"
+                      "Entity": "dim_store"
                     }
                   },
-                  "Property": "location_id"
+                  "Property": "cafe_name"
                 }
               },
-              "queryRef": "fact_transaction.location_id",
-              "nativeQueryRef": "location_id",
-              "active": true
+              "queryRef": "dim_store.cafe_name",
+              "nativeQueryRef": "Store",
+              "active": true,
+              "displayName": "Store"
             }
           ]
         },
@@ -36,22 +37,33 @@
           "projections": [
             {
               "field": {
-                "Aggregation": {
+                "Measure": {
                   "Expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "fact_transaction"
-                        }
-                      },
-                      "Property": "line_total"
+                    "SourceRef": {
+                      "Entity": "Key Measures"
                     }
                   },
-                  "Function": 0
+                  "Property": "Sales This Week"
                 }
               },
-              "queryRef": "Sum(fact_transaction.line_total)",
-              "nativeQueryRef": "Sum of line_total"
+              "queryRef": "fact_transaction.Mea_Sales This Week",
+              "nativeQueryRef": "This Week",
+              "displayName": "This Week"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Key Measures"
+                    }
+                  },
+                  "Property": "Sales Last Week"
+                }
+              },
+              "queryRef": "fact_transaction.Measure_Sales_Same_Day_Last_Week",
+              "nativeQueryRef": "Last Week",
+              "displayName": "Last Week"
             }
           ]
         }
@@ -60,18 +72,13 @@
         "sort": [
           {
             "field": {
-              "Aggregation": {
+              "Measure": {
                 "Expression": {
-                  "Column": {
-                    "Expression": {
-                      "SourceRef": {
-                        "Entity": "fact_transaction"
-                      }
-                    },
-                    "Property": "line_total"
+                  "SourceRef": {
+                    "Entity": "Key Measures"
                   }
                 },
-                "Function": 0
+                "Property": "Sales This Week"
               }
             },
             "direction": "Descending"
@@ -80,6 +87,136 @@
         "isDefaultSort": true
       }
     },
+    "objects": {
+      "labels": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "labelPosition": {
+              "expr": {
+                "Literal": {
+                  "Value": "'InsideCenter'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "legend": [
+        {
+          "properties": {
+            "position": {
+              "expr": {
+                "Literal": {
+                  "Value": "'TopCenter'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "dataPoint": [
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 8,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "fact_transaction.Mea_Sales This Week"
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "visualHeader": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Sales Change By Stores'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "6d3a975495b0cbe9e456",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Key Measures"
+              }
+            },
+            "Property": "Sales Last Week"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "525e5883500223903322",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Key Measures"
+              }
+            },
+            "Property": "Sales This Week"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "b659482be4659d168cdc",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "dim_store"
+              }
+            },
+            "Property": "cafe_name"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
   }
 }

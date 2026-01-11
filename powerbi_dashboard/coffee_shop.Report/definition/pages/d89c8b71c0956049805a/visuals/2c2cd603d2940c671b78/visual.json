@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "2c2cd603d2940c671b78",
   "position": {
-    "x": 660.52104208416836,
-    "y": 110.30060120240481,
-    "z": 5000,
-    "height": 247.53507014028057,
-    "width": 382.20440881763528,
-    "tabOrder": 5000
+    "x": 824.58221024258762,
+    "y": 0,
+    "z": 4000,
+    "height": 348.4636118598383,
+    "width": 455.41778975741244,
+    "tabOrder": 4000
   },
   "visual": {
     "visualType": "donutChart",
@@ -23,12 +23,13 @@
                       "Entity": "fact_transaction"
                     }
                   },
-                  "Property": "payment_method"
+                  "Property": "milk_type"
                 }
               },
-              "queryRef": "fact_transaction.payment_method",
-              "nativeQueryRef": "payment_method",
-              "active": true
+              "queryRef": "fact_transaction.milk_type",
+              "nativeQueryRef": "Milk Type",
+              "active": true,
+              "displayName": "Milk Type"
             }
           ]
         },
@@ -36,23 +37,17 @@
           "projections": [
             {
               "field": {
-                "Aggregation": {
+                "Measure": {
                   "Expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "fact_transaction"
-                        }
-                      },
-                      "Property": "transaction_id"
+                    "SourceRef": {
+                      "Entity": "Key Measures"
                     }
                   },
-                  "Function": 2
+                  "Property": "Sales This Week"
                 }
               },
-              "queryRef": "Count(fact_transaction.transaction_id)",
-              "nativeQueryRef": "Sales",
-              "displayName": "Sales"
+              "queryRef": "Key Measures.Sales This Week",
+              "nativeQueryRef": "Sales This Week"
             }
           ]
         },
@@ -60,23 +55,17 @@
           "projections": [
             {
               "field": {
-                "Aggregation": {
+                "Measure": {
                   "Expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "fact_transaction"
-                        }
-                      },
-                      "Property": "line_total"
+                    "SourceRef": {
+                      "Entity": "Key Measures"
                     }
                   },
-                  "Function": 0
+                  "Property": "Number Of Transactions"
                 }
               },
-              "queryRef": "Sum(fact_transaction.line_total)",
-              "nativeQueryRef": "Number of Transactions",
-              "displayName": "Number of Transactions"
+              "queryRef": "fact_transaction.Mea_Number Of Transactions",
+              "nativeQueryRef": "Number Of Transactions"
             }
           ]
         }
@@ -85,18 +74,13 @@
         "sort": [
           {
             "field": {
-              "Aggregation": {
+              "Measure": {
                 "Expression": {
-                  "Column": {
-                    "Expression": {
-                      "SourceRef": {
-                        "Entity": "fact_transaction"
-                      }
-                    },
-                    "Property": "line_total"
+                  "SourceRef": {
+                    "Entity": "Key Measures"
                   }
                 },
-                "Function": 0
+                "Property": "Number Of Transactions"
               }
             },
             "direction": "Descending"
@@ -105,6 +89,99 @@
         "isDefaultSort": true
       }
     },
+    "objects": {
+      "legend": [
+        {
+          "properties": {
+            "position": {
+              "expr": {
+                "Literal": {
+                  "Value": "'BottomCenter'"
+                }
+              }
+            },
+            "showTitle": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "labels": [
+        {
+          "properties": {
+            "labelStyle": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Category, data value, percent of total'"
+                }
+              }
+            },
+            "position": {
+              "expr": {
+                "Literal": {
+                  "Value": "'preferOutside'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "dataPoint": [
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 8,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "fact_transaction"
+                          }
+                        },
+                        "Property": "payment_method"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'card'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
     "visualContainerObjects": {
       "title": [
         {
@@ -112,7 +189,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Number of Transactions by Payment Method'"
+                  "Value": "'Milk Usage by Transactions in this week'"
                 }
               }
             },
@@ -126,7 +203,7 @@
             "bold": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             }
@@ -135,5 +212,116 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "860441bcc1c5e0c5c0e1",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Key Measures"
+              }
+            },
+            "Property": "Number Of Transactions"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "3af0b655b4d55eaad02d",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "fact_transaction"
+              }
+            },
+            "Property": "milk_type"
+          }
+        },
+        "type": "Categorical",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "f",
+              "Entity": "fact_transaction",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "Not": {
+                  "Expression": {
+                    "In": {
+                      "Expressions": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "f"
+                              }
+                            },
+                            "Property": "milk_type"
+                          }
+                        }
+                      ],
+                      "Values": [
+                        [
+                          {
+                            "Literal": {
+                              "Value": "'Food'"
+                            }
+                          }
+                        ],
+                        [
+                          {
+                            "Literal": {
+                              "Value": "'no milk'"
+                            }
+                          }
+                        ]
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "objects": {
+          "general": [
+            {
+              "properties": {
+                "isInvertedSelectionMode": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "true"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "10ab17304bb8dd401ab7",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Key Measures"
+              }
+            },
+            "Property": "Sales This Week"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "83505935e45c09deec85",
   "position": {
-    "x": 0,
+    "x": 9.2003593890386348,
     "y": 0,
     "z": 1000,
-    "height": 132.89617486338798,
-    "width": 214.03278688524591,
+    "height": 133.40521114106019,
+    "width": 213.90835579514825,
     "tabOrder": 1000
   },
   "visual": {
@@ -17,22 +17,19 @@
           "projections": [
             {
               "field": {
-                "Aggregation": {
+                "Measure": {
                   "Expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "fact_transaction"
-                        }
-                      },
-                      "Property": "line_total"
+                    "SourceRef": {
+                      "Entity": "Key Measures"
                     }
                   },
-                  "Function": 0
+                  "Property": "Sales This Week"
                 }
               },
-              "queryRef": "Sum(fact_transaction.line_total)",
-              "nativeQueryRef": "Sum of line_total"
+              "queryRef": "fact_transaction.Mea_Sales This Week",
+              "nativeQueryRef": "Total Week Sales",
+              "displayName": "Total Week Sales",
+              "format": "\\$#,0.00;(\\$#,0.00);\\$#,0.00"
             }
           ]
         }
@@ -41,18 +38,13 @@
         "sort": [
           {
             "field": {
-              "Aggregation": {
+              "Measure": {
                 "Expression": {
-                  "Column": {
-                    "Expression": {
-                      "SourceRef": {
-                        "Entity": "fact_transaction"
-                      }
-                    },
-                    "Property": "line_total"
+                  "SourceRef": {
+                    "Entity": "Key Measures"
                   }
                 },
-                "Function": 0
+                "Property": "Sales This Week"
               }
             },
             "direction": "Descending"
@@ -62,5 +54,23 @@
       }
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "c40a3595c60c564c9131",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Key Measures"
+              }
+            },
+            "Property": "Sales This Week"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

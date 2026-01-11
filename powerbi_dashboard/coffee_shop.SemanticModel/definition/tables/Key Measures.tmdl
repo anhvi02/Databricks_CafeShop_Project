@@ -1,0 +1,76 @@
+table 'Key Measures'
+	lineageTag: 26cdd336-8784-40f1-95ec-ef06d3706fec
+
+	measure 'Coloring For Table Sales By Product' =
+			
+			VAR _sales_product_this_week = SUM(fact_transaction[line_total])
+			VAR _sales_product_last_week = CALCULATE(SUM(fact_transaction[line_total]), DATEADD(dim_date[Date], -7, DAY))
+			VAR _diff_percentage = ((_sales_product_this_week - _sales_product_last_week)/_sales_product_last_week)*100
+			RETURN _diff_percentage
+		displayFolder: Coloring
+		lineageTag: 9ac6e423-e6be-45e0-8e10-29b9cf4793d9
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Sales This Week' = SUM(fact_transaction[line_total])
+		formatString: \$#,0;(\$#,0);\$#,0
+		displayFolder: SimpleMetrics
+		lineageTag: 3be8baf6-259f-45c7-bd8c-0cafc12db5c4
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+	measure 'Number Of Transactions' = DISTINCTCOUNT(fact_transaction[transaction_id])
+		formatString: 0
+		displayFolder: SimpleMetrics
+		lineageTag: 70a1e5d0-5140-418d-b0b7-69f8a994e90c
+
+	measure 'Sales Last Week' =
+			
+			CALCULATE(
+			    SUM(fact_transaction[line_total]),
+			    DATEADD('dim_date'[Date], -7, DAY)
+			)
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		displayFolder: Last Week
+		lineageTag: 595764ff-a9ee-4416-9dc8-cdf6e214f140
+
+	measure 'Sales Change For Sales By Product' =
+			
+			VAR _sales_product_this_week = SUM(fact_transaction[line_total])
+			VAR _sales_product_last_week = CALCULATE(SUM(fact_transaction[line_total]), DATEADD(dim_date[Date], -7, DAY))
+			VAR _change_percent = ((_sales_product_this_week - _sales_product_last_week) / _sales_product_last_week) * 100
+			VAR _sign = IF(_change_percent > 0, "+", "")
+			RETURN _sign & FORMAT(_change_percent, "0.00") & "%"
+		displayFolder: Percentage Change
+		lineageTag: 9d7f19c3-4065-4149-83a6-6119d299ffcc
+
+	measure 'Average Order Value' =
+			
+			DIVIDE(
+				SUM('fact_transaction'[line_total]),
+				DISTINCTCOUNT('fact_transaction'[transaction_id])
+			)
+		formatString: \$#,0.00;(\$#,0.00);\$#,0.00
+		displayFolder: SimpleMetrics
+		lineageTag: 825ac370-7079-4e41-9c01-ef18401c0ad3
+
+		extendedProperty MeasureTemplate =
+				{
+				  "version": 0,
+				  "daxTemplateName": "MathematicalDivision"
+				}
+
+		changedProperty = FormatString
+
+	partition 'Key Measures' = m
+		mode: import
+		source =
+				let
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i44FAA==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Column1 = _t]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"Column1", type text}}),
+				    #"Removed Columns" = Table.RemoveColumns(#"Changed Type",{"Column1"})
+				in
+				    #"Removed Columns"
+
+	annotation PBI_ResultType = Table
+

@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
-  "name": "cd196dec7b20bc08e223",
+  "name": "553170ade81ac95b5a42",
   "position": {
-    "x": 223.10871518418688,
+    "x": 499.11949685534591,
     "y": 0,
-    "z": 6000,
+    "z": 7000,
     "height": 133.40521114106019,
-    "width": 238.05929919137466,
-    "tabOrder": 6000
+    "width": 213.90835579514825,
+    "tabOrder": 7000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -23,13 +23,11 @@
                       "Entity": "Key Measures"
                     }
                   },
-                  "Property": "Number Of Transactions"
+                  "Property": "Average Order Value"
                 }
               },
-              "queryRef": "fact_transaction.Mea_Number Of Transactions",
-              "nativeQueryRef": "Total Week Transactions",
-              "displayName": "Total Week Transactions",
-              "format": "G"
+              "queryRef": "Key Measures.Average Order Value",
+              "nativeQueryRef": "Average Order Value"
             }
           ]
         }
@@ -44,7 +42,7 @@
                     "Entity": "Key Measures"
                   }
                 },
-                "Property": "Number Of Transactions"
+                "Property": "Average Order Value"
               }
             },
             "direction": "Descending"

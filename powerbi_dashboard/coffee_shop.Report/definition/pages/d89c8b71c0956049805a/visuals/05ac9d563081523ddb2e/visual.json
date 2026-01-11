@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "05ac9d563081523ddb2e",
   "position": {
-    "x": 725.93186372745492,
-    "y": 436.07214428857719,
+    "x": 665.8760107816712,
+    "y": 373.76460017969453,
     "z": 0,
-    "height": 255.2304609218437,
-    "width": 522.00400801603212,
+    "height": 346.16352201257865,
+    "width": 614.1239892183288,
     "tabOrder": 0
   },
   "visual": {
@@ -32,64 +32,51 @@
             },
             {
               "field": {
-                "Aggregation": {
+                "Measure": {
                   "Expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "fact_transaction"
-                        }
-                      },
-                      "Property": "line_total"
+                    "SourceRef": {
+                      "Entity": "Key Measures"
                     }
                   },
-                  "Function": 0
+                  "Property": "Number Of Transactions"
                 }
               },
-              "queryRef": "Sum(fact_transaction.line_total)",
-              "nativeQueryRef": "Sales",
-              "displayName": "Sales"
+              "queryRef": "fact_transaction.Mea_Number Of Transactions",
+              "nativeQueryRef": "Number Of Transactions"
             },
             {
               "field": {
                 "Measure": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "fact_transaction"
+                      "Entity": "Key Measures"
                     }
                   },
-                  "Property": "Measure_Sales_Change_By_Product_Text"
+                  "Property": "Sales This Week"
+                }
+              },
+              "queryRef": "fact_transaction.Mea_Sales This Week",
+              "nativeQueryRef": "Sales This Week",
+              "displayName": "Sales This Week"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Key Measures"
+                    }
+                  },
+                  "Property": "Sales Change For Sales By Product"
                 }
               },
               "queryRef": "fact_transaction.Measure_Sales_Change_By_Product",
-              "nativeQueryRef": "% Week Over Week",
-              "displayName": "% Week Over Week",
+              "nativeQueryRef": "Compared to Last Week",
+              "displayName": "Compared to Last Week",
               "format": "G"
             }
           ]
         }
-      },
-      "sortDefinition": {
-        "sort": [
-          {
-            "field": {
-              "Aggregation": {
-                "Expression": {
-                  "Column": {
-                    "Expression": {
-                      "SourceRef": {
-                        "Entity": "fact_transaction"
-                      }
-                    },
-                    "Property": "line_total"
-                  }
-                },
-                "Function": 0
-              }
-            },
-            "direction": "Descending"
-          }
-        ]
       }
     },
     "objects": {
@@ -132,7 +119,7 @@
             }
           },
           "selector": {
-            "metadata": "Sum(fact_transaction.line_total)"
+            "metadata": "fact_transaction.Measure_Sales_Change_By_Product"
           }
         },
         {
@@ -146,7 +133,21 @@
             }
           },
           "selector": {
-            "metadata": "fact_transaction.Measure_Sales_Change_By_Product"
+            "metadata": "fact_transaction.Mea_Number Of Transactions"
+          }
+        },
+        {
+          "properties": {
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "fact_transaction.Mea_Sales This Week"
           }
         }
       ],
@@ -165,20 +166,7 @@
       ],
       "grid": [
         {
-          "properties": {
-            "gridHorizontalColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "ThemeDataColor": {
-                      "ColorId": 0,
-                      "Percent": 0
-                    }
-                  }
-                }
-              }
-            }
-          }
+          "properties": {}
         }
       ],
       "values": [
@@ -198,10 +186,10 @@
                                 "Measure": {
                                   "Expression": {
                                     "SourceRef": {
-                                      "Entity": "fact_transaction"
+                                      "Entity": "Key Measures"
                                     }
                                   },
-                                  "Property": "Measure_Color_Sales_Change_By_Product_Text"
+                                  "Property": "Coloring For Table Sales By Product"
                                 }
                               },
                               "Right": {
@@ -249,12 +237,27 @@
         }
       ]
     },
+    "visualContainerObjects": {
+      "stylePreset": [
+        {
+          "properties": {
+            "name": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Sparse'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
     "drillFilterOtherVisuals": true
   },
   "filterConfig": {
     "filters": [
       {
-        "name": "dfbd4ce6b88b474b35d6",
+        "name": "3594af72ec04a0599b44",
         "field": {
           "Column": {
             "Expression": {
@@ -268,34 +271,43 @@
         "type": "Categorical"
       },
       {
-        "name": "0515b652536dec299617",
+        "name": "d14175eee0b8d5e80084",
         "field": {
-          "Aggregation": {
+          "Measure": {
             "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "fact_transaction"
-                  }
-                },
-                "Property": "line_total"
+              "SourceRef": {
+                "Entity": "Key Measures"
               }
             },
-            "Function": 0
+            "Property": "Sales Change For Sales By Product"
           }
         },
         "type": "Advanced"
       },
       {
-        "name": "1ddcbfe025231ac6c05d",
+        "name": "71b51533a5d29eb05b30",
         "field": {
           "Measure": {
             "Expression": {
               "SourceRef": {
-                "Entity": "fact_transaction"
+                "Entity": "Key Measures"
               }
             },
-            "Property": "Measure_Sales_Change_By_Product_Text"
+            "Property": "Sales This Week"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "83065fd3310b12d00b21",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Key Measures"
+              }
+            },
+            "Property": "Number Of Transactions"
           }
         },
         "type": "Advanced"

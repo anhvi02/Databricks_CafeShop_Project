@@ -4,14 +4,14 @@
     {
       "ordinal": 0,
       "scrollPosition": {
-        "x": 571,
+        "x": 191,
         "y": 105
       },
       "nodes": [
         {
           "location": {
             "x": 201.18269278110949,
-            "y": 230.2333369037122
+            "y": 345.35000535556827
           },
           "nodeIndex": "dim_employee",
           "nodeLineageTag": "619810fa-9b16-40a0-9cfa-6f71fe1df0c4",
@@ -24,7 +24,7 @@
         {
           "location": {
             "x": 1105.5580401778161,
-            "y": 261.0160518952049
+            "y": 376.13272034706097
           },
           "nodeIndex": "dim_store",
           "nodeLineageTag": "68d82e8d-93e5-4244-9521-4771d0cc349f",
@@ -37,7 +37,7 @@
         {
           "location": {
             "x": 201,
-            "y": 640.427794698322
+            "y": 755.5444631501781
           },
           "nodeIndex": "fact_roster",
           "nodeLineageTag": "b332a548-9a07-4314-ab11-1cc1f44b8eca",
@@ -50,7 +50,7 @@
         {
           "location": {
             "x": 618.38448636284193,
-            "y": 233.35008814074354
+            "y": 348.46675659259961
           },
           "nodeIndex": "fact_transaction",
           "nodeLineageTag": "81a4d5f7-2699-4f89-80ad-435f8f3c2a22",
@@ -62,25 +62,25 @@
         },
         {
           "location": {
-            "x": 1271.5580401778161,
-            "y": 367.8416745318757
+            "x": 894.55804017781611,
+            "y": 703.22994924436591
           },
-          "nodeIndex": "Table_Weeks_Back",
-          "nodeLineageTag": "9a3b7892-b87e-4b70-931d-61eb36f4fc31",
+          "nodeIndex": "dim_date",
           "size": {
-            "height": 128,
+            "height": 200,
             "width": 234
           },
           "zIndex": 0
         },
         {
           "location": {
-            "x": 894.55804017781611,
-            "y": 588.11328079250984
+            "x": 1354.5580401778161,
+            "y": 418.213897349161
           },
-          "nodeIndex": "dim_date",
+          "nodeIndex": "Key Measures",
+          "nodeLineageTag": "26cdd336-8784-40f1-95ec-ef06d3706fec",
           "size": {
-            "height": 200,
+            "height": 104,
             "width": 234
           },
           "zIndex": 0
