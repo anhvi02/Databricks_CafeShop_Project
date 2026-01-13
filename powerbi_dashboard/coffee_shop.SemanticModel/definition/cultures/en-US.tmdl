@@ -15710,7 +15710,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "Compared to Last Week": {
+			          "Change": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -15926,7 +15926,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "Sales This Week": {
+			          "Total Sales This Week": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -16023,6 +16023,16 @@ cultureInfo en-US
 			        },
 			        {
 			          "Total Week Transactions": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Total Transactions": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -16233,9 +16243,112 @@ cultureInfo en-US
 			          }
 			        }
 			      ]
+			    },
+			    "fact_transaction.transaction_hour": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fact_transaction",
+			          "ConceptualProperty": "transaction_hour"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "transaction hour": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "transaction_hour": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "time": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "transaction period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "transaction era": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "transaction epoch": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "transaction age": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
 			    }
 			  },
 			  "Relationships": {
+			    "fact_transaction_silver_processing_time_date_hierarchy_has_fact_transaction_silver_processing_time_day": {
+			      "Binding": {
+			        "ConceptualEntity": "fact_transaction"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_transaction.silver_processing_time.date_hierarchy": {
+			          "Target": {
+			            "Entity": "fact_transaction.silver_processing_time.date_hierarchy"
+			          }
+			        },
+			        "fact_transaction.silver_processing_time.day": {
+			          "Target": {
+			            "Entity": "fact_transaction.silver_processing_time.day"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_transaction.silver_processing_time.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "fact_transaction.silver_processing_time.day"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "silver_processing_time_date_hierarchies_have_silver_processing_time_days"
+			        }
+			      ]
+			    },
 			    "fact_transaction_silver_processing_time_date_hierarchy_has_fact_transaction_silver_processing_time_month": {
 			      "Binding": {
 			        "ConceptualEntity": "fact_transaction"
@@ -16892,7 +17005,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "silver_processing_time_date_hierarchies_have_silver_processing_time_days"
+			          "ID": "silver_processing_time_date_hierarchies_have_silver_processing_time_days1"
 			        }
 			      ]
 			    },
@@ -17882,7 +17995,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "silver_processing_time_date_hierarchies_have_silver_processing_time_days1"
+			          "ID": "silver_processing_time_date_hierarchies_have_silver_processing_time_days2"
 			        }
 			      ]
 			    },
@@ -18542,7 +18655,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "silver_processing_time_date_hierarchies_have_silver_processing_time_days2"
+			          "ID": "silver_processing_time_date_hierarchies_have_silver_processing_time_days3"
 			        }
 			      ]
 			    },
@@ -18973,6 +19086,39 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
+			    "fact_transaction_has_transaction_hour": {
+			      "Binding": {
+			        "ConceptualEntity": "fact_transaction"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_transaction": {
+			          "Target": {
+			            "Entity": "fact_transaction"
+			          }
+			        },
+			        "fact_transaction.transaction_hour": {
+			          "Target": {
+			            "Entity": "fact_transaction.transaction_hour"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_transaction"
+			            },
+			            "Object": {
+			              "Role": "fact_transaction.transaction_hour"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_transactions_have_transaction_hours"
+			        }
+			      ]
+			    },
 			    "fact_transaction_has_transaction_time": {
 			      "Binding": {
 			        "ConceptualEntity": "fact_transaction"
@@ -19168,57 +19314,6 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "fact_transactions_have_sales_change_for_sales_by_product"
-			        },
-			        {
-			          "Verb": {
-			            "Verbs": [
-			              {
-			                "compare": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Object": {
-			              "Role": "fact_transaction"
-			            },
-			            "PrepositionalPhrases": [
-			              {
-			                "Prepositions": [
-			                  {
-			                    "to": {
-			                      "State": "Generated"
-			                    }
-			                  }
-			                ],
-			                "Object": {
-			                  "Role": "key_measure.sales_change_for_sales_by_product"
-			                }
-			              }
-			            ]
-			          },
-			          "State": "Generated",
-			          "Weight": 0.95,
-			          "ID": "fact_transactions_are_compared_to_sales_change_for_sales_by_product"
-			        },
-			        {
-			          "Verb": {
-			            "Verbs": [
-			              {
-			                "compare": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "IndirectObject": {
-			              "Role": "key_measure.sales_change_for_sales_by_product"
-			            },
-			            "Object": {
-			              "Role": "fact_transaction"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.75,
-			          "ID": "sales_change_for_sales_by_product_are_compared_fact_transactions"
 			        }
 			      ]
 			    },
@@ -21838,39 +21933,6 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.9,
 			          "ID": "dim_employees_are_processed_on_silver_processing_times"
-			        }
-			      ]
-			    },
-			    "fact_transaction_silver_processing_time_date_hierarchy_has_fact_transaction_silver_processing_time_day": {
-			      "Binding": {
-			        "ConceptualEntity": "fact_transaction"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "fact_transaction.silver_processing_time.date_hierarchy": {
-			          "Target": {
-			            "Entity": "fact_transaction.silver_processing_time.date_hierarchy"
-			          }
-			        },
-			        "fact_transaction.silver_processing_time.day": {
-			          "Target": {
-			            "Entity": "fact_transaction.silver_processing_time.day"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "fact_transaction.silver_processing_time.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "fact_transaction.silver_processing_time.day"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "silver_processing_time_date_hierarchies_have_silver_processing_time_days3"
 			        }
 			      ]
 			    },

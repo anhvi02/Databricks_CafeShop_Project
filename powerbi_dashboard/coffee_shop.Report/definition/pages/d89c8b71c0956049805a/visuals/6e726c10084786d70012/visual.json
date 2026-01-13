@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "6e726c10084786d70012",
   "position": {
-    "x": 175.46067415730337,
-    "y": 174.50187265917603,
+    "x": 713.58885017421608,
+    "y": 0,
     "z": 2000,
-    "height": 325.99250936329588,
-    "width": 649.10861423220979,
+    "height": 282.46225319396052,
+    "width": 567.89779326364692,
     "tabOrder": 2000
   },
   "visual": {
@@ -137,7 +137,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Sales by Day of Week'"
+                  "Value": "'Total Sales by Day of Week'"
                 }
               }
             },
@@ -153,56 +153,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "f1fb47b0301709d08604",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "dim_date"
-              }
-            },
-            "Property": "DayName"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "cfe36980094caaee08ac",
-        "field": {
-          "Aggregation": {
-            "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "fact_transaction"
-                  }
-                },
-                "Property": "line_total"
-              }
-            },
-            "Function": 0
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "9005d0efde0cd9313d4e",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Key Measures"
-              }
-            },
-            "Property": "Total Sales Last Week"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

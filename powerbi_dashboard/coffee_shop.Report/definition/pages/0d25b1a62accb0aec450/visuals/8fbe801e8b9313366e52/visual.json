@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
-  "name": "05ac9d563081523ddb2e",
+  "name": "8fbe801e8b9313366e52",
   "position": {
-    "x": 713.58885017421608,
-    "y": 414.77351916376307,
-    "z": 0,
-    "height": 307.73519163763069,
-    "width": 567.89779326364692,
-    "tabOrder": 0
+    "x": 685,
+    "y": 56.25,
+    "z": 6000,
+    "height": 343.75,
+    "width": 578.75,
+    "tabOrder": 6000
   },
   "visual": {
     "visualType": "tableEx",
@@ -104,6 +104,18 @@
               "expr": {
                 "Literal": {
                   "Value": "'Center'"
+                }
+              }
+            },
+            "backColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 3,
+                      "Percent": -0.25
+                    }
+                  }
                 }
               }
             }
@@ -250,6 +262,17 @@
               }
             ],
             "metadata": "fact_transaction.Measure_Sales_Change_By_Product"
+          }
+        },
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "8D"
+                }
+              }
+            }
           }
         }
       ]

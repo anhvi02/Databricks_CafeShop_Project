@@ -1,16 +1,16 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
-  "name": "fbd78b132ca4e3654404",
+  "name": "5ab63d2d89c0e0956a09",
   "position": {
-    "x": 0,
-    "y": 414.77351916376307,
+    "x": 147.5,
+    "y": 116.25,
     "z": 3000,
-    "height": 304.76190476190476,
-    "width": 460.85946573751454,
+    "height": 270,
+    "width": 553.75,
     "tabOrder": 3000
   },
   "visual": {
-    "visualType": "clusteredBarChart",
+    "visualType": "clusteredColumnChart",
     "query": {
       "queryState": {
         "Category": {
@@ -20,16 +20,16 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "dim_store"
+                      "Entity": "dim_date"
                     }
                   },
-                  "Property": "cafe_name"
+                  "Property": "DayName"
                 }
               },
-              "queryRef": "dim_store.cafe_name",
-              "nativeQueryRef": "Store",
+              "queryRef": "dim_datetime.DayName",
+              "nativeQueryRef": "Day Of Week",
               "active": true,
-              "displayName": "Store"
+              "displayName": "Day Of Week"
             }
           ]
         },
@@ -37,16 +37,21 @@
           "projections": [
             {
               "field": {
-                "Measure": {
+                "Aggregation": {
                   "Expression": {
-                    "SourceRef": {
-                      "Entity": "Key Measures"
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "fact_transaction"
+                        }
+                      },
+                      "Property": "line_total"
                     }
                   },
-                  "Property": "Total Sales"
+                  "Function": 0
                 }
               },
-              "queryRef": "fact_transaction.Mea_Sales This Week",
+              "queryRef": "Sum(fact_transaction.line_total)",
               "nativeQueryRef": "This Week",
               "displayName": "This Week"
             },
@@ -67,27 +72,22 @@
             }
           ]
         }
-      },
-      "sortDefinition": {
-        "sort": [
-          {
-            "field": {
-              "Measure": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "Key Measures"
-                  }
-                },
-                "Property": "Total Sales"
-              }
-            },
-            "direction": "Descending"
-          }
-        ],
-        "isDefaultSort": true
       }
     },
     "objects": {
+      "legend": [
+        {
+          "properties": {
+            "position": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Bottom'"
+                }
+              }
+            }
+          }
+        }
+      ],
       "labels": [
         {
           "properties": {
@@ -101,20 +101,14 @@
             "labelPosition": {
               "expr": {
                 "Literal": {
-                  "Value": "'InsideCenter'"
+                  "Value": "'Auto'"
                 }
               }
-            }
-          }
-        }
-      ],
-      "legend": [
-        {
-          "properties": {
-            "position": {
+            },
+            "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "'TopCenter'"
+                  "Value": "8D"
                 }
               }
             }
@@ -138,32 +132,93 @@
             }
           },
           "selector": {
-            "metadata": "fact_transaction.Mea_Sales This Week"
+            "metadata": "Sum(fact_transaction.line_total)"
           }
         }
-      ]
-    },
-    "visualContainerObjects": {
-      "visualHeader": [
+      ],
+      "valueAxis": [
         {
           "properties": {
+            "gridlineShow": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
+                }
+              }
+            },
+            "showAxisTitle": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }
           }
         }
       ],
+      "categoryAxis": [
+        {
+          "properties": {
+            "innerPadding": {
+              "expr": {
+                "Literal": {
+                  "Value": "25L"
+                }
+              }
+            },
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "showAxisTitle": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "layout": [
+        {
+          "properties": {
+            "clusteredGapSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "5D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
       "title": [
         {
           "properties": {
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Total Sales by Stores'"
+                  "Value": "'Total Sales by Day of Week'"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }
