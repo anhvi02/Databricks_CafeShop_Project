@@ -8,7 +8,7 @@ model Model
 
 annotation __PBI_TimeIntelligenceEnabled = 1
 
-annotation PBI_QueryOrder = ["dim_employee","dim_store","fact_roster","fact_transaction","Key Measures"]
+annotation PBI_QueryOrder = ["dim_employee","dim_store","fact_roster","fact_transaction","Key Measures","balance_sheet_data","cash_flow_data","channel_revenues","company_expenses","income_statement_data"]
 
 annotation PBI_ProTooling = ["DevMode"]
 
@@ -35,6 +35,15 @@ ref table LocalDateTable_cc8b7386-d6a9-4a04-b2dc-ebe2aee10a4f
 ref table dim_date
 ref table LocalDateTable_a8a38932-233f-4d33-ab60-5cb471b090dd
 ref table 'Key Measures'
+ref table balance_sheet_data
+ref table cash_flow_data
+ref table channel_revenues
+ref table LocalDateTable_c5c1f0c1-4582-4d4a-80a5-202ead3e5b8a
+ref table LocalDateTable_e422e940-bbc1-4833-9f04-a485467ad486
+ref table company_expenses
+ref table LocalDateTable_5420ee6b-87aa-44b4-9aeb-3866642b4b92
+ref table income_statement_data
+ref table LocalDateTable_c0f869c8-201c-493a-bd9e-f2940cbca605
 
 ref cultureInfo en-US
 

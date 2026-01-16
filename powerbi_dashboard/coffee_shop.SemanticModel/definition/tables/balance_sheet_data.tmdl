@@ -1,0 +1,58 @@
+table balance_sheet_data
+	lineageTag: 02802f0e-96c5-4862-a80e-cd7c6de98825
+
+	column Year
+		dataType: int64
+		formatString: 0
+		lineageTag: 50ff89bf-b4fa-45dd-8e5f-12eb7bf23a99
+		summarizeBy: sum
+		sourceColumn: Year
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Balance Sheet Type'
+		dataType: string
+		lineageTag: 483bafe0-4b7a-4484-99c2-cfc79a50257a
+		summarizeBy: none
+		sourceColumn: Balance Sheet Type
+
+		annotation SummarizationSetBy = Automatic
+
+	column Category
+		dataType: string
+		lineageTag: b3911086-e8d0-432c-b590-c29fe3617e8c
+		summarizeBy: none
+		sourceColumn: Category
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Sub Category'
+		dataType: string
+		lineageTag: c13f28b3-9d1a-4cfd-ae28-751d42213e42
+		summarizeBy: none
+		sourceColumn: Sub Category
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Balance Sheet Values'
+		dataType: double
+		lineageTag: 93932345-9033-41aa-a709-0e92b09df513
+		summarizeBy: sum
+		sourceColumn: Balance Sheet Values
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition balance_sheet_data = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents("C:\Users\ADMIN\OneDrive - Deakin University\Documents\Development\Databricks_CafeShop_Project\data_raw\data\financial\balance_sheet_data.csv"),[Delimiter=",", Columns=5, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"Year", Int64.Type}, {"Balance Sheet Type", type text}, {"Category", type text}, {"Sub Category", type text}, {"Balance Sheet Values", type number}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+

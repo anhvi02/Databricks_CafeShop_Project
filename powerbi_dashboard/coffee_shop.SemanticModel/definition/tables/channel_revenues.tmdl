@@ -1,0 +1,73 @@
+table channel_revenues
+	lineageTag: 32cfa79d-3e95-4073-b1f7-07ee0a523dfc
+
+	column 'Month & Year'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 90e4aca2-d3a0-467a-8f7a-10151f5eeae7
+		summarizeBy: none
+		sourceColumn: Month & Year
+
+		variation Variation
+			isDefault
+			relationship: 6d722e90-5fdb-4bca-bfea-d168b3ef459d
+			defaultHierarchy: LocalDateTable_c5c1f0c1-4582-4d4a-80a5-202ead3e5b8a.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'First Date'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 3171765c-c266-499e-8017-613e371b9052
+		summarizeBy: none
+		sourceColumn: First Date
+
+		variation Variation
+			isDefault
+			relationship: 1d33959e-0632-405b-a5ab-b08c62d755d1
+			defaultHierarchy: LocalDateTable_e422e940-bbc1-4833-9f04-a485467ad486.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Channel
+		dataType: string
+		lineageTag: 31ed368d-4ce8-4adc-8395-f0792c21043a
+		summarizeBy: none
+		sourceColumn: Channel
+
+		annotation SummarizationSetBy = Automatic
+
+	column Category
+		dataType: string
+		lineageTag: a990c9cd-42b8-4678-af47-b76903d832e3
+		summarizeBy: none
+		sourceColumn: Category
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Sales Values'
+		dataType: double
+		lineageTag: 3489325a-fec1-4271-99e0-05cc68ea81a4
+		summarizeBy: sum
+		sourceColumn: Sales Values
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition channel_revenues = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents("C:\Users\ADMIN\OneDrive - Deakin University\Documents\Development\Databricks_CafeShop_Project\data_raw\data\financial\channel_revenues.csv"),[Delimiter=",", Columns=5, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"Month & Year", type date}, {"First Date", type date}, {"Channel", type text}, {"Category", type text}, {"Sales Values", type number}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+

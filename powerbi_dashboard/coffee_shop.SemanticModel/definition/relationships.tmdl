@@ -102,3 +102,23 @@ relationship 1001ae60-46fb-0860-fdd4-29f01d64ae61
 	fromColumn: fact_transaction.transaction_date
 	toColumn: dim_date.Date
 
+relationship 6d722e90-5fdb-4bca-bfea-d168b3ef459d
+	joinOnDateBehavior: datePartOnly
+	fromColumn: channel_revenues.'Month & Year'
+	toColumn: LocalDateTable_c5c1f0c1-4582-4d4a-80a5-202ead3e5b8a.Date
+
+relationship 1d33959e-0632-405b-a5ab-b08c62d755d1
+	joinOnDateBehavior: datePartOnly
+	fromColumn: channel_revenues.'First Date'
+	toColumn: LocalDateTable_e422e940-bbc1-4833-9f04-a485467ad486.Date
+
+relationship cb7182d7-e129-4c77-b417-1474931e0ee6
+	joinOnDateBehavior: datePartOnly
+	fromColumn: company_expenses.Month
+	toColumn: LocalDateTable_5420ee6b-87aa-44b4-9aeb-3866642b4b92.Date
+
+relationship 44de591e-1fe3-47b3-ba35-a1f1920e2c5c
+	joinOnDateBehavior: datePartOnly
+	fromColumn: income_statement_data.Month
+	toColumn: LocalDateTable_c0f869c8-201c-493a-bd9e-f2940cbca605.Date
+

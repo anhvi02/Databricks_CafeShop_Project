@@ -1,0 +1,58 @@
+table cash_flow_data
+	lineageTag: 4cc864b3-0f09-4e1f-ba22-a090bcddd1b4
+
+	column Year
+		dataType: int64
+		formatString: 0
+		lineageTag: 2085d897-ac38-440b-8ddb-8c563f11618b
+		summarizeBy: sum
+		sourceColumn: Year
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Cash Flow Type'
+		dataType: string
+		lineageTag: 3c8133f1-6b5b-44ac-9f19-5615abdbd31b
+		summarizeBy: none
+		sourceColumn: Cash Flow Type
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Cash Flow Category'
+		dataType: string
+		lineageTag: 9aad6ab2-ec4c-4195-9710-7906738496ec
+		summarizeBy: none
+		sourceColumn: Cash Flow Category
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Cash Flow Sub Category'
+		dataType: string
+		lineageTag: 0559db66-82ee-4ac9-9e64-42e7ec190c94
+		summarizeBy: none
+		sourceColumn: Cash Flow Sub Category
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Cash Flow Values'
+		dataType: double
+		lineageTag: f4f91970-9c32-4e67-923a-e55bad77f482
+		summarizeBy: sum
+		sourceColumn: Cash Flow Values
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition cash_flow_data = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents("C:\Users\ADMIN\OneDrive - Deakin University\Documents\Development\Databricks_CafeShop_Project\data_raw\data\financial\cash_flow_data.csv"),[Delimiter=",", Columns=5, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"Year", Int64.Type}, {"Cash Flow Type", type text}, {"Cash Flow Category", type text}, {"Cash Flow Sub Category", type text}, {"Cash Flow Values", type number}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+
