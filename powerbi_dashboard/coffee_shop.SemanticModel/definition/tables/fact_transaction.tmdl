@@ -230,6 +230,7 @@ table fact_transaction
 
 	partition fact_transaction = m
 		mode: import
+		queryGroup: 'Data Model'
 		source =
 				let
 				    Source = DatabricksMultiCloud.Catalogs("dbc-6da80bf3-23a8.cloud.databricks.com", "/sql/1.0/warehouses/df90c145035c5f8f", [Catalog="coffee_shop", Database=null, QueryTags=null, EnableAutomaticProxyDiscovery=null, Implementation=null]),
@@ -239,7 +240,7 @@ table fact_transaction
 				in
 				    fact_transaction_View
 
-	annotation PBI_ResultType = Table
+	annotation PBI_ResultType = Exception
 
 	annotation PBI_NavigationStepName = Navigation
 

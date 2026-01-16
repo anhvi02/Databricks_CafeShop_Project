@@ -1,4 +1,4 @@
-table cash_flow_data
+table 'Cash Flow Data'
 	lineageTag: 4cc864b3-0f09-4e1f-ba22-a090bcddd1b4
 
 	column Year
@@ -44,7 +44,7 @@ table cash_flow_data
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
-	partition cash_flow_data = m
+	partition 'Cash Flow Data' = m
 		mode: import
 		source =
 				let

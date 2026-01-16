@@ -110,7 +110,7 @@ table LocalDateTable_5420ee6b-87aa-44b4-9aeb-3866642b4b92
 
 	partition LocalDateTable_5420ee6b-87aa-44b4-9aeb-3866642b4b92 = calculated
 		mode: import
-		source = Calendar(Date(Year(MIN('company_expenses'[Month])), 1, 1), Date(Year(MAX('company_expenses'[Month])), 12, 31))
+		source = Calendar(Date(Year(MIN('Company Expenses'[Month])), 1, 1), Date(Year(MAX('Company Expenses'[Month])), 12, 31))
 
 	annotation __PBI_LocalDateTable = true
 

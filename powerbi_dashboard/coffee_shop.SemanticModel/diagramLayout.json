@@ -4,14 +4,14 @@
     {
       "ordinal": 0,
       "scrollPosition": {
-        "x": 191,
-        "y": 105
+        "x": 1588.5580401778161,
+        "y": 1070.0892579093993
       },
       "nodes": [
         {
           "location": {
             "x": 201.18269278110949,
-            "y": 345.35000535556827
+            "y": 2255.849698807152
           },
           "nodeIndex": "dim_employee",
           "nodeLineageTag": "619810fa-9b16-40a0-9cfa-6f71fe1df0c4",
@@ -24,7 +24,7 @@
         {
           "location": {
             "x": 1105.5580401778161,
-            "y": 376.13272034706097
+            "y": 2286.6324137986448
           },
           "nodeIndex": "dim_store",
           "nodeLineageTag": "68d82e8d-93e5-4244-9521-4771d0cc349f",
@@ -37,7 +37,7 @@
         {
           "location": {
             "x": 201,
-            "y": 755.5444631501781
+            "y": 2666.0441566017616
           },
           "nodeIndex": "fact_roster",
           "nodeLineageTag": "b332a548-9a07-4314-ab11-1cc1f44b8eca",
@@ -50,7 +50,7 @@
         {
           "location": {
             "x": 618.38448636284193,
-            "y": 348.46675659259961
+            "y": 2258.9664500441831
           },
           "nodeIndex": "fact_transaction",
           "nodeLineageTag": "81a4d5f7-2699-4f89-80ad-435f8f3c2a22",
@@ -63,7 +63,7 @@
         {
           "location": {
             "x": 894.55804017781611,
-            "y": 703.22994924436591
+            "y": 2613.7296426959497
           },
           "nodeIndex": "dim_date",
           "size": {
@@ -75,10 +75,83 @@
         {
           "location": {
             "x": 1354.5580401778161,
-            "y": 418.213897349161
+            "y": 2328.7135908007449
           },
           "nodeIndex": "Key Measures",
           "nodeLineageTag": "26cdd336-8784-40f1-95ec-ef06d3706fec",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1437.5580401778161,
+            "y": 2165.5969223488883
+          },
+          "nodeIndex": "Balance Sheet Data",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1721.5580401778161,
+            "y": 2165.5969223488883
+          },
+          "nodeIndex": "Cash Flow Data",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2005.5580401778161,
+            "y": 2165.5969223488883
+          },
+          "nodeIndex": "Channel Revenues",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2289.5580401778161,
+            "y": 2177.5969223488883
+          },
+          "nodeIndex": "Company Expenses",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2573.5580401778161,
+            "y": 2177.5969223488883
+          },
+          "nodeIndex": "Income Statement Data",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2656.5580401778161,
+            "y": 1070.0892579093993
+          },
+          "nodeIndex": "Income Statement Analysis",
+          "nodeLineageTag": "7ceb1cc1-30d0-427d-8307-2774b35836dd",
           "size": {
             "height": 104,
             "width": 234

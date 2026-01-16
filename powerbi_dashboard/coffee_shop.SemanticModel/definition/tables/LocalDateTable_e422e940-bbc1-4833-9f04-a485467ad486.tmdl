@@ -110,7 +110,7 @@ table LocalDateTable_e422e940-bbc1-4833-9f04-a485467ad486
 
 	partition LocalDateTable_e422e940-bbc1-4833-9f04-a485467ad486 = calculated
 		mode: import
-		source = Calendar(Date(Year(MIN('channel_revenues'[First Date])), 1, 1), Date(Year(MAX('channel_revenues'[First Date])), 12, 31))
+		source = Calendar(Date(Year(MIN('Channel Revenues'[First Date])), 1, 1), Date(Year(MAX('Channel Revenues'[First Date])), 12, 31))
 
 	annotation __PBI_LocalDateTable = true
 

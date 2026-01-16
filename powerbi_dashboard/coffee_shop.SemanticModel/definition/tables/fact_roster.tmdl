@@ -136,6 +136,7 @@ table fact_roster
 
 	partition fact_roster = m
 		mode: import
+		queryGroup: 'Data Model'
 		source =
 				let
 				    Source = DatabricksMultiCloud.Catalogs("dbc-6da80bf3-23a8.cloud.databricks.com", "/sql/1.0/warehouses/df90c145035c5f8f", [Catalog="coffee_shop", Database=null, QueryTags=null, EnableAutomaticProxyDiscovery=null, Implementation=null]),
@@ -144,4 +145,8 @@ table fact_roster
 				    fact_roster_View = layer_gold_Schema{[Name="fact_roster",Kind="View"]}[Data]
 				in
 				    fact_roster_View
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Exception
 

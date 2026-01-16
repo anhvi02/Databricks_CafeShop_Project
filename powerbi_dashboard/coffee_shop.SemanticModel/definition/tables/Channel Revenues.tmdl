@@ -1,4 +1,4 @@
-table channel_revenues
+table 'Channel Revenues'
 	lineageTag: 32cfa79d-3e95-4073-b1f7-07ee0a523dfc
 
 	column 'Month & Year'
@@ -59,7 +59,7 @@ table channel_revenues
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
-	partition channel_revenues = m
+	partition 'Channel Revenues' = m
 		mode: import
 		source =
 				let

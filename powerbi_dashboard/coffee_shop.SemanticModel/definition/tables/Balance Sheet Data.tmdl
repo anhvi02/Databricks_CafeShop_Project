@@ -1,4 +1,4 @@
-table balance_sheet_data
+table 'Balance Sheet Data'
 	lineageTag: 02802f0e-96c5-4862-a80e-cd7c6de98825
 
 	column Year
@@ -44,7 +44,7 @@ table balance_sheet_data
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
-	partition balance_sheet_data = m
+	partition 'Balance Sheet Data' = m
 		mode: import
 		source =
 				let

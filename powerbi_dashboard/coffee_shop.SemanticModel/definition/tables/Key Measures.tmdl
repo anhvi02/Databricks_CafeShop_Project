@@ -64,6 +64,7 @@ table 'Key Measures'
 
 	partition 'Key Measures' = m
 		mode: import
+		queryGroup: 'Measures Group'
 		source =
 				let
 				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i44FAA==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Column1 = _t]),
@@ -73,4 +74,6 @@ table 'Key Measures'
 				    #"Removed Columns"
 
 	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
 

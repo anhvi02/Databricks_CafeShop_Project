@@ -110,7 +110,7 @@ table LocalDateTable_c0f869c8-201c-493a-bd9e-f2940cbca605
 
 	partition LocalDateTable_c0f869c8-201c-493a-bd9e-f2940cbca605 = calculated
 		mode: import
-		source = Calendar(Date(Year(MIN('income_statement_data'[Month])), 1, 1), Date(Year(MAX('income_statement_data'[Month])), 12, 31))
+		source = Calendar(Date(Year(MIN('Income Statement Data'[Month])), 1, 1), Date(Year(MAX('Income Statement Data'[Month])), 12, 31))
 
 	annotation __PBI_LocalDateTable = true
 

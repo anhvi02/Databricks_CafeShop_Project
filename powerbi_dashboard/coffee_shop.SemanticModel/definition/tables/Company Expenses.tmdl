@@ -1,17 +1,17 @@
-table income_statement_data
-	lineageTag: ccae6a89-c50e-40ae-85a6-7f53bd277f02
+table 'Company Expenses'
+	lineageTag: 2324e7d4-7475-4b60-b0d9-c3e2e28aaa3f
 
 	column Month
 		dataType: dateTime
 		formatString: Long Date
-		lineageTag: a3f22bd9-8a81-4c89-b5b7-a544c3639154
+		lineageTag: a68786fd-640e-486f-9d5f-3ce7c4336e81
 		summarizeBy: none
 		sourceColumn: Month
 
 		variation Variation
 			isDefault
-			relationship: 44de591e-1fe3-47b3-ba35-a1f1920e2c5c
-			defaultHierarchy: LocalDateTable_c0f869c8-201c-493a-bd9e-f2940cbca605.'Date Hierarchy'
+			relationship: cb7182d7-e129-4c77-b417-1474931e0ee6
+			defaultHierarchy: LocalDateTable_5420ee6b-87aa-44b4-9aeb-3866642b4b92.'Date Hierarchy'
 
 		annotation SummarizationSetBy = Automatic
 
@@ -19,7 +19,7 @@ table income_statement_data
 
 	column 'Expense Category'
 		dataType: string
-		lineageTag: ce28767c-27e8-441c-802c-66f883dc1f4a
+		lineageTag: ff05f1dd-2417-4b1b-8172-1057c0d1f9e4
 		summarizeBy: none
 		sourceColumn: Expense Category
 
@@ -27,7 +27,7 @@ table income_statement_data
 
 	column 'Expense Items'
 		dataType: string
-		lineageTag: 92685e45-3a18-44f0-8ce5-3521c1836d16
+		lineageTag: b16f4f5d-9313-4c42-88d8-10222854a627
 		summarizeBy: none
 		sourceColumn: Expense Items
 
@@ -35,7 +35,7 @@ table income_statement_data
 
 	column 'Expense Values'
 		dataType: double
-		lineageTag: f82f6066-2af6-475e-ad76-b83e78626dce
+		lineageTag: 643c09ae-5ceb-4890-bd02-0edb64922a39
 		summarizeBy: sum
 		sourceColumn: Expense Values
 
@@ -43,11 +43,11 @@ table income_statement_data
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
-	partition income_statement_data = m
+	partition 'Company Expenses' = m
 		mode: import
 		source =
 				let
-				    Source = Csv.Document(File.Contents("C:\Users\ADMIN\OneDrive - Deakin University\Documents\Development\Databricks_CafeShop_Project\data_raw\data\financial\income_statement_data.csv"),[Delimiter=",", Columns=4, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+				    Source = Csv.Document(File.Contents("C:\Users\ADMIN\OneDrive - Deakin University\Documents\Development\Databricks_CafeShop_Project\data_raw\data\financial\company_expenses.csv"),[Delimiter=",", Columns=4, Encoding=1252, QuoteStyle=QuoteStyle.None]),
 				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
 				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"Month", type date}, {"Expense Category", type text}, {"Expense Items", type text}, {"Expense Values", type number}})
 				in
