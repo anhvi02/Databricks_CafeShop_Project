@@ -1,0 +1,65 @@
+Year,Balance Sheet Type,Category,Sub Category,Balance Sheet Values
+2025,Assets,Current Assets,Accounts Receivable,3713.65
+2025,Assets,Current Assets,Accounts Receivable,4666.57
+2025,Assets,Current Assets,Accounts Receivable,4933.87
+2025,Assets,Current Assets,Cash,48836.15
+2025,Assets,Current Assets,Cash,52010.36
+2025,Assets,Current Assets,Cash,55930.43
+2025,Assets,Current Assets,Inventory,7155.06
+2025,Assets,Current Assets,Inventory,6979.05
+2025,Assets,Current Assets,Inventory,8829.15
+2025,Assets,Current Assets,Prepaid Expenses,1844.35
+2025,Assets,Current Assets,Prepaid Expenses,2399.71
+2025,Assets,Current Assets,Prepaid Expenses,1838.33
+2025,Assets,Fixed Assets,Accumulated Depreciation,-30000.0
+2025,Assets,Fixed Assets,Accumulated Depreciation,-30000.0
+2025,Assets,Fixed Assets,Accumulated Depreciation,-30000.0
+2025,Assets,Fixed Assets,Equipment,121085.82
+2025,Assets,Fixed Assets,Equipment,114011.95
+2025,Assets,Fixed Assets,Equipment,125385.5
+2025,Assets,Fixed Assets,Furniture & Fixtures,40865.91
+2025,Assets,Fixed Assets,Furniture & Fixtures,41719.99
+2025,Assets,Fixed Assets,Furniture & Fixtures,41520.31
+2025,Assets,Fixed Assets,Leasehold Improvements,83413.93
+2025,Assets,Fixed Assets,Leasehold Improvements,77743.81
+2025,Assets,Fixed Assets,Leasehold Improvements,83771.5
+2025,Equity,Owner's Equity,Owner's Capital,101263.26
+2025,Equity,Owner's Equity,Owner's Capital,101964.43
+2025,Equity,Owner's Equity,Owner's Capital,100078.64
+2025,Equity,Owner's Equity,Retained Earnings,56046.22
+2025,Equity,Owner's Equity,Retained Earnings,66037.47
+2025,Equity,Owner's Equity,Retained Earnings,71716.04
+2025,Liabilities,Current Liabilities,Accounts Payable,6969.29
+2025,Liabilities,Current Liabilities,Accounts Payable,7337.86
+2025,Liabilities,Current Liabilities,Accounts Payable,5635.83
+2025,Liabilities,Current Liabilities,Accrued Expenses,3143.16
+2025,Liabilities,Current Liabilities,Accrued Expenses,3232.47
+2025,Liabilities,Current Liabilities,Accrued Expenses,2931.18
+2025,Liabilities,Current Liabilities,Credit Card Payable,2291.47
+2025,Liabilities,Current Liabilities,Credit Card Payable,2035.83
+2025,Liabilities,Current Liabilities,Credit Card Payable,2137.21
+2025,Liabilities,Current Liabilities,Short-term Loans,14410.75
+2025,Liabilities,Current Liabilities,Short-term Loans,14042.54
+2025,Liabilities,Current Liabilities,Short-term Loans,16247.13
+2025,Liabilities,Long-term Liabilities,Lease Obligations,20357.13
+2025,Liabilities,Long-term Liabilities,Lease Obligations,20704.07
+2025,Liabilities,Long-term Liabilities,Lease Obligations,19014.22
+2025,Liabilities,Long-term Liabilities,Long-term Loans,50000.0
+2025,Liabilities,Long-term Liabilities,Long-term Loans,49282.21
+2025,Liabilities,Long-term Liabilities,Long-term Loans,48288.05
+2026,Assets,Current Assets,Accounts Receivable,5669.62
+2026,Assets,Current Assets,Cash,51759.34
+2026,Assets,Current Assets,Inventory,8505.41
+2026,Assets,Current Assets,Prepaid Expenses,2437.64
+2026,Assets,Fixed Assets,Accumulated Depreciation,-30000.0
+2026,Assets,Fixed Assets,Equipment,122614.24
+2026,Assets,Fixed Assets,Furniture & Fixtures,41090.88
+2026,Assets,Fixed Assets,Leasehold Improvements,78301.18
+2026,Equity,Owner's Equity,Owner's Capital,98910.79
+2026,Equity,Owner's Equity,Retained Earnings,77194.6
+2026,Liabilities,Current Liabilities,Accounts Payable,6145.9
+2026,Liabilities,Current Liabilities,Accrued Expenses,3655.87
+2026,Liabilities,Current Liabilities,Credit Card Payable,1348.59
+2026,Liabilities,Current Liabilities,Short-term Loans,13812.23
+2026,Liabilities,Long-term Liabilities,Lease Obligations,20189.33
+2026,Liabilities,Long-term Liabilities,Long-term Loans,47391.48
