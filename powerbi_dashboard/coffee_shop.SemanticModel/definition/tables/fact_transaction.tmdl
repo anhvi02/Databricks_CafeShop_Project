@@ -214,6 +214,20 @@ table fact_transaction
 
 		annotation UnderlyingDateTimeDataType = Time
 
+	column transaction_hour =
+			
+			FORMAT([transaction_datetime], "hh AM/PM")
+		dataType: dateTime
+		formatString: Long Time
+		lineageTag: 8c4da27e-30ca-4168-9ecf-baa3e60ce4f7
+		summarizeBy: none
+
+		changedProperty = DataType
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Time
+
 	partition fact_transaction = m
 		mode: import
 		source =

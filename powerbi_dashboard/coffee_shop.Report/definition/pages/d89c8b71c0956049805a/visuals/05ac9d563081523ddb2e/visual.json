@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "05ac9d563081523ddb2e",
   "position": {
-    "x": 665.8760107816712,
-    "y": 373.76460017969453,
+    "x": 713.58885017421608,
+    "y": 414.77351916376307,
     "z": 0,
-    "height": 346.16352201257865,
-    "width": 614.1239892183288,
+    "height": 307.73519163763069,
+    "width": 567.89779326364692,
     "tabOrder": 0
   },
   "visual": {
@@ -38,11 +38,12 @@
                       "Entity": "Key Measures"
                     }
                   },
-                  "Property": "Number Of Transactions"
+                  "Property": "Total Sales"
                 }
               },
-              "queryRef": "fact_transaction.Mea_Number Of Transactions",
-              "nativeQueryRef": "Number Of Transactions"
+              "queryRef": "fact_transaction.Mea_Sales This Week",
+              "nativeQueryRef": "Total Sales This Week",
+              "displayName": "Total Sales This Week"
             },
             {
               "field": {
@@ -52,12 +53,11 @@
                       "Entity": "Key Measures"
                     }
                   },
-                  "Property": "Total Sales"
+                  "Property": "Total Sales Last Week"
                 }
               },
-              "queryRef": "fact_transaction.Mea_Sales This Week",
-              "nativeQueryRef": "Sales This Week",
-              "displayName": "Sales This Week"
+              "queryRef": "Key Measures.Total Sales Last Week",
+              "nativeQueryRef": "Total Sales Last Week"
             },
             {
               "field": {
@@ -71,12 +71,29 @@
                 }
               },
               "queryRef": "fact_transaction.Measure_Sales_Change_By_Product",
-              "nativeQueryRef": "Compared to Last Week",
-              "displayName": "Compared to Last Week",
+              "nativeQueryRef": "Change",
+              "displayName": "Change",
               "format": "G"
             }
           ]
         }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Key Measures"
+                  }
+                },
+                "Property": "Sales Change For Sales By Product"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ]
       }
     },
     "objects": {
@@ -133,7 +150,7 @@
             }
           },
           "selector": {
-            "metadata": "fact_transaction.Mea_Number Of Transactions"
+            "metadata": "fact_transaction.Mea_Sales This Week"
           }
         },
         {
@@ -147,7 +164,7 @@
             }
           },
           "selector": {
-            "metadata": "fact_transaction.Mea_Sales This Week"
+            "metadata": "Key Measures.Total Sales Last Week"
           }
         }
       ],

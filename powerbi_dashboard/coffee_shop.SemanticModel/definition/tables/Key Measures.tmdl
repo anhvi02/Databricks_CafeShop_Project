@@ -30,7 +30,7 @@ table 'Key Measures'
 			    SUM(fact_transaction[line_total]),
 			    DATEADD('dim_date'[Date], -7, DAY)
 			)
-		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		formatString: \$#,0.00;(\$#,0.00);\$#,0.00
 		displayFolder: Last Week
 		lineageTag: 595764ff-a9ee-4416-9dc8-cdf6e214f140
 

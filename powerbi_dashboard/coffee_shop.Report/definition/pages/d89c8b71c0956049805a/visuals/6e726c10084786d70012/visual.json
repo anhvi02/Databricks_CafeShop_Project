@@ -173,7 +173,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Sales by Day of Week'"
+                  "Value": "'Total Sales by Day of Week'"
                 }
               }
             },
@@ -189,56 +189,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "f1fb47b0301709d08604",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "dim_date"
-              }
-            },
-            "Property": "DayName"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "cfe36980094caaee08ac",
-        "field": {
-          "Aggregation": {
-            "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "fact_transaction"
-                  }
-                },
-                "Property": "line_total"
-              }
-            },
-            "Function": 0
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "9005d0efde0cd9313d4e",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Key Measures"
-              }
-            },
-            "Property": "Total Sales Last Week"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }
