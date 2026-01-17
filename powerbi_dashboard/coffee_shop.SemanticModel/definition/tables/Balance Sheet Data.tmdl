@@ -48,11 +48,13 @@ table 'Balance Sheet Data'
 		mode: import
 		source =
 				let
-				    Source = Csv.Document(File.Contents("C:\Users\ADMIN\OneDrive - Deakin University\Documents\Development\Databricks_CafeShop_Project\data_raw\data\financial\balance_sheet_data.csv"),[Delimiter=",", Columns=5, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+				    Source = Csv.Document(File.Contents("C:\Users\Nobit\Documents\Databricks_CafeShop_Project\data_raw\data\financial\balance_sheet_data.csv"),[Delimiter=",", Columns=5, Encoding=1252, QuoteStyle=QuoteStyle.None]),
 				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
 				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"Year", Int64.Type}, {"Balance Sheet Type", type text}, {"Category", type text}, {"Sub Category", type text}, {"Balance Sheet Values", type number}})
 				in
 				    #"Changed Type"
 
 	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
 
