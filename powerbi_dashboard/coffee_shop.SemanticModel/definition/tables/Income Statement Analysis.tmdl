@@ -21,6 +21,54 @@ table 'Income Statement Analysis'
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
+	measure COGS = ```
+			
+			 CALCULATE( [Income Values], 'Income Statement Data'[Expense Category] = "Cost Of Goods Sold" )*(-1)
+			```
+		lineageTag: b7350f97-f5ac-47ef-bf14-e2b669ca4059
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure Revenue =
+			
+			CALCULATE('Income Statement Analysis'[Income Values], 'Income Statement Data'[Type]="Revenues")
+		lineageTag: 8e226f9f-d46a-4f95-aaeb-c0d45a839ac2
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Gross Profit' =
+			
+			[Revenue] - [COGS]
+		lineageTag: 5bda2497-4161-4c61-9fff-402db369a1ed
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Gross Profit Margin' =
+			
+			DIVIDE([Gross Profit], [Revenue],0)
+		lineageTag: 29c2b0ba-1da1-4288-b66c-4a71e14f941a
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Other Expenses' =
+			
+			(CALCULATE([Income Values], 'Income Statement Data'[Type]="Expenses") + [COGS]) * -1 -- Supposed to subtract COGS since Expences includes COGS but in the formula, COGS is alreay in minus
+		lineageTag: bc74419f-6b20-4c23-b73e-9044e102a278
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Net Profit' = [Revenue] + [COGS] + [Other Expenses] -- Should be subtracting [COGS] and [Other Expenses] but they already in minus in their formula so we don't have to subtract in this one
+		lineageTag: bc5b3616-2639-4fdf-9e63-4b4370cd62c6
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Net Profit Margin' =
+			
+			DIVIDE([Net Profit], [Revenue],0)
+		lineageTag: be9a19f3-bf1c-44b4-9a9c-6ed8b81267eb
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
 	partition 'Income Statement Analysis' = m
 		mode: import
 		source =

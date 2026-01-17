@@ -4,8 +4,8 @@
     {
       "ordinal": 0,
       "scrollPosition": {
-        "x": 1588.5580401778161,
-        "y": 1070.0892579093993
+        "x": 0,
+        "y": 1842.3979392117558
       },
       "nodes": [
         {
@@ -23,8 +23,8 @@
         },
         {
           "location": {
-            "x": 1105.5580401778161,
-            "y": 2286.6324137986448
+            "x": 1088.1769275437427,
+            "y": 2670.5969928968057
           },
           "nodeIndex": "dim_store",
           "nodeLineageTag": "68d82e8d-93e5-4244-9521-4771d0cc349f",
@@ -42,7 +42,7 @@
           "nodeIndex": "fact_roster",
           "nodeLineageTag": "b332a548-9a07-4314-ab11-1cc1f44b8eca",
           "size": {
-            "height": 300,
+            "height": 284.19898851447897,
             "width": 234
           },
           "zIndex": 0
@@ -62,10 +62,11 @@
         },
         {
           "location": {
-            "x": 894.55804017781611,
-            "y": 2613.7296426959497
+            "x": 1058.8885596272348,
+            "y": 2253.4665808260697
           },
           "nodeIndex": "dim_date",
+          "nodeLineageTag": "b47d4b9f-6c53-4d50-9f9f-0183e035212d",
           "size": {
             "height": 200,
             "width": 234
@@ -74,8 +75,8 @@
         },
         {
           "location": {
-            "x": 1354.5580401778161,
-            "y": 2328.7135908007449
+            "x": 1620.0150331345699,
+            "y": 1977.9311358221776
           },
           "nodeIndex": "Key Measures",
           "nodeLineageTag": "26cdd336-8784-40f1-95ec-ef06d3706fec",
@@ -87,10 +88,11 @@
         },
         {
           "location": {
-            "x": 1437.5580401778161,
-            "y": 2165.5969223488883
+            "x": 200.33884086151693,
+            "y": 1968.0842787798749
           },
           "nodeIndex": "Balance Sheet Data",
+          "nodeLineageTag": "02802f0e-96c5-4862-a80e-cd7c6de98825",
           "size": {
             "height": 200,
             "width": 234
@@ -99,10 +101,11 @@
         },
         {
           "location": {
-            "x": 1721.5580401778161,
-            "y": 2165.5969223488883
+            "x": 767.176946452344,
+            "y": 1972.8245822255312
           },
           "nodeIndex": "Cash Flow Data",
+          "nodeLineageTag": "4cc864b3-0f09-4e1f-ba22-a090bcddd1b4",
           "size": {
             "height": 200,
             "width": 234
@@ -111,10 +114,11 @@
         },
         {
           "location": {
-            "x": 2005.5580401778161,
-            "y": 2165.5969223488883
+            "x": 1044.8565418581359,
+            "y": 1971.2444810769791
           },
           "nodeIndex": "Channel Revenues",
+          "nodeLineageTag": "32cfa79d-3e95-4073-b1f7-07ee0a523dfc",
           "size": {
             "height": 200,
             "width": 234
@@ -123,10 +127,11 @@
         },
         {
           "location": {
-            "x": 2289.5580401778161,
-            "y": 2177.5969223488883
+            "x": 1330.4366430066877,
+            "y": 1970.6036718885623
           },
           "nodeIndex": "Company Expenses",
+          "nodeLineageTag": "2324e7d4-7475-4b60-b0d9-c3e2e28aaa3f",
           "size": {
             "height": 176,
             "width": 234
@@ -135,10 +140,11 @@
         },
         {
           "location": {
-            "x": 2573.5580401778161,
-            "y": 2177.5969223488883
+            "x": 486.24442294048367,
+            "y": 1972.1837730371146
           },
           "nodeIndex": "Income Statement Data",
+          "nodeLineageTag": "ccae6a89-c50e-40ae-85a6-7f53bd277f02",
           "size": {
             "height": 176,
             "width": 234
@@ -160,6 +166,20 @@
         }
       ],
       "name": "All tables",
+      "zoomValue": 63.287087723234038,
+      "pinKeyFieldsToTop": true,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    },
+    {
+      "ordinal": 1,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [],
+      "name": "Layout 1",
       "zoomValue": 100,
       "pinKeyFieldsToTop": true,
       "showExtraHeaderInfo": false,
