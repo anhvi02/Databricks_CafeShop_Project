@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
-  "name": "8bfb927aa8a832d84402",
+  "name": "cf27fac08525605cbbbd",
   "position": {
-    "x": 0,
-    "y": 0,
-    "z": 0,
-    "height": 143.28358208955223,
-    "width": 227.46268656716418,
-    "tabOrder": 0
+    "x": 394.64083938660207,
+    "y": 106.40839386602099,
+    "z": 6,
+    "height": 106.40839386602099,
+    "width": 204.55205811138015,
+    "tabOrder": 6
   },
   "visual": {
     "visualType": "cardVisual",
@@ -20,14 +20,14 @@
                 "Measure": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Income Statement Analysis"
+                      "Entity": "Balance Sheet Analysis"
                     }
                   },
-                  "Property": "Income Values"
+                  "Property": "Other Assets"
                 }
               },
-              "queryRef": "Income Statement Analysis.Income Values",
-              "nativeQueryRef": "Income Values"
+              "queryRef": "Balance Sheet Analysis.Other Assets",
+              "nativeQueryRef": "Other Assets"
             }
           ]
         }
@@ -39,10 +39,10 @@
               "Measure": {
                 "Expression": {
                   "SourceRef": {
-                    "Entity": "Income Statement Analysis"
+                    "Entity": "Balance Sheet Analysis"
                   }
                 },
-                "Property": "Income Values"
+                "Property": "Other Assets"
               }
             },
             "direction": "Descending"
@@ -56,15 +56,15 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "e21b561c6e9eb268857d",
+        "name": "13e6a5940ae00cb72775",
         "field": {
           "Measure": {
             "Expression": {
               "SourceRef": {
-                "Entity": "Income Statement Analysis"
+                "Entity": "Balance Sheet Analysis"
               }
             },
-            "Property": "Income Values"
+            "Property": "Other Assets"
           }
         },
         "type": "Advanced"

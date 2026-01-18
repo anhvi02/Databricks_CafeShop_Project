@@ -4,14 +4,14 @@
     {
       "ordinal": 0,
       "scrollPosition": {
-        "x": 833.26634476297386,
-        "y": 1842.3979392117558
+        "x": 1084.2498221784231,
+        "y": 2034.4242801750006
       },
       "nodes": [
         {
           "location": {
             "x": 201.18269278110949,
-            "y": 3478.4551140409121
+            "y": 4299.7770575586474
           },
           "nodeIndex": "dim_employee",
           "nodeLineageTag": "619810fa-9b16-40a0-9cfa-6f71fe1df0c4",
@@ -24,7 +24,7 @@
         {
           "location": {
             "x": 1088.1769275437427,
-            "y": 3893.2024081305653
+            "y": 4714.5243516483006
           },
           "nodeIndex": "dim_store",
           "nodeLineageTag": "68d82e8d-93e5-4244-9521-4771d0cc349f",
@@ -37,7 +37,7 @@
         {
           "location": {
             "x": 201,
-            "y": 3888.6495718355218
+            "y": 4709.971515353257
           },
           "nodeIndex": "fact_roster",
           "nodeLineageTag": "b332a548-9a07-4314-ab11-1cc1f44b8eca",
@@ -50,7 +50,7 @@
         {
           "location": {
             "x": 618.38448636284193,
-            "y": 3481.5718652779433
+            "y": 4302.8938087956785
           },
           "nodeIndex": "fact_transaction",
           "nodeLineageTag": "81a4d5f7-2699-4f89-80ad-435f8f3c2a22",
@@ -63,7 +63,7 @@
         {
           "location": {
             "x": 1058.8885596272348,
-            "y": 3476.07199605983
+            "y": 4297.3939395775651
           },
           "nodeIndex": "dim_date",
           "nodeLineageTag": "b47d4b9f-6c53-4d50-9f9f-0183e035212d",
@@ -76,7 +76,7 @@
         {
           "location": {
             "x": 1620.0150331345699,
-            "y": 3200.5365510559377
+            "y": 4021.8584945736729
           },
           "nodeIndex": "Key Measures",
           "nodeLineageTag": "26cdd336-8784-40f1-95ec-ef06d3706fec",
@@ -89,7 +89,7 @@
         {
           "location": {
             "x": 200.33884086151693,
-            "y": 3190.6896940136348
+            "y": 4012.01163753137
           },
           "nodeIndex": "Balance Sheet Data",
           "nodeLineageTag": "02802f0e-96c5-4862-a80e-cd7c6de98825",
@@ -102,7 +102,7 @@
         {
           "location": {
             "x": 767.176946452344,
-            "y": 3195.4299974592914
+            "y": 4016.7519409770266
           },
           "nodeIndex": "Cash Flow Data",
           "nodeLineageTag": "4cc864b3-0f09-4e1f-ba22-a090bcddd1b4",
@@ -115,7 +115,7 @@
         {
           "location": {
             "x": 1044.8565418581359,
-            "y": 3193.849896310739
+            "y": 4015.1718398284743
           },
           "nodeIndex": "Channel Revenues",
           "nodeLineageTag": "32cfa79d-3e95-4073-b1f7-07ee0a523dfc",
@@ -128,7 +128,7 @@
         {
           "location": {
             "x": 1330.4366430066877,
-            "y": 3193.2090871223222
+            "y": 4014.5310306400575
           },
           "nodeIndex": "Company Expenses",
           "nodeLineageTag": "2324e7d4-7475-4b60-b0d9-c3e2e28aaa3f",
@@ -141,7 +141,7 @@
         {
           "location": {
             "x": 486.24442294048367,
-            "y": 3194.7891882708745
+            "y": 4016.11113178861
           },
           "nodeIndex": "Income Statement Data",
           "nodeLineageTag": "ccae6a89-c50e-40ae-85a6-7f53bd277f02",
@@ -154,7 +154,7 @@
         {
           "location": {
             "x": 2656.5580401778161,
-            "y": 2292.694673143159
+            "y": 3114.0166166608942
           },
           "nodeIndex": "Income Statement Analysis",
           "nodeLineageTag": "7ceb1cc1-30d0-427d-8307-2774b35836dd",
@@ -167,7 +167,7 @@
         {
           "location": {
             "x": 2740.2191993162992,
-            "y": 2062.6823588371808
+            "y": 2884.004302354916
           },
           "nodeIndex": "Template Balance Sheet",
           "size": {
@@ -179,11 +179,24 @@
         {
           "location": {
             "x": 2823.8803584547823,
-            "y": 1642.6438870354705
+            "y": 2463.9658305532057
           },
           "nodeIndex": "Template Income Statement",
           "size": {
             "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2907.5415175932653,
+            "y": 2034.4242801750006
+          },
+          "nodeIndex": "Balance Sheet Analysis",
+          "nodeLineageTag": "d0e76a95-fe88-4060-b7f3-2e14128108ea",
+          "size": {
+            "height": 104,
             "width": 234
           },
           "zIndex": 0

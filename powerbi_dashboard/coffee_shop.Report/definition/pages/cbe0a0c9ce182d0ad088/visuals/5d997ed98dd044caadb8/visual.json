@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
-  "name": "8bfb927aa8a832d84402",
+  "name": "5d997ed98dd044caadb8",
   "position": {
     "x": 0,
-    "y": 0,
-    "z": 0,
-    "height": 143.28358208955223,
-    "width": 227.46268656716418,
-    "tabOrder": 0
+    "y": 106.40839386602099,
+    "z": 2,
+    "height": 106.40839386602099,
+    "width": 191.12187247780469,
+    "tabOrder": 2
   },
   "visual": {
     "visualType": "cardVisual",
@@ -20,14 +20,14 @@
                 "Measure": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Income Statement Analysis"
+                      "Entity": "Balance Sheet Analysis"
                     }
                   },
-                  "Property": "Income Values"
+                  "Property": "Current Asset"
                 }
               },
-              "queryRef": "Income Statement Analysis.Income Values",
-              "nativeQueryRef": "Income Values"
+              "queryRef": "Balance Sheet Analysis.Current Asset",
+              "nativeQueryRef": "Current Asset"
             }
           ]
         }
@@ -39,10 +39,10 @@
               "Measure": {
                 "Expression": {
                   "SourceRef": {
-                    "Entity": "Income Statement Analysis"
+                    "Entity": "Balance Sheet Analysis"
                   }
                 },
-                "Property": "Income Values"
+                "Property": "Current Asset"
               }
             },
             "direction": "Descending"
@@ -56,15 +56,15 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "e21b561c6e9eb268857d",
+        "name": "133dc627323da6403050",
         "field": {
           "Measure": {
             "Expression": {
               "SourceRef": {
-                "Entity": "Income Statement Analysis"
+                "Entity": "Balance Sheet Analysis"
               }
             },
-            "Property": "Income Values"
+            "Property": "Current Asset"
           }
         },
         "type": "Advanced"

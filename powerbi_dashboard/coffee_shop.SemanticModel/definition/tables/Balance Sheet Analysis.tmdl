@@ -1,0 +1,75 @@
+table 'Balance Sheet Analysis'
+	lineageTag: d0e76a95-fe88-4060-b7f3-2e14128108ea
+
+	measure 'BS Values' = ```
+			
+			CALCULATE(SUM('Balance Sheet Data'[Balance Sheet Values]), 
+			        TREATAS( VALUES(dim_date[Year]), 'Balance Sheet Data'[Year]))
+			```
+		lineageTag: b29700a8-1464-4112-8b55-6c0300c2e378
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Current Asset' =
+			
+			CALCULATE([BS Values], 'Balance Sheet Data'[Category] = "Current Assets")
+		lineageTag: 5571e4bc-3631-448b-90a1-e99da2612f60
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Current Liabilities' =
+			
+			CALCULATE([BS Values], 'Balance Sheet Data'[Category] = "Current Liabilities")
+		lineageTag: 7f625633-7870-4bd7-bc1d-34e2d995d694
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Fixed Assets' =
+			
+			CALCULATE([BS Values], 'Balance Sheet Data'[Category] = "Fixed Assets")
+		lineageTag: 854860d6-779b-4b8b-9a02-b8fbcd16cfc7
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Long-term Liabilities' =
+			
+			CALCULATE([BS Values], 'Balance Sheet Data'[Category] = "Long-term Liabilities")
+		formatString: 0
+		lineageTag: 60b8510a-e427-400e-968c-576a67915fa3
+
+	measure 'Other Assets' =
+			
+			CALCULATE([BS Values], 'Balance Sheet Data'[Category] = "Other Assets")
+		lineageTag: f1f98eaa-4cb4-4ba0-bf48-ad7e4a2b3507
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Total Assets' = [Current Asset] + [Fixed Assets] + [Other Assets]
+		lineageTag: 264a1065-a5fb-4bb5-9108-f17002ebdc1a
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Total Liabilities' = [Current Liabilities] + [Long-term Liabilities] + [Owner's Equity]
+		lineageTag: 234fee97-782c-4760-af00-3d0abf112b36
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Owner''s Equity' =
+			
+			CALCULATE([BS Values], 'Balance Sheet Data'[Category] = "Owner's Equity")
+		lineageTag: 181e0d2a-e0ef-4c9b-b33c-fc20fa920053
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition 'Balance Sheet Analysis' = m
+		mode: import
+		source =
+				let
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i44FAA==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Column1 = _t]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"Column1", type text}}),
+				    #"Removed Columns" = Table.RemoveColumns(#"Changed Type",{"Column1"})
+				in
+				    #"Removed Columns"
+
+	annotation PBI_ResultType = Table
+

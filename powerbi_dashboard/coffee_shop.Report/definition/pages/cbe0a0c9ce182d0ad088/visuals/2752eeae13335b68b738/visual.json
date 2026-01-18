@@ -1,12 +1,12 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
-  "name": "8bfb927aa8a832d84402",
+  "name": "2752eeae13335b68b738",
   "position": {
-    "x": 0,
+    "x": 10.33091202582728,
     "y": 0,
     "z": 0,
-    "height": 143.28358208955223,
-    "width": 227.46268656716418,
+    "height": 106.40839386602099,
+    "width": 180.79096045197738,
     "tabOrder": 0
   },
   "visual": {
@@ -20,14 +20,14 @@
                 "Measure": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Income Statement Analysis"
+                      "Entity": "Balance Sheet Analysis"
                     }
                   },
-                  "Property": "Income Values"
+                  "Property": "BS Values"
                 }
               },
-              "queryRef": "Income Statement Analysis.Income Values",
-              "nativeQueryRef": "Income Values"
+              "queryRef": "Balance Sheet Analysis.BS Values",
+              "nativeQueryRef": "BS Values"
             }
           ]
         }
@@ -39,10 +39,10 @@
               "Measure": {
                 "Expression": {
                   "SourceRef": {
-                    "Entity": "Income Statement Analysis"
+                    "Entity": "Balance Sheet Analysis"
                   }
                 },
-                "Property": "Income Values"
+                "Property": "BS Values"
               }
             },
             "direction": "Descending"
@@ -56,15 +56,15 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "e21b561c6e9eb268857d",
+        "name": "cad2dc300a18453d39dc",
         "field": {
           "Measure": {
             "Expression": {
               "SourceRef": {
-                "Entity": "Income Statement Analysis"
+                "Entity": "Balance Sheet Analysis"
               }
             },
-            "Property": "Income Values"
+            "Property": "BS Values"
           }
         },
         "type": "Advanced"
