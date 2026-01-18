@@ -1,0 +1,58 @@
+table 'Template Income Statement'
+	lineageTag: b8eca6ca-38d3-4279-90ab-8a719a471374
+
+	column 'Row Index'
+		dataType: int64
+		formatString: 0
+		lineageTag: 135f879f-ab12-4a38-b130-35e17f686c19
+		summarizeBy: none
+		sourceColumn: Row Index
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Income Statement Items'
+		dataType: string
+		lineageTag: cd78c57a-737b-4c64-9619-5ddd02f86629
+		summarizeBy: none
+		sourceColumn: Income Statement Items
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Summary 1'
+		dataType: string
+		lineageTag: 8fdb5592-3484-4324-83cf-c79150365f18
+		summarizeBy: none
+		sourceColumn: Summary 1
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Items (Normalized)'
+		dataType: string
+		lineageTag: d323b6f7-e2af-40e8-abe8-2ec33aba720c
+		summarizeBy: none
+		sourceColumn: Items (Normalized)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Summary Index'
+		dataType: int64
+		formatString: 0
+		lineageTag: f81dc6c3-d7f2-4a83-b45a-72157877b235
+		summarizeBy: sum
+		sourceColumn: Summary Index
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Template Income Statement' = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents("C:\Users\ADMIN\OneDrive - Deakin University\Documents\Development\Databricks_CafeShop_Project\data_raw\data\financial\income_statement_template.xlsx"), null, true),
+				    #"IS Template_Sheet" = Source{[Item="IS Template",Kind="Sheet"]}[Data],
+				    #"Promoted Headers" = Table.PromoteHeaders(#"IS Template_Sheet", [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"Row Index", Int64.Type}, {"Income Statement Items", type text}, {"Summary 1", type text}, {"Items (Normalized)", type text}, {"Summary Index", Int64.Type}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+

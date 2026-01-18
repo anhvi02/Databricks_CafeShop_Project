@@ -1,0 +1,58 @@
+table 'Template Balance Sheet'
+	lineageTag: fb123112-1cd0-4d73-9d6b-c556359dfd04
+
+	column 'Row Index'
+		dataType: int64
+		formatString: 0
+		lineageTag: 6432b371-7994-483d-90d1-482e6742eddf
+		summarizeBy: none
+		sourceColumn: Row Index
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Balance Sheet Items'
+		dataType: string
+		lineageTag: 907cc6bc-74cb-41cb-b809-ea353377bb73
+		summarizeBy: none
+		sourceColumn: Balance Sheet Items
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Summary Items'
+		dataType: string
+		lineageTag: 455f0385-b55b-4ffc-a3b9-81b2c40d46cc
+		summarizeBy: none
+		sourceColumn: Summary Items
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Balance Sheet Normalized'
+		dataType: string
+		lineageTag: f3fa72e8-12d8-4480-9fee-9bd148df90ee
+		summarizeBy: none
+		sourceColumn: Balance Sheet Normalized
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Summary Index'
+		dataType: int64
+		formatString: 0
+		lineageTag: 1068045b-2424-43b1-8fd0-873cea1882aa
+		summarizeBy: sum
+		sourceColumn: Summary Index
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Template Balance Sheet' = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents("C:\Users\ADMIN\OneDrive - Deakin University\Documents\Development\Databricks_CafeShop_Project\data_raw\data\financial\balance_sheet_template.xlsx"), null, true),
+				    #"BS Template_Sheet" = Source{[Item="BS Template",Kind="Sheet"]}[Data],
+				    #"Promoted Headers" = Table.PromoteHeaders(#"BS Template_Sheet", [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"Row Index", Int64.Type}, {"Balance Sheet Items", type text}, {"Summary Items", type text}, {"Balance Sheet Normalized", type text}, {"Summary Index", Int64.Type}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+

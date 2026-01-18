@@ -122,3 +122,9 @@ relationship 44de591e-1fe3-47b3-ba35-a1f1920e2c5c
 	fromColumn: 'Income Statement Data'.Month
 	toColumn: LocalDateTable_c0f869c8-201c-493a-bd9e-f2940cbca605.Date
 
+relationship AutoDetected_2c074ad5-b663-46b1-b672-896b4318023c
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: 'Template Income Statement'.'Row Index'
+	toColumn: 'Template Balance Sheet'.'Row Index'
+

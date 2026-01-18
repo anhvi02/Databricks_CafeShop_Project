@@ -4,10 +4,10 @@
   "position": {
     "x": 0,
     "y": 264.68823993685874,
-    "z": 7001,
+    "z": 8000,
     "height": 72.73875295974743,
     "width": 142.44672454617205,
-    "tabOrder": 7001
+    "tabOrder": 8000
   },
   "visual": {
     "visualType": "slicer",
@@ -88,23 +88,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "9faf17080525cb3dc776",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "dim_store"
-              }
-            },
-            "Property": "cafe_name"
-          }
-        },
-        "type": "Categorical"
-      }
-    ]
   }
 }

@@ -16,7 +16,7 @@ queryGroup 'Measures Group'
 
 annotation __PBI_TimeIntelligenceEnabled = 1
 
-annotation PBI_QueryOrder = ["dim_employee","dim_store","fact_roster","fact_transaction","Key Measures","Balance Sheet Data","Cash Flow Data","Channel Revenues","Company Expenses","Income Statement Data","Income Statement Analysis"]
+annotation PBI_QueryOrder = ["dim_employee","dim_store","fact_roster","fact_transaction","Key Measures","Balance Sheet Data","Cash Flow Data","Channel Revenues","Company Expenses","Income Statement Data","Income Statement Analysis","Template Balance Sheet","Template Income Statement"]
 
 annotation PBI_ProTooling = ["DevMode"]
 
@@ -53,6 +53,8 @@ ref table LocalDateTable_5420ee6b-87aa-44b4-9aeb-3866642b4b92
 ref table 'Income Statement Data'
 ref table LocalDateTable_c0f869c8-201c-493a-bd9e-f2940cbca605
 ref table 'Income Statement Analysis'
+ref table 'Template Balance Sheet'
+ref table 'Template Income Statement'
 
 ref cultureInfo en-US
 

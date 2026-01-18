@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "6e726c10084786d70012",
   "position": {
-    "x": 263.67797947908446,
-    "y": 102.03630623520127,
+    "x": 598.56115107913672,
+    "y": 57.553956834532372,
     "z": 2000,
-    "height": 325.30386740331488,
-    "width": 648.58721389108132,
+    "height": 324.60431654676256,
+    "width": 649.20863309352512,
     "tabOrder": 2000
   },
   "visual": {
@@ -189,5 +189,56 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "04332931dba3bc916310",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "dim_date"
+              }
+            },
+            "Property": "DayName"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "192c21ae5d049d807600",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "fact_transaction"
+                  }
+                },
+                "Property": "line_total"
+              }
+            },
+            "Function": 0
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "defcb11340e9760492d1",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Key Measures"
+              }
+            },
+            "Property": "Total Sales Last Week"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }
