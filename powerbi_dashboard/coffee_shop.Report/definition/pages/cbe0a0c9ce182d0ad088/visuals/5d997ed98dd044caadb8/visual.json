@@ -23,11 +23,11 @@
                       "Entity": "Balance Sheet Analysis"
                     }
                   },
-                  "Property": "Current Asset"
+                  "Property": "Current Assets"
                 }
               },
               "queryRef": "Balance Sheet Analysis.Current Asset",
-              "nativeQueryRef": "Current Asset"
+              "nativeQueryRef": "Current Assets"
             }
           ]
         }
@@ -42,7 +42,7 @@
                     "Entity": "Balance Sheet Analysis"
                   }
                 },
-                "Property": "Current Asset"
+                "Property": "Current Assets"
               }
             },
             "direction": "Descending"
@@ -64,7 +64,7 @@
                 "Entity": "Balance Sheet Analysis"
               }
             },
-            "Property": "Current Asset"
+            "Property": "Current Assets"
           }
         },
         "type": "Advanced"

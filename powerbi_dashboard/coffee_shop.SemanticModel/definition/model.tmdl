@@ -14,9 +14,13 @@ queryGroup 'Measures Group'
 
 	annotation PBI_QueryGroupOrder = 1
 
+queryGroup 'Financial Template'
+
+	annotation PBI_QueryGroupOrder = 2
+
 annotation __PBI_TimeIntelligenceEnabled = 1
 
-annotation PBI_QueryOrder = ["dim_employee","dim_store","fact_roster","fact_transaction","Key Measures","Balance Sheet Data","Cash Flow Data","Channel Revenues","Company Expenses","Income Statement Data","Income Statement Analysis","Template Balance Sheet","Template Income Statement","Balance Sheet Analysis"]
+annotation PBI_QueryOrder = ["dim_employee","dim_store","fact_roster","fact_transaction","Key Measures","Balance Sheet Data","Cash Flow Data","Channel Revenues","Company Expenses","Income Statement Data","Income Statement Analysis","Template Balance Sheet","Template Income Statement","Balance Sheet Analysis","Template Cash Flow","Cash Flow Analysis"]
 
 annotation PBI_ProTooling = ["DevMode"]
 
@@ -56,6 +60,8 @@ ref table 'Income Statement Analysis'
 ref table 'Template Balance Sheet'
 ref table 'Template Income Statement'
 ref table 'Balance Sheet Analysis'
+ref table 'Template Cash Flow'
+ref table 'Cash Flow Analysis'
 
 ref cultureInfo en-US
 

@@ -1,0 +1,61 @@
+table 'Template Cash Flow'
+	lineageTag: ec3208fc-c5af-4392-8e45-6e0a164e9fee
+
+	column 'Row Index'
+		dataType: int64
+		formatString: 0
+		lineageTag: f58a8c5d-df79-413c-ace5-9567d358bd7e
+		summarizeBy: none
+		sourceColumn: Row Index
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Cash Flow Items'
+		dataType: string
+		lineageTag: 494736cf-d594-4d97-9be9-9c5b7ab98eff
+		summarizeBy: none
+		sourceColumn: Cash Flow Items
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Cash Flow Summary Items'
+		dataType: string
+		lineageTag: ccfe4f37-f041-4e2a-a594-e46c785a769e
+		summarizeBy: none
+		sourceColumn: Cash Flow Summary Items
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Cash Flow Normalized'
+		dataType: string
+		lineageTag: edadb519-7477-4416-a68a-b447b62f3abe
+		summarizeBy: none
+		sourceColumn: Cash Flow Normalized
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Summary Index'
+		dataType: int64
+		formatString: 0
+		lineageTag: 23a0ff59-9907-4a70-854a-859bbd135b85
+		summarizeBy: sum
+		sourceColumn: Summary Index
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Template Cash Flow' = m
+		mode: import
+		queryGroup: 'Financial Template'
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents("C:\Users\Nobit\Documents\Databricks_CafeShop_Project\data_raw\data\financial\cash_flow_template.xlsx"), null, true),
+				    #"CF Template_Sheet" = Source{[Item="CF Template",Kind="Sheet"]}[Data],
+				    #"Promoted Headers" = Table.PromoteHeaders(#"CF Template_Sheet", [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"Row Index", Int64.Type}, {"Cash Flow Items", type text}, {"Cash Flow Summary Items", type text}, {"Cash Flow Normalized", type text}, {"Summary Index", Int64.Type}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+

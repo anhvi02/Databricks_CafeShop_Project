@@ -1,0 +1,49 @@
+table 'Cash Flow Analysis'
+	lineageTag: a5400da7-8728-4486-861f-2948d790576c
+
+	measure 'CF Values' =
+			
+			CALCULATE(SUM('Cash Flow Data'[Cash Flow Values]),
+			    TREATAS(VALUES(dim_date[Year]), 'Cash Flow Data'[Year]))
+		lineageTag: ac2d51e0-3ebe-4e02-a92b-38b63f635848
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'DEBUG_NEEDED_Cash Paid For - Investing' = ```
+			
+			CALCULATE([CF Values], 
+			    FILTER('Cash Flow Data',
+			        'Cash Flow Data'[Cash Flow Category] = "Cash paid for" && --could be not Cash paid for or Investing Activities
+			        'Cash Flow Data'[Cash Flow Type] = "Investing Activities")) * -1
+			
+			        
+			```
+		lineageTag: 288de1fb-9532-442f-bd2d-214de7deacd5
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'DEBGU NEEDED_Cash Paid For - Financing' = ```
+			
+			CALCULATE([CF Values], 
+			    FILTER('Cash Flow Data',
+			        'Cash Flow Data'[Cash Flow Category] = "Cash paid for" && --could be not Cash paid for or Financing Activities
+			        'Cash Flow Data'[Cash Flow Type] = "Financing Activities")) * -1
+			
+			        
+			```
+		lineageTag: 8322e59c-b73a-4a52-b1ed-cbbdff54082e
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition 'Cash Flow Analysis' = m
+		mode: import
+		source =
+				let
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i44FAA==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Column1 = _t]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"Column1", type text}}),
+				    #"Removed Columns" = Table.RemoveColumns(#"Changed Type",{"Column1"})
+				in
+				    #"Removed Columns"
+
+	annotation PBI_ResultType = Table
+

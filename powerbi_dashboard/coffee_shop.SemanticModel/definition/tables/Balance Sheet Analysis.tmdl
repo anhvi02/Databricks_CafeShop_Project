@@ -10,7 +10,7 @@ table 'Balance Sheet Analysis'
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
-	measure 'Current Asset' =
+	measure 'Current Assets' =
 			
 			CALCULATE([BS Values], 'Balance Sheet Data'[Category] = "Current Assets")
 		lineageTag: 5571e4bc-3631-448b-90a1-e99da2612f60
@@ -44,7 +44,7 @@ table 'Balance Sheet Analysis'
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
-	measure 'Total Assets' = [Current Asset] + [Fixed Assets] + [Other Assets]
+	measure 'Total Assets' = [Current Assets] + [Fixed Assets] + [Other Assets]
 		lineageTag: 264a1065-a5fb-4bb5-9108-f17002ebdc1a
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
@@ -58,6 +58,34 @@ table 'Balance Sheet Analysis'
 			
 			CALCULATE([BS Values], 'Balance Sheet Data'[Category] = "Owner's Equity")
 		lineageTag: 181e0d2a-e0ef-4c9b-b33c-fc20fa920053
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'B/S Values Switch Function' =
+			
+			VAR CurrentItem = SELECTEDVALUE( 'Template Balance Sheet'[Balance Sheet Normalized] )
+			RETURN
+			SWITCH ( TRUE(),
+			CurrentItem = "Total current assets", [Current Assets],
+			CurrentItem = "Total Fixed Assets", [Fixed Assets],
+			CurrentItem = "Total Other Assets", [Other Assets],
+			CurrentItem = "Total Assets", [Total Assets],
+			CurrentItem = "Total Current Liabilities", [Current Liabilities],
+			CurrentItem = "Total Long-Term Liabilities", [Long-Term Liabilities],
+			CurrentItem = "Total Owner's Equity", [Owner's Equity],
+			CurrentItem = "Total Liabilities and Owner's Equity", [Liabilities and Owner's Equity],
+			CurrentItem = "Debt Ratio (Total Liabilities / Total Assets)", FORMAT( DIVIDE( [Current Liabilities] + [Long-Term Liabilities], [Total Assets], 0), "0.00" ),
+			CurrentItem = "Current Ratio (Current Assets / Current Liabilities)", FORMAT( DIVIDE( [Current Assets], [Total Assets], 0 ), "0.00" ),
+			CurrentItem = "Working Capital (Current Assets - Current Liabilities)", FORMAT( [Current Assets] - [Current Liabilities], "0" ),
+			CurrentItem = "Assets-to-Equity Ratio (Total Assets / Owner's Equity)", FORMAT( DIVIDE( [Total Assets], [Owner's Equity], 0 ), "0.00" ),
+			CurrentItem = "Debt-to-Equity Ratio (Total Liabilities / Owner's Equity)", FORMAT( DIVIDE( [Current Liabilities] + [Long-Term Liabilities], [Owner's Equity], 0 ),
+			"0.00" ),
+			CALCULATE( [BS Values], FILTER( 'Balance Sheet Data', 'Balance Sheet Data' [Sub Category] = CurrentItem ) ))
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		lineageTag: 7ba167e8-f46a-4bfe-ba08-7870e3c3ec5e
+
+	measure 'Liabilities and Owner''s Equity' = [Total Liabilities] + [Owner's Equity]
+		lineageTag: 6007ebf0-83ca-47f0-b700-40a87c9b942b
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 

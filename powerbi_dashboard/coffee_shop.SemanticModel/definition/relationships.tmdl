@@ -128,3 +128,9 @@ relationship AutoDetected_2c074ad5-b663-46b1-b672-896b4318023c
 	fromColumn: 'Template Income Statement'.'Row Index'
 	toColumn: 'Template Balance Sheet'.'Row Index'
 
+relationship AutoDetected_8f2a7470-f471-4835-8c7c-2eaa587d7dd6
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: 'Template Cash Flow'.'Row Index'
+	toColumn: 'Template Balance Sheet'.'Row Index'
+

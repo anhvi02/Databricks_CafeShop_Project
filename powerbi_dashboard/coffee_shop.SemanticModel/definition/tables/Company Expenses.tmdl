@@ -47,7 +47,7 @@ table 'Company Expenses'
 		mode: import
 		source =
 				let
-				    Source = Csv.Document(File.Contents("C:\Users\ADMIN\OneDrive - Deakin University\Documents\Development\Databricks_CafeShop_Project\data_raw\data\financial\company_expenses.csv"),[Delimiter=",", Columns=4, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+				    Source = Csv.Document(File.Contents("C:\Users\Nobit\Documents\Databricks_CafeShop_Project\data_raw\data\financial\company_expenses.csv"),[Delimiter=",", Columns=4, Encoding=1252, QuoteStyle=QuoteStyle.None]),
 				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
 				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"Month", type date}, {"Expense Category", type text}, {"Expense Items", type text}, {"Expense Values", type number}})
 				in
