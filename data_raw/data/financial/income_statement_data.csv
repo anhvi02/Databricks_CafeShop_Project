@@ -1,162 +1,185 @@
 Month,Expense Category,Expense Items,Expense Values
-2024-10-31,Cost of Goods Sold,Coffee Beans,17281.7
-2024-10-31,Cost of Goods Sold,Food Ingredients,17256.39
-2024-10-31,Cost of Goods Sold,Inventory Adjustments,379.1
-2024-10-31,Cost of Goods Sold,Milk & Dairy,10092.77
-2024-10-31,Cost of Goods Sold,Packaging & Supplies,3561.46
-2024-10-31,Operating Expenses,Depreciation,2198.66
-2024-10-31,Operating Expenses,Equipment Maintenance,292.04
-2024-10-31,Operating Expenses,Insurance,2012.61
-2024-10-31,Operating Expenses,Marketing & Advertising,1820.51
-2024-10-31,Operating Expenses,Other Operating Expenses,959.78
-2024-10-31,Operating Expenses,Professional Services,816.45
-2024-10-31,Operating Expenses,Rent,29356.25
-2024-10-31,Operating Expenses,Salaries & Wages,20203.71
-2024-10-31,Operating Expenses,Supplies,1310.0
-2024-10-31,Operating Expenses,Utilities,2862.61
-2024-10-31,Other Income/Expenses,Interest Expense,189.86
-2024-10-31,Other Income/Expenses,Interest Income,114.37
-2024-10-31,Other Income/Expenses,Other Expenses,148.3
-2024-10-31,Other Income/Expenses,Other Income,31.97
-2024-10-31,Revenue,Catering Revenue,4754.28
-2024-10-31,Revenue,Delivery Revenue,10424.78
-2024-10-31,Revenue,Total Sales Revenue,96874.83
-2024-10-31,Revenue,Wholesale Revenue,593.19
-2024-11-30,Cost of Goods Sold,Coffee Beans,15622.36
-2024-11-30,Cost of Goods Sold,Food Ingredients,14082.16
-2024-11-30,Cost of Goods Sold,Inventory Adjustments,-251.17
-2024-11-30,Cost of Goods Sold,Milk & Dairy,10327.0
-2024-11-30,Cost of Goods Sold,Packaging & Supplies,3513.6
-2024-11-30,Operating Expenses,Depreciation,1788.03
-2024-11-30,Operating Expenses,Equipment Maintenance,323.6
-2024-11-30,Operating Expenses,Insurance,1961.09
-2024-11-30,Operating Expenses,Marketing & Advertising,1823.35
-2024-11-30,Operating Expenses,Other Operating Expenses,679.63
-2024-11-30,Operating Expenses,Professional Services,810.14
-2024-11-30,Operating Expenses,Rent,30920.23
-2024-11-30,Operating Expenses,Salaries & Wages,16925.39
-2024-11-30,Operating Expenses,Supplies,1597.08
-2024-11-30,Operating Expenses,Utilities,2546.25
-2024-11-30,Other Income/Expenses,Interest Expense,171.33
-2024-11-30,Other Income/Expenses,Interest Income,96.86
-2024-11-30,Other Income/Expenses,Other Expenses,151.28
-2024-11-30,Other Income/Expenses,Other Income,41.23
-2024-11-30,Revenue,Catering Revenue,3167.44
-2024-11-30,Revenue,Delivery Revenue,7773.71
-2024-11-30,Revenue,Total Sales Revenue,93652.95
-2024-11-30,Revenue,Wholesale Revenue,718.92
-2024-12-31,Cost of Goods Sold,Coffee Beans,14107.98
-2024-12-31,Cost of Goods Sold,Food Ingredients,20623.8
-2024-12-31,Cost of Goods Sold,Inventory Adjustments,277.12
-2024-12-31,Cost of Goods Sold,Milk & Dairy,9221.23
-2024-12-31,Cost of Goods Sold,Packaging & Supplies,3877.09
-2024-12-31,Operating Expenses,Depreciation,2271.41
-2024-12-31,Operating Expenses,Equipment Maintenance,140.78
-2024-12-31,Operating Expenses,Insurance,2117.38
-2024-12-31,Operating Expenses,Marketing & Advertising,2273.96
-2024-12-31,Operating Expenses,Other Operating Expenses,1085.59
-2024-12-31,Operating Expenses,Professional Services,740.0
-2024-12-31,Operating Expenses,Rent,29748.93
-2024-12-31,Operating Expenses,Salaries & Wages,17594.64
-2024-12-31,Operating Expenses,Supplies,1404.35
-2024-12-31,Operating Expenses,Utilities,2397.44
-2024-12-31,Other Income/Expenses,Interest Expense,194.75
-2024-12-31,Other Income/Expenses,Interest Income,122.83
-2024-12-31,Other Income/Expenses,Other Expenses,164.32
-2024-12-31,Other Income/Expenses,Other Income,27.62
-2024-12-31,Revenue,Catering Revenue,3259.81
-2024-12-31,Revenue,Delivery Revenue,11639.26
-2024-12-31,Revenue,Total Sales Revenue,101571.08
-2024-12-31,Revenue,Wholesale Revenue,649.59
-2025-01-31,Cost of Goods Sold,Coffee Beans,13384.06
-2025-01-31,Cost of Goods Sold,Food Ingredients,15621.94
-2025-01-31,Cost of Goods Sold,Inventory Adjustments,-297.41
-2025-01-31,Cost of Goods Sold,Milk & Dairy,9373.11
-2025-01-31,Cost of Goods Sold,Packaging & Supplies,3544.58
-2025-01-31,Operating Expenses,Depreciation,1972.13
-2025-01-31,Operating Expenses,Equipment Maintenance,107.23
-2025-01-31,Operating Expenses,Insurance,1860.52
-2025-01-31,Operating Expenses,Marketing & Advertising,1591.01
-2025-01-31,Operating Expenses,Other Operating Expenses,595.29
-2025-01-31,Operating Expenses,Professional Services,783.58
-2025-01-31,Operating Expenses,Rent,30909.44
-2025-01-31,Operating Expenses,Salaries & Wages,16300.55
-2025-01-31,Operating Expenses,Supplies,1326.27
-2025-01-31,Operating Expenses,Utilities,1569.79
-2025-01-31,Other Income/Expenses,Interest Expense,220.89
-2025-01-31,Other Income/Expenses,Interest Income,108.99
-2025-01-31,Other Income/Expenses,Other Expenses,209.3
-2025-01-31,Other Income/Expenses,Other Income,21.89
-2025-01-31,Revenue,Catering Revenue,3851.07
-2025-01-31,Revenue,Delivery Revenue,6936.96
-2025-01-31,Revenue,Total Sales Revenue,78127.75
-2025-01-31,Revenue,Wholesale Revenue,1061.48
-2025-10-31,Cost of Goods Sold,Coffee Beans,19865.45
-2025-10-31,Cost of Goods Sold,Food Ingredients,20182.1
-2025-10-31,Cost of Goods Sold,Inventory Adjustments,307.82
-2025-10-31,Cost of Goods Sold,Milk & Dairy,13291.65
-2025-10-31,Cost of Goods Sold,Packaging & Supplies,4388.88
-2025-10-31,Operating Expenses,Depreciation,2330.62
-2025-10-31,Operating Expenses,Equipment Maintenance,659.2
-2025-10-31,Operating Expenses,Insurance,1934.54
-2025-10-31,Operating Expenses,Marketing & Advertising,2320.33
-2025-10-31,Operating Expenses,Other Operating Expenses,863.42
-2025-10-31,Operating Expenses,Professional Services,1092.79
-2025-10-31,Operating Expenses,Rent,35901.84
-2025-10-31,Operating Expenses,Salaries & Wages,17611.88
-2025-10-31,Operating Expenses,Supplies,1609.1
-2025-10-31,Operating Expenses,Utilities,3529.96
-2025-10-31,Other Income/Expenses,Interest Expense,451.18
+2024-01-31,Cost of Goods Sold,Coffee Beans,15396.59
+2024-01-31,Cost of Goods Sold,Food Ingredients,21030.69
+2024-01-31,Cost of Goods Sold,Inventory Adjustments,-341.06
+2024-01-31,Cost of Goods Sold,Milk & Dairy,11683.5
+2024-01-31,Cost of Goods Sold,Packaging & Supplies,5040.97
+2024-01-31,Operating Expenses,Depreciation,1861.27
+2024-01-31,Operating Expenses,Equipment Maintenance,144.27
+2024-01-31,Operating Expenses,Insurance,2007.69
+2024-01-31,Operating Expenses,Marketing & Advertising,1501.45
+2024-01-31,Operating Expenses,Other Operating Expenses,766.02
+2024-01-31,Operating Expenses,Professional Services,1095.09
+2024-01-31,Operating Expenses,Rent,34089.68
+2024-01-31,Operating Expenses,Salaries & Wages,16728.58
+2024-01-31,Operating Expenses,Supplies,1508.71
+2024-01-31,Operating Expenses,Utilities,2566.27
+2024-01-31,Other Income/Expenses,Interest Expense,212.57
+2024-01-31,Other Income/Expenses,Interest Income,132.6
+2024-01-31,Other Income/Expenses,Other Expenses,217.68
+2024-01-31,Other Income/Expenses,Other Income,3.22
+2024-01-31,Revenue,Catering Revenue,3855.55
+2024-01-31,Revenue,Delivery Revenue,8394.94
+2024-01-31,Revenue,Total Sales Revenue,103438.96
+2024-01-31,Revenue,Wholesale Revenue,1497.54
+2024-10-31,Cost of Goods Sold,Coffee Beans,14524.29
+2024-10-31,Cost of Goods Sold,Food Ingredients,16069.14
+2024-10-31,Cost of Goods Sold,Inventory Adjustments,190.5
+2024-10-31,Cost of Goods Sold,Milk & Dairy,8135.27
+2024-10-31,Cost of Goods Sold,Packaging & Supplies,2885.69
+2024-10-31,Operating Expenses,Depreciation,1994.64
+2024-10-31,Operating Expenses,Equipment Maintenance,434.96
+2024-10-31,Operating Expenses,Insurance,2198.08
+2024-10-31,Operating Expenses,Marketing & Advertising,1739.32
+2024-10-31,Operating Expenses,Other Operating Expenses,900.93
+2024-10-31,Operating Expenses,Professional Services,670.83
+2024-10-31,Operating Expenses,Rent,33296.91
+2024-10-31,Operating Expenses,Salaries & Wages,15078.68
+2024-10-31,Operating Expenses,Supplies,1598.65
+2024-10-31,Operating Expenses,Utilities,2123.16
+2024-10-31,Other Income/Expenses,Interest Expense,200.14
+2024-10-31,Other Income/Expenses,Interest Income,90.99
+2024-10-31,Other Income/Expenses,Other Expenses,152.45
+2024-10-31,Other Income/Expenses,Other Income,35.64
+2024-10-31,Revenue,Catering Revenue,2916.56
+2024-10-31,Revenue,Delivery Revenue,7463.04
+2024-10-31,Revenue,Total Sales Revenue,90331.6
+2024-10-31,Revenue,Wholesale Revenue,603.33
+2024-11-30,Cost of Goods Sold,Coffee Beans,18960.72
+2024-11-30,Cost of Goods Sold,Food Ingredients,16861.64
+2024-11-30,Cost of Goods Sold,Inventory Adjustments,276.13
+2024-11-30,Cost of Goods Sold,Milk & Dairy,10283.14
+2024-11-30,Cost of Goods Sold,Packaging & Supplies,4046.81
+2024-11-30,Operating Expenses,Depreciation,2070.16
+2024-11-30,Operating Expenses,Equipment Maintenance,35.98
+2024-11-30,Operating Expenses,Insurance,1969.27
+2024-11-30,Operating Expenses,Marketing & Advertising,2000.86
+2024-11-30,Operating Expenses,Other Operating Expenses,844.57
+2024-11-30,Operating Expenses,Professional Services,807.21
+2024-11-30,Operating Expenses,Rent,32134.49
+2024-11-30,Operating Expenses,Salaries & Wages,20541.14
+2024-11-30,Operating Expenses,Supplies,1434.15
+2024-11-30,Operating Expenses,Utilities,2208.05
+2024-11-30,Other Income/Expenses,Interest Expense,167.64
+2024-11-30,Other Income/Expenses,Interest Income,128.03
+2024-11-30,Other Income/Expenses,Other Expenses,177.79
+2024-11-30,Other Income/Expenses,Other Income,50.59
+2024-11-30,Revenue,Catering Revenue,3322.79
+2024-11-30,Revenue,Delivery Revenue,11605.39
+2024-11-30,Revenue,Total Sales Revenue,105465.45
+2024-11-30,Revenue,Wholesale Revenue,1093.07
+2024-12-31,Cost of Goods Sold,Coffee Beans,10708.98
+2024-12-31,Cost of Goods Sold,Food Ingredients,15796.31
+2024-12-31,Cost of Goods Sold,Inventory Adjustments,14.39
+2024-12-31,Cost of Goods Sold,Milk & Dairy,9715.57
+2024-12-31,Cost of Goods Sold,Packaging & Supplies,4153.68
+2024-12-31,Operating Expenses,Depreciation,2064.16
+2024-12-31,Operating Expenses,Equipment Maintenance,334.52
+2024-12-31,Operating Expenses,Insurance,1818.22
+2024-12-31,Operating Expenses,Marketing & Advertising,1396.1
+2024-12-31,Operating Expenses,Other Operating Expenses,659.83
+2024-12-31,Operating Expenses,Professional Services,730.5
+2024-12-31,Operating Expenses,Rent,31866.08
+2024-12-31,Operating Expenses,Salaries & Wages,14162.73
+2024-12-31,Operating Expenses,Supplies,1347.75
+2024-12-31,Operating Expenses,Utilities,2244.59
+2024-12-31,Other Income/Expenses,Interest Expense,180.44
+2024-12-31,Other Income/Expenses,Interest Income,112.62
+2024-12-31,Other Income/Expenses,Other Expenses,175.77
+2024-12-31,Other Income/Expenses,Other Income,19.35
+2024-12-31,Revenue,Catering Revenue,2545.62
+2024-12-31,Revenue,Delivery Revenue,9176.01
+2024-12-31,Revenue,Total Sales Revenue,84422.59
+2024-12-31,Revenue,Wholesale Revenue,1000.44
+2025-01-31,Cost of Goods Sold,Coffee Beans,13213.71
+2025-01-31,Cost of Goods Sold,Food Ingredients,20216.5
+2025-01-31,Cost of Goods Sold,Inventory Adjustments,118.95
+2025-01-31,Cost of Goods Sold,Milk & Dairy,10743.75
+2025-01-31,Cost of Goods Sold,Packaging & Supplies,4029.41
+2025-01-31,Operating Expenses,Depreciation,1975.05
+2025-01-31,Operating Expenses,Equipment Maintenance,47.39
+2025-01-31,Operating Expenses,Insurance,1859.92
+2025-01-31,Operating Expenses,Marketing & Advertising,1346.01
+2025-01-31,Operating Expenses,Other Operating Expenses,986.88
+2025-01-31,Operating Expenses,Professional Services,758.34
+2025-01-31,Operating Expenses,Rent,36274.88
+2025-01-31,Operating Expenses,Salaries & Wages,20048.69
+2025-01-31,Operating Expenses,Supplies,1506.12
+2025-01-31,Operating Expenses,Utilities,3114.72
+2025-01-31,Other Income/Expenses,Interest Expense,197.78
+2025-01-31,Other Income/Expenses,Interest Income,92.39
+2025-01-31,Other Income/Expenses,Other Expenses,227.5
+2025-01-31,Other Income/Expenses,Other Income,21.27
+2025-01-31,Revenue,Catering Revenue,3924.49
+2025-01-31,Revenue,Delivery Revenue,10169.39
+2025-01-31,Revenue,Total Sales Revenue,96441.9
+2025-01-31,Revenue,Wholesale Revenue,568.47
+2025-10-31,Cost of Goods Sold,Coffee Beans,14104.92
+2025-10-31,Cost of Goods Sold,Food Ingredients,22371.61
+2025-10-31,Cost of Goods Sold,Inventory Adjustments,205.25
+2025-10-31,Cost of Goods Sold,Milk & Dairy,11560.0
+2025-10-31,Cost of Goods Sold,Packaging & Supplies,3540.95
+2025-10-31,Operating Expenses,Depreciation,2764.3
+2025-10-31,Operating Expenses,Equipment Maintenance,1300.52
+2025-10-31,Operating Expenses,Insurance,1774.62
+2025-10-31,Operating Expenses,Marketing & Advertising,1797.8
+2025-10-31,Operating Expenses,Other Operating Expenses,902.16
+2025-10-31,Operating Expenses,Professional Services,0.0
+2025-10-31,Operating Expenses,Rent,33702.63
+2025-10-31,Operating Expenses,Salaries & Wages,21930.41
+2025-10-31,Operating Expenses,Supplies,1842.31
+2025-10-31,Operating Expenses,Utilities,2506.97
+2025-10-31,Other Income/Expenses,Interest Expense,412.62
 2025-10-31,Other Income/Expenses,Interest Income,0.0
-2025-10-31,Other Income/Expenses,Other Expenses,241.14
+2025-10-31,Other Income/Expenses,Other Expenses,0.0
 2025-10-31,Other Income/Expenses,Other Income,0.0
-2025-10-31,Revenue,Catering Revenue,4648.17
-2025-10-31,Revenue,Delivery Revenue,9869.88
-2025-10-31,Revenue,Total Sales Revenue,117798.28
-2025-10-31,Revenue,Wholesale Revenue,1626.67
-2025-11-30,Cost of Goods Sold,Coffee Beans,15102.35
-2025-11-30,Cost of Goods Sold,Food Ingredients,22492.04
-2025-11-30,Cost of Goods Sold,Inventory Adjustments,164.18
-2025-11-30,Cost of Goods Sold,Milk & Dairy,12319.34
-2025-11-30,Cost of Goods Sold,Packaging & Supplies,4636.68
-2025-11-30,Operating Expenses,Depreciation,2616.59
-2025-11-30,Operating Expenses,Equipment Maintenance,1454.16
-2025-11-30,Operating Expenses,Insurance,2409.73
-2025-11-30,Operating Expenses,Marketing & Advertising,1668.34
-2025-11-30,Operating Expenses,Other Operating Expenses,1134.76
-2025-11-30,Operating Expenses,Professional Services,994.23
-2025-11-30,Operating Expenses,Rent,35204.62
-2025-11-30,Operating Expenses,Salaries & Wages,20855.6
-2025-11-30,Operating Expenses,Supplies,1464.01
-2025-11-30,Operating Expenses,Utilities,3359.69
-2025-11-30,Other Income/Expenses,Interest Expense,423.16
-2025-11-30,Other Income/Expenses,Interest Income,151.8
-2025-11-30,Other Income/Expenses,Other Expenses,254.46
-2025-11-30,Other Income/Expenses,Other Income,223.58
-2025-11-30,Revenue,Catering Revenue,5188.8
-2025-11-30,Revenue,Delivery Revenue,12165.43
-2025-11-30,Revenue,Total Sales Revenue,113507.52
-2025-11-30,Revenue,Wholesale Revenue,1189.63
-2025-12-31,Cost of Goods Sold,Coffee Beans,16161.2
-2025-12-31,Cost of Goods Sold,Food Ingredients,18514.75
-2025-12-31,Cost of Goods Sold,Inventory Adjustments,418.67
-2025-12-31,Cost of Goods Sold,Milk & Dairy,10810.88
-2025-12-31,Cost of Goods Sold,Packaging & Supplies,4478.47
-2025-12-31,Operating Expenses,Depreciation,2463.39
-2025-12-31,Operating Expenses,Equipment Maintenance,861.04
-2025-12-31,Operating Expenses,Insurance,1765.83
-2025-12-31,Operating Expenses,Marketing & Advertising,2131.05
-2025-12-31,Operating Expenses,Other Operating Expenses,1001.1
+2025-10-31,Revenue,Catering Revenue,5000.01
+2025-10-31,Revenue,Delivery Revenue,11959.06
+2025-10-31,Revenue,Total Sales Revenue,107217.37
+2025-10-31,Revenue,Wholesale Revenue,1268.26
+2025-11-30,Cost of Goods Sold,Coffee Beans,15392.62
+2025-11-30,Cost of Goods Sold,Food Ingredients,23946.96
+2025-11-30,Cost of Goods Sold,Inventory Adjustments,31.15
+2025-11-30,Cost of Goods Sold,Milk & Dairy,11668.91
+2025-11-30,Cost of Goods Sold,Packaging & Supplies,5614.03
+2025-11-30,Operating Expenses,Depreciation,2733.76
+2025-11-30,Operating Expenses,Equipment Maintenance,1525.07
+2025-11-30,Operating Expenses,Insurance,1874.31
+2025-11-30,Operating Expenses,Marketing & Advertising,1587.86
+2025-11-30,Operating Expenses,Other Operating Expenses,1261.63
+2025-11-30,Operating Expenses,Professional Services,0.0
+2025-11-30,Operating Expenses,Rent,35754.3
+2025-11-30,Operating Expenses,Salaries & Wages,20521.26
+2025-11-30,Operating Expenses,Supplies,1403.81
+2025-11-30,Operating Expenses,Utilities,3090.01
+2025-11-30,Other Income/Expenses,Interest Expense,499.55
+2025-11-30,Other Income/Expenses,Interest Income,0.0
+2025-11-30,Other Income/Expenses,Other Expenses,0.0
+2025-11-30,Other Income/Expenses,Other Income,321.25
+2025-11-30,Revenue,Catering Revenue,4072.22
+2025-11-30,Revenue,Delivery Revenue,11939.6
+2025-11-30,Revenue,Total Sales Revenue,111296.56
+2025-11-30,Revenue,Wholesale Revenue,971.81
+2025-12-31,Cost of Goods Sold,Coffee Beans,16469.0
+2025-12-31,Cost of Goods Sold,Food Ingredients,19571.35
+2025-12-31,Cost of Goods Sold,Inventory Adjustments,165.83
+2025-12-31,Cost of Goods Sold,Milk & Dairy,10727.25
+2025-12-31,Cost of Goods Sold,Packaging & Supplies,4633.28
+2025-12-31,Operating Expenses,Depreciation,2061.21
+2025-12-31,Operating Expenses,Equipment Maintenance,897.56
+2025-12-31,Operating Expenses,Insurance,2269.15
+2025-12-31,Operating Expenses,Marketing & Advertising,2121.92
+2025-12-31,Operating Expenses,Other Operating Expenses,788.71
 2025-12-31,Operating Expenses,Professional Services,0.0
-2025-12-31,Operating Expenses,Rent,40864.79
-2025-12-31,Operating Expenses,Salaries & Wages,23625.97
-2025-12-31,Operating Expenses,Supplies,1296.49
-2025-12-31,Operating Expenses,Utilities,3471.34
-2025-12-31,Other Income/Expenses,Interest Expense,327.43
-2025-12-31,Other Income/Expenses,Interest Income,183.05
+2025-12-31,Operating Expenses,Rent,32583.41
+2025-12-31,Operating Expenses,Salaries & Wages,19910.49
+2025-12-31,Operating Expenses,Supplies,1305.57
+2025-12-31,Operating Expenses,Utilities,2264.56
+2025-12-31,Other Income/Expenses,Interest Expense,325.83
+2025-12-31,Other Income/Expenses,Interest Income,0.0
 2025-12-31,Other Income/Expenses,Other Expenses,0.0
 2025-12-31,Other Income/Expenses,Other Income,0.0
-2025-12-31,Revenue,Catering Revenue,4053.33
-2025-12-31,Revenue,Delivery Revenue,13542.63
-2025-12-31,Revenue,Total Sales Revenue,109547.65
-2025-12-31,Revenue,Wholesale Revenue,1299.26
+2025-12-31,Revenue,Catering Revenue,4335.63
+2025-12-31,Revenue,Delivery Revenue,11078.71
+2025-12-31,Revenue,Total Sales Revenue,109463.41
+2025-12-31,Revenue,Wholesale Revenue,1316.38
