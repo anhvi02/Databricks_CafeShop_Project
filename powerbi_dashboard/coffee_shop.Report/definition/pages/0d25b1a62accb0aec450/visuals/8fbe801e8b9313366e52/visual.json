@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "8fbe801e8b9313366e52",
   "position": {
-    "x": 701.19402985074623,
-    "y": 125.3731343283582,
+    "x": 697.15205148833468,
+    "y": 125.63153660498793,
     "z": 6000,
-    "height": 343.88059701492534,
-    "width": 578.50746268656712,
+    "height": 343.94207562349158,
+    "width": 582.84794851166532,
     "tabOrder": 6000
   },
   "visual": {
@@ -42,8 +42,8 @@
                 }
               },
               "queryRef": "fact_transaction.Mea_Sales This Week",
-              "nativeQueryRef": "Total Sales This Week",
-              "displayName": "Total Sales This Week"
+              "nativeQueryRef": "Sales This Week",
+              "displayName": "Sales This Week"
             },
             {
               "field": {
@@ -57,7 +57,8 @@
                 }
               },
               "queryRef": "Key Measures.Total Sales Last Week",
-              "nativeQueryRef": "Total Sales Last Week"
+              "nativeQueryRef": "Sales Last Week",
+              "displayName": "Sales Last Week"
             },
             {
               "field": {
@@ -73,7 +74,7 @@
               "queryRef": "fact_transaction.Measure_Sales_Change_By_Product",
               "nativeQueryRef": "Change",
               "displayName": "Change",
-              "format": "G"
+              "format": "0.00%;-0.00%;0.00%"
             }
           ]
         }
@@ -88,10 +89,10 @@
                     "Entity": "Key Measures"
                   }
                 },
-                "Property": "Sales Change For Sales By Product"
+                "Property": "Total Sales"
               }
             },
-            "direction": "Ascending"
+            "direction": "Descending"
           }
         ]
       }
@@ -269,7 +270,7 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "8D"
+                  "Value": "9D"
                 }
               }
             }

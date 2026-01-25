@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "15e6f019ec34ad860002",
   "position": {
-    "x": 505.07462686567163,
-    "y": 488.05970149253733,
+    "x": 492.22847948511668,
+    "y": 482.9605792437651,
     "z": 5000,
-    "height": 231.94029850746267,
-    "width": 392.23880597014926,
+    "height": 231.69750603378924,
+    "width": 435.59131134352373,
     "tabOrder": 5000
   },
   "visual": {
@@ -55,16 +55,16 @@
         "sort": [
           {
             "field": {
-              "Measure": {
+              "Column": {
                 "Expression": {
                   "SourceRef": {
-                    "Entity": "Key Measures"
+                    "Entity": "fact_transaction"
                   }
                 },
-                "Property": "Total Sales"
+                "Property": "transaction_hour"
               }
             },
-            "direction": "Descending"
+            "direction": "Ascending"
           }
         ],
         "isDefaultSort": true
@@ -133,6 +133,13 @@
               "expr": {
                 "Literal": {
                   "Value": "true"
+                }
+              }
+            },
+            "lineChartType": {
+              "expr": {
+                "Literal": {
+                  "Value": "'smooth'"
                 }
               }
             }

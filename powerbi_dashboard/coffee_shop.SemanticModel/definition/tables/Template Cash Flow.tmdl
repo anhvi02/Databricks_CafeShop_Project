@@ -48,7 +48,7 @@ table 'Template Cash Flow'
 		queryGroup: 'Financial Template'
 		source =
 				let
-				    Source = Excel.Workbook(File.Contents("C:\Users\Nobit\Documents\Databricks_CafeShop_Project\data_raw\data\financial\cash_flow_template.xlsx"), null, true),
+				    Source = Excel.Workbook(File.Contents("C:\Users\ADMIN\OneDrive - Deakin University\Documents\Development\Databricks_CafeShop_Project\data_raw\data\financial\cash_flow_template.xlsx"), null, true),
 				    #"CF Template_Sheet" = Source{[Item="CF Template",Kind="Sheet"]}[Data],
 				    #"Promoted Headers" = Table.PromoteHeaders(#"CF Template_Sheet", [PromoteAllScalars=true]),
 				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"Row Index", Int64.Type}, {"Cash Flow Items", type text}, {"Cash Flow Summary Items", type text}, {"Cash Flow Normalized", type text}, {"Summary Index", Int64.Type}})

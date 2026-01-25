@@ -30,17 +30,21 @@ table 'Key Measures'
 			    SUM(fact_transaction[line_total]),
 			    DATEADD('dim_date'[Date], -7, DAY)
 			)
-		formatString: \$#,0.00;(\$#,0.00);\$#,0.00
+		formatString: \$#,0;(\$#,0);\$#,0
 		displayFolder: Last Week
 		lineageTag: 595764ff-a9ee-4416-9dc8-cdf6e214f140
 
-	measure 'Sales Change For Sales By Product' =
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+	measure 'Sales Change For Sales By Product' = ```
 			
 			VAR _sales_product_this_week = SUM(fact_transaction[line_total])
 			VAR _sales_product_last_week = CALCULATE(SUM(fact_transaction[line_total]), DATEADD(dim_date[Date], -7, DAY))
-			VAR _change_percent = ((_sales_product_this_week - _sales_product_last_week) / _sales_product_last_week) * 100
+			VAR _change_percent = ((_sales_product_this_week - _sales_product_last_week) / _sales_product_last_week) 
 			VAR _sign = IF(_change_percent > 0, "+", "")
-			RETURN _sign & FORMAT(_change_percent, "0.00") & "%"
+			RETURN _change_percent
+			```
+		formatString: 0.00%;-0.00%;0.00%
 		displayFolder: Percentage Change
 		lineageTag: 9d7f19c3-4065-4149-83a6-6119d299ffcc
 

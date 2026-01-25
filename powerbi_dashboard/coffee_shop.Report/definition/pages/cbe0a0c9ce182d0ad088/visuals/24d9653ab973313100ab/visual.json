@@ -4,10 +4,10 @@
   "position": {
     "x": 191.12187247780469,
     "y": 106.40839386602099,
-    "z": 4,
+    "z": 3000,
     "height": 106.40839386602099,
     "width": 191.12187247780469,
-    "tabOrder": 4
+    "tabOrder": 3000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -52,23 +52,5 @@
       }
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "a6b96e164183a8ee7e7b",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Balance Sheet Analysis"
-              }
-            },
-            "Property": "Fixed Assets"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

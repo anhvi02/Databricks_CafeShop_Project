@@ -4,10 +4,10 @@
   "position": {
     "x": 0,
     "y": 106.40839386602099,
-    "z": 2,
+    "z": 1000,
     "height": 106.40839386602099,
     "width": 191.12187247780469,
-    "tabOrder": 2
+    "tabOrder": 1000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -52,23 +52,5 @@
       }
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "133dc627323da6403050",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Balance Sheet Analysis"
-              }
-            },
-            "Property": "Current Assets"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

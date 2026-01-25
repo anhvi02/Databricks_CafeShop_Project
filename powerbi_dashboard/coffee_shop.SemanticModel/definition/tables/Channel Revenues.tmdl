@@ -63,13 +63,13 @@ table 'Channel Revenues'
 		mode: import
 		source =
 				let
-				    Source = Csv.Document(File.Contents("C:\Users\Nobit\Documents\Databricks_CafeShop_Project\data_raw\data\financial\channel_revenues.csv"),[Delimiter=",", Columns=5, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+				    Source = Csv.Document(File.Contents("C:\Users\ADMIN\OneDrive - Deakin University\Documents\Development\Databricks_CafeShop_Project\data_raw\data\financial\channel_revenues.csv"),[Delimiter=",", Columns=5, Encoding=1252, QuoteStyle=QuoteStyle.None]),
 				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
 				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"Month & Year", type date}, {"First Date", type date}, {"Channel", type text}, {"Category", type text}, {"Sales Values", type number}})
 				in
 				    #"Changed Type"
 
-	annotation PBI_ResultType = Table
+	annotation PBI_ResultType = Exception
 
 	annotation PBI_NavigationStepName = Navigation
 

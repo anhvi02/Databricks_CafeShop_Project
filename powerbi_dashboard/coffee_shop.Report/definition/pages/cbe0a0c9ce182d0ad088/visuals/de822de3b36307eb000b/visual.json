@@ -4,10 +4,10 @@
   "position": {
     "x": 496.62817551963053,
     "y": 317.78290993071596,
-    "z": 11,
+    "z": 10000,
     "height": 402.03233256351041,
     "width": 449.33025404157047,
-    "tabOrder": 11
+    "tabOrder": 10000
   },
   "visual": {
     "visualType": "pivotTable",
@@ -385,48 +385,6 @@
           ]
         },
         "howCreated": "Exclude"
-      },
-      {
-        "name": "e3ed63b8019b0999111b",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Template Balance Sheet"
-              }
-            },
-            "Property": "Row Index"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "f022ac52c7498b49c2b7",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Balance Sheet Analysis"
-              }
-            },
-            "Property": "B/S Values Switch Function"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "ac5d8d290bb9450c2914",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Template Balance Sheet"
-              }
-            },
-            "Property": "Balance Sheet Items"
-          }
-        },
-        "type": "Categorical"
       },
       {
         "name": "1b95dddc658a7a08e600",

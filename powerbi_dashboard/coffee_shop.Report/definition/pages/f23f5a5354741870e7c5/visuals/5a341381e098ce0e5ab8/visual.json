@@ -1,33 +1,33 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
-  "name": "4aa66ecf0c07ec037e0c",
+  "name": "5a341381e098ce0e5ab8",
   "position": {
-    "x": 227.46268656716418,
-    "y": 0,
-    "z": 1000,
-    "height": 130.74626865671641,
-    "width": 218.50746268656715,
-    "tabOrder": 1000
+    "x": 529.300080450523,
+    "y": 269.798873692679,
+    "z": 0,
+    "height": 450.00804505229286,
+    "width": 541.65728077232507,
+    "tabOrder": 0
   },
   "visual": {
-    "visualType": "cardVisual",
+    "visualType": "tableEx",
     "query": {
       "queryState": {
-        "Data": {
+        "Values": {
           "projections": [
             {
               "field": {
-                "Measure": {
+                "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Income Statement Analysis"
+                      "Entity": "fact_transaction"
                     }
                   },
-                  "Property": "Actuals (,000)"
+                  "Property": "transaction_date"
                 }
               },
-              "queryRef": "Income Statement Analysis.Actuals (,000)",
-              "nativeQueryRef": "Actuals (,000)"
+              "queryRef": "fact_transaction.transaction_date",
+              "nativeQueryRef": "transaction_date"
             }
           ]
         }
@@ -36,19 +36,18 @@
         "sort": [
           {
             "field": {
-              "Measure": {
+              "Column": {
                 "Expression": {
                   "SourceRef": {
-                    "Entity": "Income Statement Analysis"
+                    "Entity": "fact_transaction"
                   }
                 },
-                "Property": "Actuals (,000)"
+                "Property": "transaction_date"
               }
             },
             "direction": "Descending"
           }
-        ],
-        "isDefaultSort": true
+        ]
       }
     },
     "drillFilterOtherVisuals": true

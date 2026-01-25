@@ -189,56 +189,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "04332931dba3bc916310",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "dim_date"
-              }
-            },
-            "Property": "DayName"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "192c21ae5d049d807600",
-        "field": {
-          "Aggregation": {
-            "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "fact_transaction"
-                  }
-                },
-                "Property": "line_total"
-              }
-            },
-            "Function": 0
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "defcb11340e9760492d1",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Key Measures"
-              }
-            },
-            "Property": "Total Sales Last Week"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

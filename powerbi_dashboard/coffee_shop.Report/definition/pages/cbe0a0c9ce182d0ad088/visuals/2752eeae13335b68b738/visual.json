@@ -52,23 +52,5 @@
       }
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "cad2dc300a18453d39dc",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Balance Sheet Analysis"
-              }
-            },
-            "Property": "BS Values"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }
