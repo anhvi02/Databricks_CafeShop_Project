@@ -9,7 +9,7 @@ import pandas as pd
 
 # Configuration
 START_DATE = datetime(2025, 10, 1)
-today = date_module.today()
+END_DATE = datetime(2026, 1, 23)  # End date: January 23, 2026 (matches POS data)
 
 # Cash Flow structure
 CASH_FLOW_STRUCTURE = {
@@ -122,14 +122,16 @@ def get_months_list(start_date, end_date):
         else:
             next_month = current.replace(month=current.month + 1, day=1)
         last_day = next_month - timedelta(days=1)
-        months.append(last_day)
+        # Only append if the month-end date doesn't exceed end_date
+        if last_day <= end_date:
+            months.append(last_day)
         current = next_month
     return months
 
 
 def generate_cash_flow_data():
     """Generate cash flow data."""
-    months = get_months_list(START_DATE.date(), today)
+    months = get_months_list(START_DATE.date(), END_DATE.date())
     cash_flow_data = []
     
     for month_date in months:
@@ -188,7 +190,7 @@ def generate_cash_flow_data():
 def main():
     """Main function to generate and save cash flow data."""
     print("Generating Cash Flow Data...")
-    print(f"Date range: {START_DATE.strftime('%Y-%m-%d')} to {today.strftime('%Y-%m-%d')}\n")
+    print(f"Date range: {START_DATE.strftime('%Y-%m-%d')} to {END_DATE.strftime('%Y-%m-%d')}\n")
     
     # Generate data
     cash_flow_data = generate_cash_flow_data()

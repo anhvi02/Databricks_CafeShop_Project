@@ -15,12 +15,12 @@ fake = Faker('en_AU')  # Australian locale for realistic names
 
 # Configuration
 START_DATE = datetime(2025, 10, 1)  # Start date: October 1, 2025
-# Calculate operating days from start date to today (Monday-Friday only)
-today = date_module.today()
-# Calculate number of weekdays between start date and today
+END_DATE = datetime(2026, 1, 23)  # End date: January 23, 2026 (last business day of the week)
+# Calculate operating days from start date to end date (Monday-Friday only)
 current_date = START_DATE.date()
+end_date = END_DATE.date()
 operating_days_count = 0
-while current_date <= today:
+while current_date <= end_date:
     if current_date.weekday() < 5:  # Monday=0, Friday=4
         operating_days_count += 1
     current_date += timedelta(days=1)
@@ -212,17 +212,16 @@ MENU = {
 }
 
 
-def get_operating_days(start_date, num_days):
-    """Generate list of operating days (Monday-Friday only)."""
+def get_operating_days(start_date, end_date):
+    """Generate list of operating days (Monday-Friday only) between start and end dates."""
     operating_days = []
-    current_date = start_date
-    days_added = 0
+    current_date = start_date.date() if isinstance(start_date, datetime) else start_date
+    end_date_obj = end_date.date() if isinstance(end_date, datetime) else end_date
     
-    while days_added < num_days:
+    while current_date <= end_date_obj:
         # Skip weekends (Saturday=5, Sunday=6)
         if current_date.weekday() < 5:  # Monday=0, Friday=4
             operating_days.append(current_date)
-            days_added += 1
         current_date += timedelta(days=1)
     
     return operating_days
@@ -465,7 +464,7 @@ def generate_transaction(transaction_id, date, location_id, order_counter):
 
 def generate_all_transactions():
     """Generate all transactions for the specified period."""
-    operating_days = get_operating_days(START_DATE, OPERATING_DAYS)
+    operating_days = get_operating_days(START_DATE, END_DATE)
     
     all_transactions = []
     transaction_counter = 1
@@ -500,7 +499,7 @@ def generate_all_transactions():
 def main():
     """Main function to generate and save POS transaction data."""
     print("Generating POS transaction data...")
-    print(f"Date range: {START_DATE.strftime('%Y-%m-%d')} to {date_module.today().strftime('%Y-%m-%d')} (current date)")
+    print(f"Date range: {START_DATE.strftime('%Y-%m-%d')} to {END_DATE.strftime('%Y-%m-%d')}")
     print(f"Operating days: {OPERATING_DAYS} (Monday-Friday only)")
     print(f"Target transactions: ~{TARGET_TRANSACTIONS}")
     print(f"Target total sales: ${TARGET_TOTAL_SALES:,.2f} AUD")
@@ -517,7 +516,10 @@ def main():
     df = df.sort_values('transaction_datetime').reset_index(drop=True)
     
     # Save to CSV
-    output_file = 'pos_transactions.csv'
+    import os
+    output_dir = '../data/pos'
+    os.makedirs(output_dir, exist_ok=True)
+    output_file = os.path.join(output_dir, 'pos_0.csv')
     df.to_csv(output_file, index=False)
     print(f"Data saved to {output_file}")
     

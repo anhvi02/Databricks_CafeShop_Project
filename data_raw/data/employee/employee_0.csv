@@ -1,23 +1,20 @@
 employee_id,employee_name,role,primary_location,pay_rate,work_pattern
-EMP-001,April Tran,Barista,LOC-001,30.74,full-time
-EMP-002,Tiffany Johnson,Barista,LOC-001,30.31,full-time
-EMP-004,Jennifer Johnson,Barista,LOC-001,31.24,full-time
-EMP-007,Brian Wong,Barista,LOC-002,30.69,full-time
-EMP-009,Christopher Rogers,Barista,LOC-003,30.16,part-time
-EMP-012,Taylor Kirk,Barista,LOC-004,31.94,part-time
-EMP-016,Jeffrey Nelson,Barista,LOC-002,30.18,part-time
-EMP-003,Maria Baker,Front of House,LOC-001,28.69,full-time
-EMP-006,Cynthia Monroe,Front of House,LOC-001,31.78,full-time
-EMP-008,Megan Oconnor,Front of House,LOC-001,32.08,full-time
-EMP-010,Deborah Robertson,Front of House,LOC-002,31.24,full-time
-EMP-013,Brenda Taylor,Front of House,LOC-003,28.32,full-time
-EMP-015,John Saunders,Front of House,LOC-004,27.94,full-time
-EMP-017,Mary Fletcher,Front of House,LOC-003,31.49,part-time
-EMP-018,Scott Edwards DVM,Front of House,LOC-002,31.27,part-time
-EMP-005,Albert Roberts,Kitchen,LOC-001,30.95,full-time
-EMP-011,Chelsey Good,Kitchen,LOC-002,28.91,full-time
-EMP-014,Stephanie Rodriguez,Kitchen,LOC-003,29.4,full-time
-EMP-019,Anna Walter,Kitchen,LOC-004,29.75,full-time
-
-
-
+EMP-001,Brian Chandler DDS,Barista,LOC-001,31.26,full-time
+EMP-002,Emily Hanson,Barista,LOC-001,30.6,full-time
+EMP-004,Kyle Mcbride,Barista,LOC-001,30.16,full-time
+EMP-007,Dr. Cynthia Thompson,Barista,LOC-002,30.97,full-time
+EMP-009,Mr. Nicholas Dennis,Barista,LOC-003,30.36,part-time
+EMP-012,Joseph Knight,Barista,LOC-004,30.04,part-time
+EMP-016,Christine Davis,Barista,LOC-002,30.18,part-time
+EMP-003,Brandon Soto,Front of House,LOC-001,26.03,full-time
+EMP-006,Robert Brown,Front of House,LOC-001,26.71,full-time
+EMP-008,Steven Torres,Front of House,LOC-001,31.43,full-time
+EMP-010,Christopher Adams,Front of House,LOC-002,31.09,full-time
+EMP-013,John Ward,Front of House,LOC-003,27.66,full-time
+EMP-015,Kelly Conner,Front of House,LOC-004,30.07,full-time
+EMP-017,Jacob Harris,Front of House,LOC-003,27.86,part-time
+EMP-018,Felicia Mcgrath,Front of House,LOC-002,30.08,part-time
+EMP-005,Sherri Chapman,Kitchen,LOC-001,28.54,full-time
+EMP-011,Paula Day,Kitchen,LOC-002,32.06,full-time
+EMP-014,Shannon Snyder,Kitchen,LOC-003,28.71,full-time
+EMP-019,Sara Summers,Kitchen,LOC-004,29.25,full-time

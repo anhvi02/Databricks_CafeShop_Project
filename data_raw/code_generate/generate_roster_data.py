@@ -14,12 +14,12 @@ fake = Faker('en_AU')  # Australian locale for realistic names
 
 # Configuration
 START_DATE = datetime(2025, 10, 1)  # Start date: October 1, 2025 (matches POS data)
-# Calculate operating days from start date to today (Monday-Friday only)
-today = date_module.today()
-# Calculate number of weekdays between start date and today
+END_DATE = datetime(2026, 1, 23)  # End date: January 23, 2026 (last business day of the week)
+# Calculate operating days from start date to end date (Monday-Friday only)
 current_date = START_DATE.date()
+end_date = END_DATE.date()
 operating_days_count = 0
-while current_date <= today:
+while current_date <= end_date:
     if current_date.weekday() < 5:  # Monday=0, Friday=4
         operating_days_count += 1
     current_date += timedelta(days=1)
@@ -89,17 +89,16 @@ for emp_id, emp_data in EMPLOYEES.items():
     }
 
 
-def get_operating_days(start_date, num_days):
-    """Generate list of operating days (Monday-Friday only)."""
+def get_operating_days(start_date, end_date):
+    """Generate list of operating days (Monday-Friday only) between start and end dates."""
     operating_days = []
-    current_date = start_date
-    days_added = 0
+    current_date = start_date.date() if isinstance(start_date, datetime) else start_date
+    end_date_obj = end_date.date() if isinstance(end_date, datetime) else end_date
     
-    while days_added < num_days:
+    while current_date <= end_date_obj:
         # Skip weekends (Saturday=5, Sunday=6)
         if current_date.weekday() < 5:  # Monday=0, Friday=4
             operating_days.append(current_date)
-            days_added += 1
         current_date += timedelta(days=1)
     
     return operating_days
@@ -258,7 +257,7 @@ def should_employee_work(emp_id, date, all_shifts_so_far):
 
 def generate_roster():
     """Generate complete roster for all operating days."""
-    operating_days = get_operating_days(START_DATE, OPERATING_DAYS)
+    operating_days = get_operating_days(START_DATE, END_DATE)
     all_shifts = []
     
     for date in operating_days:
@@ -444,7 +443,7 @@ def generate_roster():
 def main():
     """Main function to generate and save roster data."""
     print("Generating roster data...")
-    print(f"Date range: {START_DATE.strftime('%Y-%m-%d')} to {today.strftime('%Y-%m-%d')} (current date)")
+    print(f"Date range: {START_DATE.strftime('%Y-%m-%d')} to {END_DATE.strftime('%Y-%m-%d')}")
     print(f"Operating days: {OPERATING_DAYS} (Monday-Friday only)")
     print(f"Locations: {len(LOCATIONS)}")
     print(f"Total employees: {len(EMPLOYEES)}\n")
@@ -466,7 +465,13 @@ def main():
     df_roster = df_roster[column_order]
     
     # Save roster CSV
-    output_file = 'deputy_roster.csv'
+    import os
+    roster_dir = '../data/roster'
+    employee_dir = '../data/employee'
+    os.makedirs(roster_dir, exist_ok=True)
+    os.makedirs(employee_dir, exist_ok=True)
+    
+    output_file = os.path.join(roster_dir, 'roster_0.csv')
     df_roster.to_csv(output_file, index=False)
     print(f"Roster data saved to {output_file}")
     
@@ -476,7 +481,7 @@ def main():
         employee_master_list.append(emp_info)
     
     df_employees = pd.DataFrame(employee_master_list)
-    employee_file = 'employee_master.csv'
+    employee_file = os.path.join(employee_dir, 'employee_0.csv')
     df_employees.to_csv(employee_file, index=False)
     print(f"Employee master data saved to {employee_file}")
     
