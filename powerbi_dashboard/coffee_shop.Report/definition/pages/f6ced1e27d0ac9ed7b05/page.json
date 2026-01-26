@@ -1,0 +1,52 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.0.0/schema.json",
+  "name": "f6ced1e27d0ac9ed7b05",
+  "displayName": "Cash Flow",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1280,
+  "objects": {
+    "background": [
+      {
+        "properties": {
+          "color": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "ThemeDataColor": {
+                    "ColorId": 4,
+                    "Percent": -0.5
+                  }
+                }
+              }
+            }
+          },
+          "transparency": {
+            "expr": {
+              "Literal": {
+                "Value": "1D"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "visualInteractions": [
+    {
+      "source": "6be4100b916c403a7753",
+      "target": "67d4bb0ed52ac23a0439",
+      "type": "NoFilter"
+    },
+    {
+      "source": "bd85f3fe933c9aab30bb",
+      "target": "6be4100b916c403a7753",
+      "type": "NoFilter"
+    },
+    {
+      "source": "bd85f3fe933c9aab30bb",
+      "target": "6c453d147a6c2e922b56",
+      "type": "NoFilter"
+    }
+  ]
+}

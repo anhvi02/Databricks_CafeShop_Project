@@ -543,12 +543,6 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "location": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
 			          "primary locality": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -589,46 +583,6 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "locality": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
-			          "placement": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
-			          "scene": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
-			          "venue": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
 			          "primary address": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -640,6 +594,46 @@ cultureInfo en-US
 			        },
 			        {
 			          "primary place": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "primary position": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "primary setting": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "primary site": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "primary spot": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -3832,12 +3826,6 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "location": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
 			          "location identification": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -3868,46 +3856,6 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "locality": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
-			          "placement": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
-			          "scene": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
-			          "venue": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
 			          "location credential": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -3918,23 +3866,63 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "place": {
+			          "locality id": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.714
+			            "Weight": 0.6
 			          }
 			        },
 			        {
-			          "position": {
+			          "placement id": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.714
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "scene id": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "venue id": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "address id": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "place id": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
 			          }
 			        }
 			      ]
@@ -4014,6 +4002,16 @@ cultureInfo en-US
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "Location": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        },
 			        {
@@ -12837,6 +12835,16 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.485
 			          }
+			        },
+			        {
+			          "Payment Type": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -12862,12 +12870,6 @@ cultureInfo en-US
 			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.99
-			          }
-			        },
-			        {
-			          "location": {
-			            "State": "Generated",
-			            "Weight": 0.97
 			          }
 			        },
 			        {
@@ -12901,46 +12903,6 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "locality": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
-			          "placement": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
-			          "scene": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
-			          "venue": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
 			          "location credential": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -12951,23 +12913,63 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "place": {
+			          "locality id": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.714
+			            "Weight": 0.6
 			          }
 			        },
 			        {
-			          "position": {
+			          "placement id": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.714
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "scene id": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "venue id": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "address id": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "place id": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
 			          }
 			        }
 			      ]
@@ -15740,12 +15742,6 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "value": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
 			          "order value": {
 			            "State": "Generated",
 			            "Weight": 0.97
@@ -15822,16 +15818,6 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "assessment": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
-			          }
-			        },
-			        {
 			          "order worth": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -15843,6 +15829,16 @@ cultureInfo en-US
 			        },
 			        {
 			          "order price": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "order cost": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -15914,26 +15910,6 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "Total Sales This Week": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        },
-			        {
-			          "Total Week Sales": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        },
-			        {
 			          "This Week": {
 			            "State": "Suggested",
 			            "Source": {
@@ -15944,7 +15920,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "Sales This Week": {
+			          "Total Sales This Week": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -16017,26 +15993,6 @@ cultureInfo en-US
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.739
-			          }
-			        },
-			        {
-			          "Total Week Transactions": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        },
-			        {
-			          "Total Transactions": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -16735,12 +16691,6 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "value": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
 			          "sheet value": {
 			            "State": "Generated",
 			            "Weight": 0.97
@@ -16817,16 +16767,6 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "assessment": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
-			          }
-			        },
-			        {
 			          "sheet worth": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -16838,6 +16778,16 @@ cultureInfo en-US
 			        },
 			        {
 			          "sheet price": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "sheet cost": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -17383,12 +17333,6 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "value": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
 			          "flow value": {
 			            "State": "Generated",
 			            "Weight": 0.97
@@ -17465,16 +17409,6 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "assessment": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
-			          }
-			        },
-			        {
 			          "flow worth": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -17486,6 +17420,16 @@ cultureInfo en-US
 			        },
 			        {
 			          "flow price": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "flow cost": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -18561,12 +18505,6 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "value": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
 			          "sale assessment": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -18574,16 +18512,6 @@ cultureInfo en-US
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.5
-			          }
-			        },
-			        {
-			          "assessment": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
 			          }
 			        },
 			        {
@@ -18637,23 +18565,33 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "worth": {
+			          "sale importance": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.476
+			            "Weight": 0.475
 			          }
 			        },
 			        {
-			          "cost": {
+			          "sale significance": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.476
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "sale usefulness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
 			          }
 			        }
 			      ]
@@ -19250,12 +19188,6 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "value": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
 			          "expense assessment": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -19263,16 +19195,6 @@ cultureInfo en-US
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.5
-			          }
-			        },
-			        {
-			          "assessment": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
 			          }
 			        },
 			        {
@@ -19326,33 +19248,43 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "worth": {
+			          "expense importance": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.476
+			            "Weight": 0.475
 			          }
 			        },
 			        {
-			          "cost": {
+			          "expense significance": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.476
+			            "Weight": 0.475
 			          }
 			        },
 			        {
-			          "charge": {
+			          "expense usefulness": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.476
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "expense consequence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
 			          }
 			        }
 			      ]
@@ -19517,230 +19449,555 @@ cultureInfo en-US
 			      ],
 			      "SemanticType": "Time"
 			    },
-			    "income_statement_data.month.date_hierarchy": {
+			    "cash_flow_analysis.cash_receipts_from__operations": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Income Statement Data",
-			          "VariationSource": "Month",
-			          "VariationSet": "Variation",
-			          "Hierarchy": "Date Hierarchy"
+			          "ConceptualEntity": "Cash Flow Analysis",
+			          "ConceptualProperty": "Cash Receipts From - Operations"
 			        }
 			      },
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "month date hierarchy": {
+			          "cash receipts from - operations": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "date hierarchy": {
+			          "cash receipts from operations": {
 			            "State": "Generated",
 			            "Weight": 0.97
 			          }
+			        },
+			        {
+			          "receipts": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "cash receipts": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "cash earnings from - operation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "cash income from - operation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "cash revenue from - operation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "cash earnings from operation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "cash income from operation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "cash revenue from operation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "cash take from - operation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "cash taking from - operation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "cash gross from - operation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "cash proceeds from - operation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
 			        }
-			      ],
-			      "SemanticType": "Time"
+			      ]
 			    },
-			    "income_statement_data.month.year": {
+			    "cash_flow_analysis.cash_receipts_from__investing": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Income Statement Data",
-			          "VariationSource": "Month",
-			          "VariationSet": "Variation",
-			          "Hierarchy": "Date Hierarchy",
-			          "HierarchyLevel": "Year"
+			          "ConceptualEntity": "Cash Flow Analysis",
+			          "ConceptualProperty": "Cash Receipts From - Investing"
 			        }
 			      },
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "month year": {
+			          "cash receipts from - investing": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "year": {
-			            "State": "Generated"
+			          "cash receipts from investing": {
+			            "State": "Generated",
+			            "Weight": 0.97
 			          }
 			        },
 			        {
-			          "month yr": {
+			          "receipts": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "cash receipts": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "cash earnings from - investing": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.75
+			            "Weight": 0.52
 			          }
 			        },
 			        {
-			          "yr": {
+			          "cash income from - investing": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.736
+			            "Weight": 0.52
 			          }
 			        },
 			        {
-			          "mth year": {
+			          "cash revenue from - investing": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.6
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "cash earnings from investing": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "cash income from investing": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "cash revenue from investing": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "cash take from - investing": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "cash taking from - investing": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "cash gross from - investing": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "cash proceeds from - investing": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
 			          }
 			        }
-			      ],
-			      "SemanticType": "Time"
+			      ]
 			    },
-			    "income_statement_data.month.quarter": {
+			    "cash_flow_analysis.cash_receipts_from__financing": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Income Statement Data",
-			          "VariationSource": "Month",
-			          "VariationSet": "Variation",
-			          "Hierarchy": "Date Hierarchy",
-			          "HierarchyLevel": "Quarter"
+			          "ConceptualEntity": "Cash Flow Analysis",
+			          "ConceptualProperty": "Cash Receipts From - Financing"
 			        }
 			      },
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "month quarter": {
+			          "cash receipts from - financing": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "quarter": {
-			            "State": "Generated"
+			          "cash receipts from financing": {
+			            "State": "Generated",
+			            "Weight": 0.97
 			          }
 			        },
 			        {
-			          "month qtr": {
+			          "receipts": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "cash receipts": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "cash earnings from - financing": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.833
+			            "Weight": 0.52
 			          }
 			        },
 			        {
-			          "qtr": {
+			          "cash income from - financing": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.818
+			            "Weight": 0.52
 			          }
 			        },
 			        {
-			          "mth quarter": {
+			          "cash revenue from - financing": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.6
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "cash earnings from financing": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "cash income from financing": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "cash revenue from financing": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "cash take from - financing": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "cash taking from - financing": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "cash gross from - financing": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "cash proceeds from - financing": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
 			          }
 			        }
-			      ],
-			      "SemanticType": "Time"
+			      ]
 			    },
-			    "income_statement_data.month.month": {
+			    "cash_flow_analysis.cash_paid_for__operations": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Income Statement Data",
-			          "VariationSource": "Month",
-			          "VariationSet": "Variation",
-			          "Hierarchy": "Date Hierarchy",
-			          "HierarchyLevel": "Month"
+			          "ConceptualEntity": "Cash Flow Analysis",
+			          "ConceptualProperty": "Cash Paid For - Operations"
 			        }
 			      },
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "month month": {
+			          "cash paid for - operations": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "month": {
-			            "State": "Generated"
+			          "cash paid for operations": {
+			            "State": "Generated",
+			            "Weight": 0.97
 			          }
 			        },
 			        {
-			          "month mth": {
+			          "money paid for - operation": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.75
+			            "Weight": 0.52
 			          }
 			        },
 			        {
-			          "mth": {
+			          "currency paid for - operation": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.736
+			            "Weight": 0.52
 			          }
 			        },
 			        {
-			          "mth month": {
+			          "dough paid for - operation": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.6
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "money paid for operation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "currency paid for operation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "dough paid for operation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "coin paid for - operation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "note paid for - operation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "coin paid for operation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "note paid for operation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
 			          }
 			        }
-			      ],
-			      "SemanticType": "Time"
+			      ]
 			    },
-			    "income_statement_data.month.day": {
+			    "income_statement_analysis.DEBUG_Selected_year_actuals": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Income Statement Data",
-			          "VariationSource": "Month",
-			          "VariationSet": "Variation",
-			          "Hierarchy": "Date Hierarchy",
-			          "HierarchyLevel": "Day"
+			          "ConceptualEntity": "Income Statement Analysis",
+			          "ConceptualProperty": "DEBUG_Selected Year Actuals"
 			        }
 			      },
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "month day": {
+			          "DEBUG_Selected year actuals": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "day": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "mth day": {
+			          "debug_selected yr actual": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.6
+			            "Weight": 0.609
 			          }
 			        }
-			      ],
-			      "SemanticType": "Time"
+			      ]
 			    },
 			    "income_statement_data.expense_category": {
 			      "Definition": {
@@ -19955,12 +20212,6 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "value": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
 			          "expense assessment": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -19968,16 +20219,6 @@ cultureInfo en-US
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.5
-			          }
-			        },
-			        {
-			          "assessment": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
 			          }
 			        },
 			        {
@@ -20031,33 +20272,43 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "worth": {
+			          "expense importance": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.476
+			            "Weight": 0.475
 			          }
 			        },
 			        {
-			          "cost": {
+			          "expense significance": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.476
+			            "Weight": 0.475
 			          }
 			        },
 			        {
-			          "charge": {
+			          "expense usefulness": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.476
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "expense consequence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
 			          }
 			        }
 			      ]
@@ -24396,6 +24647,16 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.504
 			          }
+			        },
+			        {
+			          "Value": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -25479,7 +25740,7 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "cash_flow_analysis.DEBUG_NEEDED_Cash_paid_for__investing": {
+			    "cash_flow_analysis.cash_paid_for__investing": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Cash Flow Analysis",
@@ -25489,19 +25750,119 @@ cultureInfo en-US
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "DEBUG_NEEDED_Cash paid for - investing": {
+			          "cash paid for - investing": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "DEBUG_NEEDED_Cash paid for investing": {
+			          "cash paid for investing": {
 			            "State": "Generated",
 			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "money paid for - investing": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "currency paid for - investing": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "dough paid for - investing": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "money paid for investing": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "currency paid for investing": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "dough paid for investing": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "coin paid for - investing": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "note paid for - investing": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "coin paid for investing": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "note paid for investing": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
 			          }
 			        }
 			      ]
 			    },
-			    "cash_flow_analysis.DEBGU_NEEDED_Cash_paid_for__financing": {
+			    "cash_flow_analysis.cash_paid_for__financing": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Cash Flow Analysis",
@@ -25511,185 +25872,690 @@ cultureInfo en-US
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "DEBGU NEEDED_Cash paid for - financing": {
+			          "cash paid for - financing": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "DEBGU NEEDED_Cash paid for financing": {
+			          "cash paid for financing": {
 			            "State": "Generated",
 			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "money paid for - financing": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "currency paid for - financing": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "dough paid for - financing": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "money paid for financing": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "currency paid for financing": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "dough paid for financing": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "coin paid for - financing": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "note paid for - financing": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "coin paid for financing": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "note paid for financing": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        }
+			      ]
+			    },
+			    "cash_flow_analysis.net_cash_flow__financing": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Cash Flow Analysis",
+			          "ConceptualProperty": "Net Cash Flow - Financing"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "net cash flow - financing": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "net cash flow financing": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "financing": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "flow financing": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "cash flow financing": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "cash_flow_analysis.net_cash_flow__investing": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Cash Flow Analysis",
+			          "ConceptualProperty": "Net Cash Flow - Investing"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "net cash flow - investing": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "net cash flow investing": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "investing": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "flow investing": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "cash flow investing": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "cash_flow_analysis.net_cash_flow__operations": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Cash Flow Analysis",
+			          "ConceptualProperty": "Net Cash Flow - Operations"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "net cash flow - operations": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "net cash flow operations": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "operations": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "flow operations": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "cash flow operations": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "net cash flow - procedure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "net cash flow - setup": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "net cash flow procedure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "net cash flow setup": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "cash flow procedure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "cash flow setup": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "net cash flow - process": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "net cash flow - action": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "net cash flow - act": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "net cash flow - maneuver": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        }
+			      ]
+			    },
+			    "cash_flow_analysis.cash_at_beginning_of_year": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Cash Flow Analysis",
+			          "ConceptualProperty": "Cash at Beginning of Year"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cash at beginning of year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "cash at beginning of yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.624
+			          }
+			        },
+			        {
+			          "money at beginning of year": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "currency at beginning of year": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "dough at beginning of year": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "coin at beginning of year": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "note at beginning of year": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        }
+			      ]
+			    },
+			    "cash_flow_analysis.c_f_values_switch_function": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Cash Flow Analysis",
+			          "ConceptualProperty": "C/F Values Switch Function"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "c/f values switch function": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "c": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "c f values switch function": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "f values switch function": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "function": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "switch function": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "values switch function": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "c f value switch role": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "c f value switch occupation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "f value switch role": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "f value switch occupation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "value switch role": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "value switch occupation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "c f value switch purpose": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "c f value switch meaning": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "c f value switch job": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "c f value switch task": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        }
+			      ]
+			    },
+			    "cash_flow_analysis.absolute_CF_value": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Cash Flow Analysis",
+			          "ConceptualProperty": "Absolute CF Value"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "absolute CF value": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "CF value": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "absolute cf assessment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "cf assessment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "absolute cf worth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "absolute cf price": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "absolute cf cost": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "absolute cf charge": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "absolute cf rate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "cf worth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "cf price": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "cf cost": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
 			          }
 			        }
 			      ]
 			    }
 			  },
 			  "Relationships": {
-			    "company_expense_month_date_hierarchy_has_company_expense_month_day": {
-			      "Binding": {
-			        "ConceptualEntity": "Company Expenses"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "company_expense.month.date_hierarchy": {
-			          "Target": {
-			            "Entity": "company_expense.month.date_hierarchy"
-			          }
-			        },
-			        "company_expense.month.day": {
-			          "Target": {
-			            "Entity": "company_expense.month.day"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "company_expense.month.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "company_expense.month.day"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "month_date_hierarchies_have_month_days"
-			        }
-			      ]
-			    },
-			    "company_expense_month_date_hierarchy_has_company_expense_month_month": {
-			      "Binding": {
-			        "ConceptualEntity": "Company Expenses"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "company_expense.month.date_hierarchy": {
-			          "Target": {
-			            "Entity": "company_expense.month.date_hierarchy"
-			          }
-			        },
-			        "company_expense.month.month": {
-			          "Target": {
-			            "Entity": "company_expense.month.month"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "company_expense.month.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "company_expense.month.month"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "month_date_hierarchies_have_month_months"
-			        }
-			      ]
-			    },
-			    "company_expense_month_date_hierarchy_has_company_expense_month_quarter": {
-			      "Binding": {
-			        "ConceptualEntity": "Company Expenses"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "company_expense.month.date_hierarchy": {
-			          "Target": {
-			            "Entity": "company_expense.month.date_hierarchy"
-			          }
-			        },
-			        "company_expense.month.quarter": {
-			          "Target": {
-			            "Entity": "company_expense.month.quarter"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "company_expense.month.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "company_expense.month.quarter"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "month_date_hierarchies_have_month_quarters"
-			        }
-			      ]
-			    },
-			    "company_expense_month_date_hierarchy_has_company_expense_month_year": {
-			      "Binding": {
-			        "ConceptualEntity": "Company Expenses"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "company_expense.month.date_hierarchy": {
-			          "Target": {
-			            "Entity": "company_expense.month.date_hierarchy"
-			          }
-			        },
-			        "company_expense.month.year": {
-			          "Target": {
-			            "Entity": "company_expense.month.year"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "company_expense.month.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "company_expense.month.year"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "month_date_hierarchies_have_month_years"
-			        }
-			      ]
-			    },
-			    "company_expense_month_has_date_hierarchy": {
-			      "Binding": {
-			        "ConceptualEntity": "Company Expenses"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "company_expense.month": {
-			          "Target": {
-			            "Entity": "company_expense.month"
-			          }
-			        },
-			        "company_expense.month.date_hierarchy": {
-			          "Target": {
-			            "Entity": "company_expense.month.date_hierarchy"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "company_expense.month"
-			            },
-			            "Object": {
-			              "Role": "company_expense.month.date_hierarchy"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "months_have_month_date_hierarchies"
-			        }
-			      ]
-			    },
 			    "channel_revenue_first_date_date_hierarchy_has_channel_revenue_first_date_day": {
 			      "Binding": {
 			        "ConceptualEntity": "Channel Revenues"
@@ -28792,6 +29658,59 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
+			    "income_statement_data_has_dim_date": {
+			      "Binding": {
+			        "ConceptualEntity": "Income Statement Data"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "income_statement_data": {
+			          "Target": {
+			            "Entity": "income_statement_data"
+			          }
+			        },
+			        "dim_date": {
+			          "Target": {
+			            "Entity": "dim_date"
+			          },
+			          "Nouns": [
+			            {
+			              "month": {
+			                "State": "Generated"
+			              }
+			            }
+			          ]
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "income_statement_data"
+			            },
+			            "Object": {
+			              "Role": "dim_date"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "income_statement_data_have_dim_dates"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_date"
+			            },
+			            "Object": {
+			              "Role": "income_statement_data"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_dates_have_income_statement_data"
+			        }
+			      ]
+			    },
 			    "fact_transaction_has_dim_date": {
 			      "Binding": {
 			        "ConceptualEntity": "fact_transaction"
@@ -28852,14 +29771,7 @@ cultureInfo en-US
 			        "dim_store": {
 			          "Target": {
 			            "Entity": "dim_store"
-			          },
-			          "Nouns": [
-			            {
-			              "location": {
-			                "State": "Generated"
-			              }
-			            }
-			          ]
+			          }
 			        }
 			      },
 			      "Phrasings": [
@@ -29087,7 +29999,7 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "cash_flow_data_has_cash_flow_analysis_DEBGU_NEEDED_Cash_paid_for__financing": {
+			    "cash_flow_data_has_cash_flow_analysis_absolute_CF_value": {
 			      "Binding": {
 			        "ConceptualEntity": "Cash Flow Data"
 			      },
@@ -29098,9 +30010,9 @@ cultureInfo en-US
 			            "Entity": "cash_flow_data"
 			          }
 			        },
-			        "cash_flow_analysis.DEBGU_NEEDED_Cash_paid_for__financing": {
+			        "cash_flow_analysis.absolute_CF_value": {
 			          "Target": {
-			            "Entity": "cash_flow_analysis.DEBGU_NEEDED_Cash_paid_for__financing"
+			            "Entity": "cash_flow_analysis.absolute_CF_value"
 			          }
 			        }
 			      },
@@ -29111,16 +30023,49 @@ cultureInfo en-US
 			              "Role": "cash_flow_data"
 			            },
 			            "Object": {
-			              "Role": "cash_flow_analysis.DEBGU_NEEDED_Cash_paid_for__financing"
+			              "Role": "cash_flow_analysis.absolute_CF_value"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "cash_flow_data_have_DEBGU_NEEDED_Cash_paid_for__financing"
+			          "ID": "cash_flow_data_have_absolute_CF_value"
 			        }
 			      ]
 			    },
-			    "cash_flow_data_has_cash_flow_analysis_DEBUG_NEEDED_Cash_paid_for__investing": {
+			    "template_cash_flow_has_cash_flow_analysis_c_f_values_switch_function": {
+			      "Binding": {
+			        "ConceptualEntity": "Template Cash Flow"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "template_cash_flow": {
+			          "Target": {
+			            "Entity": "template_cash_flow"
+			          }
+			        },
+			        "cash_flow_analysis.c_f_values_switch_function": {
+			          "Target": {
+			            "Entity": "cash_flow_analysis.c_f_values_switch_function"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "template_cash_flow"
+			            },
+			            "Object": {
+			              "Role": "cash_flow_analysis.c_f_values_switch_function"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "template_cash_flows_have_c_f_values_switch_function"
+			        }
+			      ]
+			    },
+			    "cash_flow_data_has_cash_flow_analysis_c_f_values_switch_function": {
 			      "Binding": {
 			        "ConceptualEntity": "Cash Flow Data"
 			      },
@@ -29131,9 +30076,9 @@ cultureInfo en-US
 			            "Entity": "cash_flow_data"
 			          }
 			        },
-			        "cash_flow_analysis.DEBUG_NEEDED_Cash_paid_for__investing": {
+			        "cash_flow_analysis.c_f_values_switch_function": {
 			          "Target": {
-			            "Entity": "cash_flow_analysis.DEBUG_NEEDED_Cash_paid_for__investing"
+			            "Entity": "cash_flow_analysis.c_f_values_switch_function"
 			          }
 			        }
 			      },
@@ -29144,12 +30089,210 @@ cultureInfo en-US
 			              "Role": "cash_flow_data"
 			            },
 			            "Object": {
-			              "Role": "cash_flow_analysis.DEBUG_NEEDED_Cash_paid_for__investing"
+			              "Role": "cash_flow_analysis.c_f_values_switch_function"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "cash_flow_data_have_DEBUG_NEEDED_Cash_paid_for__investing"
+			          "ID": "cash_flow_data_have_c_f_values_switch_function"
+			        }
+			      ]
+			    },
+			    "cash_flow_data_has_cash_flow_analysis_cash_at_beginning_of_year": {
+			      "Binding": {
+			        "ConceptualEntity": "Cash Flow Data"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cash_flow_data": {
+			          "Target": {
+			            "Entity": "cash_flow_data"
+			          }
+			        },
+			        "cash_flow_analysis.cash_at_beginning_of_year": {
+			          "Target": {
+			            "Entity": "cash_flow_analysis.cash_at_beginning_of_year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cash_flow_data"
+			            },
+			            "Object": {
+			              "Role": "cash_flow_analysis.cash_at_beginning_of_year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cash_flow_data_have_cash_at_beginning_of_year"
+			        }
+			      ]
+			    },
+			    "cash_flow_data_has_cash_flow_analysis_net_cash_flow__operations": {
+			      "Binding": {
+			        "ConceptualEntity": "Cash Flow Data"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cash_flow_data": {
+			          "Target": {
+			            "Entity": "cash_flow_data"
+			          }
+			        },
+			        "cash_flow_analysis.net_cash_flow__operations": {
+			          "Target": {
+			            "Entity": "cash_flow_analysis.net_cash_flow__operations"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cash_flow_data"
+			            },
+			            "Object": {
+			              "Role": "cash_flow_analysis.net_cash_flow__operations"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cash_flow_data_have_net_cash_flow__operations"
+			        }
+			      ]
+			    },
+			    "cash_flow_data_has_cash_flow_analysis_net_cash_flow__investing": {
+			      "Binding": {
+			        "ConceptualEntity": "Cash Flow Data"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cash_flow_data": {
+			          "Target": {
+			            "Entity": "cash_flow_data"
+			          }
+			        },
+			        "cash_flow_analysis.net_cash_flow__investing": {
+			          "Target": {
+			            "Entity": "cash_flow_analysis.net_cash_flow__investing"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cash_flow_data"
+			            },
+			            "Object": {
+			              "Role": "cash_flow_analysis.net_cash_flow__investing"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cash_flow_data_have_net_cash_flow__investing"
+			        }
+			      ]
+			    },
+			    "cash_flow_data_has_cash_flow_analysis_net_cash_flow__financing": {
+			      "Binding": {
+			        "ConceptualEntity": "Cash Flow Data"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cash_flow_data": {
+			          "Target": {
+			            "Entity": "cash_flow_data"
+			          }
+			        },
+			        "cash_flow_analysis.net_cash_flow__financing": {
+			          "Target": {
+			            "Entity": "cash_flow_analysis.net_cash_flow__financing"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cash_flow_data"
+			            },
+			            "Object": {
+			              "Role": "cash_flow_analysis.net_cash_flow__financing"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cash_flow_data_have_net_cash_flow__financing"
+			        }
+			      ]
+			    },
+			    "cash_flow_data_has_cash_flow_analysis_cash_paid_for__financing": {
+			      "Binding": {
+			        "ConceptualEntity": "Cash Flow Data"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cash_flow_data": {
+			          "Target": {
+			            "Entity": "cash_flow_data"
+			          }
+			        },
+			        "cash_flow_analysis.cash_paid_for__financing": {
+			          "Target": {
+			            "Entity": "cash_flow_analysis.cash_paid_for__financing"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cash_flow_data"
+			            },
+			            "Object": {
+			              "Role": "cash_flow_analysis.cash_paid_for__financing"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cash_flow_data_have_cash_paid_for__financing"
+			        }
+			      ]
+			    },
+			    "cash_flow_data_has_cash_flow_analysis_cash_paid_for__investing": {
+			      "Binding": {
+			        "ConceptualEntity": "Cash Flow Data"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cash_flow_data": {
+			          "Target": {
+			            "Entity": "cash_flow_data"
+			          }
+			        },
+			        "cash_flow_analysis.cash_paid_for__investing": {
+			          "Target": {
+			            "Entity": "cash_flow_analysis.cash_paid_for__investing"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cash_flow_data"
+			            },
+			            "Object": {
+			              "Role": "cash_flow_analysis.cash_paid_for__investing"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cash_flow_data_have_cash_paid_for__investing"
 			        }
 			      ]
 			    },
@@ -31064,6 +32207,171 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "income_statement_data_have_expense_categories"
+			        }
+			      ]
+			    },
+			    "template_income_statement_has_income_statement_analysis_DEBUG_Selected_year_actuals": {
+			      "Binding": {
+			        "ConceptualEntity": "Template Income Statement"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "template_income_statement": {
+			          "Target": {
+			            "Entity": "template_income_statement"
+			          }
+			        },
+			        "income_statement_analysis.DEBUG_Selected_year_actuals": {
+			          "Target": {
+			            "Entity": "income_statement_analysis.DEBUG_Selected_year_actuals"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "template_income_statement"
+			            },
+			            "Object": {
+			              "Role": "income_statement_analysis.DEBUG_Selected_year_actuals"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "template_income_statements_have_DEBUG_Selected_year_actuals"
+			        }
+			      ]
+			    },
+			    "cash_flow_data_has_cash_flow_analysis_cash_paid_for__operations": {
+			      "Binding": {
+			        "ConceptualEntity": "Cash Flow Data"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cash_flow_data": {
+			          "Target": {
+			            "Entity": "cash_flow_data"
+			          }
+			        },
+			        "cash_flow_analysis.cash_paid_for__operations": {
+			          "Target": {
+			            "Entity": "cash_flow_analysis.cash_paid_for__operations"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cash_flow_data"
+			            },
+			            "Object": {
+			              "Role": "cash_flow_analysis.cash_paid_for__operations"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cash_flow_data_have_cash_paid_for__operations"
+			        }
+			      ]
+			    },
+			    "cash_flow_data_has_cash_flow_analysis_cash_receipts_from__financing": {
+			      "Binding": {
+			        "ConceptualEntity": "Cash Flow Data"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cash_flow_data": {
+			          "Target": {
+			            "Entity": "cash_flow_data"
+			          }
+			        },
+			        "cash_flow_analysis.cash_receipts_from__financing": {
+			          "Target": {
+			            "Entity": "cash_flow_analysis.cash_receipts_from__financing"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cash_flow_data"
+			            },
+			            "Object": {
+			              "Role": "cash_flow_analysis.cash_receipts_from__financing"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cash_flow_data_have_cash_receipts_from__financing"
+			        }
+			      ]
+			    },
+			    "cash_flow_data_has_cash_flow_analysis_cash_receipts_from__investing": {
+			      "Binding": {
+			        "ConceptualEntity": "Cash Flow Data"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cash_flow_data": {
+			          "Target": {
+			            "Entity": "cash_flow_data"
+			          }
+			        },
+			        "cash_flow_analysis.cash_receipts_from__investing": {
+			          "Target": {
+			            "Entity": "cash_flow_analysis.cash_receipts_from__investing"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cash_flow_data"
+			            },
+			            "Object": {
+			              "Role": "cash_flow_analysis.cash_receipts_from__investing"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cash_flow_data_have_cash_receipts_from__investing"
+			        }
+			      ]
+			    },
+			    "cash_flow_data_has_cash_flow_analysis_cash_receipts_from__operations": {
+			      "Binding": {
+			        "ConceptualEntity": "Cash Flow Data"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cash_flow_data": {
+			          "Target": {
+			            "Entity": "cash_flow_data"
+			          }
+			        },
+			        "cash_flow_analysis.cash_receipts_from__operations": {
+			          "Target": {
+			            "Entity": "cash_flow_analysis.cash_receipts_from__operations"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cash_flow_data"
+			            },
+			            "Object": {
+			              "Role": "cash_flow_analysis.cash_receipts_from__operations"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cash_flow_data_have_cash_receipts_from__operations"
 			        }
 			      ]
 			    },
@@ -33983,6 +35291,51 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
+			    "dim_store_in_cafe_name": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_store"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_store": {
+			          "Target": {
+			            "Entity": "dim_store"
+			          }
+			        },
+			        "dim_store.cafe_name": {
+			          "Target": {
+			            "Entity": "dim_store.cafe_name"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "Where": {
+			          "Role": "dim_store.cafe_name"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "dim_store"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "dim_store.cafe_name"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_stores_are_in_cafe_names"
+			        }
+			      ]
+			    },
 			    "dim_store_in_location_id": {
 			      "Binding": {
 			        "ConceptualEntity": "dim_store"
@@ -34577,20 +35930,20 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "income_statement_data_month_has_date_hierarchy": {
+			    "company_expense_month_has_date_hierarchy": {
 			      "Binding": {
-			        "ConceptualEntity": "Income Statement Data"
+			        "ConceptualEntity": "Company Expenses"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "income_statement_data.month": {
+			        "company_expense.month": {
 			          "Target": {
-			            "Entity": "income_statement_data.month"
+			            "Entity": "company_expense.month"
 			          }
 			        },
-			        "income_statement_data.month.date_hierarchy": {
+			        "company_expense.month.date_hierarchy": {
 			          "Target": {
-			            "Entity": "income_statement_data.month.date_hierarchy"
+			            "Entity": "company_expense.month.date_hierarchy"
 			          }
 			        }
 			      },
@@ -34598,32 +35951,32 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "income_statement_data.month"
+			              "Role": "company_expense.month"
 			            },
 			            "Object": {
-			              "Role": "income_statement_data.month.date_hierarchy"
+			              "Role": "company_expense.month.date_hierarchy"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "months_have_month_date_hierarchies1"
+			          "ID": "months_have_month_date_hierarchies"
 			        }
 			      ]
 			    },
-			    "income_statement_data_month_date_hierarchy_has_income_statement_data_month_year": {
+			    "company_expense_month_date_hierarchy_has_company_expense_month_year": {
 			      "Binding": {
-			        "ConceptualEntity": "Income Statement Data"
+			        "ConceptualEntity": "Company Expenses"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "income_statement_data.month.date_hierarchy": {
+			        "company_expense.month.date_hierarchy": {
 			          "Target": {
-			            "Entity": "income_statement_data.month.date_hierarchy"
+			            "Entity": "company_expense.month.date_hierarchy"
 			          }
 			        },
-			        "income_statement_data.month.year": {
+			        "company_expense.month.year": {
 			          "Target": {
-			            "Entity": "income_statement_data.month.year"
+			            "Entity": "company_expense.month.year"
 			          }
 			        }
 			      },
@@ -34631,32 +35984,32 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "income_statement_data.month.date_hierarchy"
+			              "Role": "company_expense.month.date_hierarchy"
 			            },
 			            "Object": {
-			              "Role": "income_statement_data.month.year"
+			              "Role": "company_expense.month.year"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "month_date_hierarchies_have_month_years1"
+			          "ID": "month_date_hierarchies_have_month_years"
 			        }
 			      ]
 			    },
-			    "income_statement_data_month_date_hierarchy_has_income_statement_data_month_quarter": {
+			    "company_expense_month_date_hierarchy_has_company_expense_month_quarter": {
 			      "Binding": {
-			        "ConceptualEntity": "Income Statement Data"
+			        "ConceptualEntity": "Company Expenses"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "income_statement_data.month.date_hierarchy": {
+			        "company_expense.month.date_hierarchy": {
 			          "Target": {
-			            "Entity": "income_statement_data.month.date_hierarchy"
+			            "Entity": "company_expense.month.date_hierarchy"
 			          }
 			        },
-			        "income_statement_data.month.quarter": {
+			        "company_expense.month.quarter": {
 			          "Target": {
-			            "Entity": "income_statement_data.month.quarter"
+			            "Entity": "company_expense.month.quarter"
 			          }
 			        }
 			      },
@@ -34664,32 +36017,32 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "income_statement_data.month.date_hierarchy"
+			              "Role": "company_expense.month.date_hierarchy"
 			            },
 			            "Object": {
-			              "Role": "income_statement_data.month.quarter"
+			              "Role": "company_expense.month.quarter"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "month_date_hierarchies_have_month_quarters1"
+			          "ID": "month_date_hierarchies_have_month_quarters"
 			        }
 			      ]
 			    },
-			    "income_statement_data_month_date_hierarchy_has_income_statement_data_month_month": {
+			    "company_expense_month_date_hierarchy_has_company_expense_month_month": {
 			      "Binding": {
-			        "ConceptualEntity": "Income Statement Data"
+			        "ConceptualEntity": "Company Expenses"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "income_statement_data.month.date_hierarchy": {
+			        "company_expense.month.date_hierarchy": {
 			          "Target": {
-			            "Entity": "income_statement_data.month.date_hierarchy"
+			            "Entity": "company_expense.month.date_hierarchy"
 			          }
 			        },
-			        "income_statement_data.month.month": {
+			        "company_expense.month.month": {
 			          "Target": {
-			            "Entity": "income_statement_data.month.month"
+			            "Entity": "company_expense.month.month"
 			          }
 			        }
 			      },
@@ -34697,32 +36050,32 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "income_statement_data.month.date_hierarchy"
+			              "Role": "company_expense.month.date_hierarchy"
 			            },
 			            "Object": {
-			              "Role": "income_statement_data.month.month"
+			              "Role": "company_expense.month.month"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "month_date_hierarchies_have_month_months1"
+			          "ID": "month_date_hierarchies_have_month_months"
 			        }
 			      ]
 			    },
-			    "income_statement_data_month_date_hierarchy_has_income_statement_data_month_day": {
+			    "company_expense_month_date_hierarchy_has_company_expense_month_day": {
 			      "Binding": {
-			        "ConceptualEntity": "Income Statement Data"
+			        "ConceptualEntity": "Company Expenses"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "income_statement_data.month.date_hierarchy": {
+			        "company_expense.month.date_hierarchy": {
 			          "Target": {
-			            "Entity": "income_statement_data.month.date_hierarchy"
+			            "Entity": "company_expense.month.date_hierarchy"
 			          }
 			        },
-			        "income_statement_data.month.day": {
+			        "company_expense.month.day": {
 			          "Target": {
-			            "Entity": "income_statement_data.month.day"
+			            "Entity": "company_expense.month.day"
 			          }
 			        }
 			      },
@@ -34730,15 +36083,15 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "income_statement_data.month.date_hierarchy"
+			              "Role": "company_expense.month.date_hierarchy"
 			            },
 			            "Object": {
-			              "Role": "income_statement_data.month.day"
+			              "Role": "company_expense.month.day"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "month_date_hierarchies_have_month_days1"
+			          "ID": "month_date_hierarchies_have_month_days"
 			        }
 			      ]
 			    }

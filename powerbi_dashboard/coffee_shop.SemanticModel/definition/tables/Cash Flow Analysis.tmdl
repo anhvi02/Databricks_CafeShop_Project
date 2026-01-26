@@ -124,9 +124,8 @@ table 'Cash Flow Analysis'
 			        CurrentItem = "Cash at Beginning of Year", [Cash at Beginning of Year],
 			        CurrentItem = "Cash at End of Year", [Cash at Beginning of Year] - ( [Net Cash Flow - Operations] + [Net Cash Flow - Investing] + [Net Cash Flow - Financing] ),
 			            CALCULATE ( [CF Values], FILTER( 'Cash Flow Data', 'Cash Flow Data' [Cash Flow Sub Category] = CurrentItem )))
+		formatString: \$#,0.00;(\$#,0.00);\$#,0.00
 		lineageTag: 4847eda5-3947-45f2-9b8d-5ecdf25e6eb1
-
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
 	measure 'Absolute CF Value' = ABS([CF Values])
 		lineageTag: 701ff032-952d-4052-b32f-4ea2f9cff8d7
