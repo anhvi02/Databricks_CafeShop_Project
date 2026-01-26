@@ -1,38 +1,79 @@
 Year,Cash Flow Type,Cash Flow Category,Cash Flow Sub Category,Cash Flow Values
-2025,Financing,Dividends Paid,Owner Distributions,-7430.21
-2025,Financing,Loan Repayments,Principal Payments,-931.61
-2025,Financing,Loan Repayments,Principal Payments,-862.31
-2025,Financing,Loan Repayments,Principal Payments,-919.92
-2025,Investing,Equipment Purchases,Coffee Machines,-20955.65
-2025,Investing,Equipment Purchases,Coffee Machines,-22169.29
-2025,Investing,Furniture Purchases,Furniture & Fixtures,-6889.9
-2025,Operating,Cash Paid for Operating Expenses,Rent & Utilities,-13203.49
-2025,Operating,Cash Paid for Operating Expenses,Rent & Utilities,-15863.96
-2025,Operating,Cash Paid for Operating Expenses,Rent & Utilities,-14485.21
-2025,Operating,Cash Paid to Employees,Salaries & Wages,-18152.99
-2025,Operating,Cash Paid to Employees,Salaries & Wages,-19312.02
-2025,Operating,Cash Paid to Employees,Salaries & Wages,-21252.26
-2025,Operating,Cash Paid to Suppliers,Inventory Purchases,-34359.81
-2025,Operating,Cash Paid to Suppliers,Inventory Purchases,-29896.78
-2025,Operating,Cash Paid to Suppliers,Inventory Purchases,-39382.67
-2025,Operating,Cash from Sales,Sales Revenue,98777.54
-2025,Operating,Cash from Sales,Sales Revenue,93391.96
-2025,Operating,Cash from Sales,Sales Revenue,105239.15
-2025,Operating,Interest Paid,Interest Expense,-314.26
-2025,Operating,Interest Paid,Interest Expense,-318.7
-2025,Operating,Interest Paid,Interest Expense,-349.66
-2025,Operating,Interest Received,Interest Income,111.35
-2025,Operating,Interest Received,Interest Income,106.03
-2025,Operating,Interest Received,Interest Income,123.94
-2025,Operating,Taxes Paid,Income Tax,-1698.58
-2025,Operating,Taxes Paid,Income Tax,-1573.62
-2025,Operating,Taxes Paid,Income Tax,-1715.13
-2026,Financing,Loan Repayments,Principal Payments,-1129.77
-2026,Investing,Equipment Purchases,Coffee Machines,-23591.79
-2026,Operating,Cash Paid for Operating Expenses,Rent & Utilities,-16932.43
-2026,Operating,Cash Paid to Employees,Salaries & Wages,-20968.6
-2026,Operating,Cash Paid to Suppliers,Inventory Purchases,-38493.86
-2026,Operating,Cash from Sales,Sales Revenue,86250.67
-2026,Operating,Interest Paid,Interest Expense,-361.7
-2026,Operating,Interest Received,Interest Income,102.05
-2026,Operating,Taxes Paid,Income Tax,-2281.5
+2024,Financing,Loan Repayments,Principal Payments,-905.52
+2024,Financing,Loan Repayments,Principal Payments,-1135.33
+2024,Financing,Loan Repayments,Principal Payments,-928.18
+2024,Financing,Loan Repayments,Principal Payments,-900.21
+2024,Investing,Equipment Purchases,Coffee Machines,-16257.2
+2024,Investing,Equipment Purchases,Coffee Machines,-6625.95
+2024,Investing,Furniture Purchases,Furniture & Fixtures,-7009.72
+2024,Operating,Cash Paid for Operating Expenses,Rent & Utilities,-13589.27
+2024,Operating,Cash Paid for Operating Expenses,Rent & Utilities,-16114.7
+2024,Operating,Cash Paid for Operating Expenses,Rent & Utilities,-17217.42
+2024,Operating,Cash Paid for Operating Expenses,Rent & Utilities,-15685.05
+2024,Operating,Cash Paid to Employees,Salaries & Wages,-20696.82
+2024,Operating,Cash Paid to Employees,Salaries & Wages,-21213.01
+2024,Operating,Cash Paid to Employees,Salaries & Wages,-21017.34
+2024,Operating,Cash Paid to Employees,Salaries & Wages,-19633.49
+2024,Operating,Cash Paid to Suppliers,Inventory Purchases,-38528.05
+2024,Operating,Cash Paid to Suppliers,Inventory Purchases,-40796.56
+2024,Operating,Cash Paid to Suppliers,Inventory Purchases,-28548.84
+2024,Operating,Cash Paid to Suppliers,Inventory Purchases,-33362.47
+2024,Operating,Cash from Sales,Sales Revenue,103273.03
+2024,Operating,Cash from Sales,Sales Revenue,104426.85
+2024,Operating,Cash from Sales,Sales Revenue,108307.74
+2024,Operating,Cash from Sales,Sales Revenue,114049.34
+2024,Operating,Interest Paid,Interest Expense,-298.04
+2024,Operating,Interest Paid,Interest Expense,-378.97
+2024,Operating,Interest Paid,Interest Expense,-343.2
+2024,Operating,Interest Paid,Interest Expense,-332.04
+2024,Operating,Interest Received,Interest Income,99.68
+2024,Operating,Interest Received,Interest Income,82.06
+2024,Operating,Interest Received,Interest Income,90.13
+2024,Operating,Interest Received,Interest Income,52.7
+2024,Operating,Taxes Paid,Income Tax,-1695.67
+2024,Operating,Taxes Paid,Income Tax,-1574.35
+2024,Operating,Taxes Paid,Income Tax,-1804.2
+2024,Operating,Taxes Paid,Income Tax,-2148.78
+2025,Financing,Dividends Paid,Owner Distributions,-6234.29
+2025,Financing,Dividends Paid,Owner Distributions,-3688.42
+2025,Financing,Loan Repayments,Principal Payments,-1108.18
+2025,Financing,Loan Repayments,Principal Payments,-928.27
+2025,Financing,Loan Repayments,Principal Payments,-1239.82
+2025,Financing,Loan Repayments,Principal Payments,-950.98
+2025,Operating,Cash Paid for Operating Expenses,Rent & Utilities,-16938.25
+2025,Operating,Cash Paid for Operating Expenses,Rent & Utilities,-14188.95
+2025,Operating,Cash Paid for Operating Expenses,Rent & Utilities,-17314.49
+2025,Operating,Cash Paid for Operating Expenses,Rent & Utilities,-17260.12
+2025,Operating,Cash Paid to Employees,Salaries & Wages,-21657.54
+2025,Operating,Cash Paid to Employees,Salaries & Wages,-19966.77
+2025,Operating,Cash Paid to Employees,Salaries & Wages,-23377.83
+2025,Operating,Cash Paid to Employees,Salaries & Wages,-21409.41
+2025,Operating,Cash Paid to Suppliers,Inventory Purchases,-31489.38
+2025,Operating,Cash Paid to Suppliers,Inventory Purchases,-43877.13
+2025,Operating,Cash Paid to Suppliers,Inventory Purchases,-44971.99
+2025,Operating,Cash Paid to Suppliers,Inventory Purchases,-35700.6
+2025,Operating,Cash from Sales,Sales Revenue,121216.56
+2025,Operating,Cash from Sales,Sales Revenue,106859.04
+2025,Operating,Cash from Sales,Sales Revenue,101376.23
+2025,Operating,Cash from Sales,Sales Revenue,107741.71
+2025,Operating,Interest Paid,Interest Expense,-416.52
+2025,Operating,Interest Paid,Interest Expense,-300.91
+2025,Operating,Interest Paid,Interest Expense,-379.47
+2025,Operating,Interest Paid,Interest Expense,-283.62
+2025,Operating,Interest Received,Interest Income,100.82
+2025,Operating,Interest Received,Interest Income,157.87
+2025,Operating,Interest Received,Interest Income,155.22
+2025,Operating,Interest Received,Interest Income,95.66
+2025,Operating,Taxes Paid,Income Tax,-1784.37
+2025,Operating,Taxes Paid,Income Tax,-2346.89
+2025,Operating,Taxes Paid,Income Tax,-1993.82
+2025,Operating,Taxes Paid,Income Tax,-1785.44
+2026,Financing,Dividends Paid,Owner Distributions,-3905.54
+2026,Financing,Loan Repayments,Principal Payments,-840.52
+2026,Operating,Cash Paid for Operating Expenses,Rent & Utilities,-15000.01
+2026,Operating,Cash Paid to Employees,Salaries & Wages,-21074.63
+2026,Operating,Cash Paid to Suppliers,Inventory Purchases,-30871.17
+2026,Operating,Cash from Sales,Sales Revenue,95615.39
+2026,Operating,Interest Paid,Interest Expense,-289.46
+2026,Operating,Interest Received,Interest Income,66.22
+2026,Operating,Taxes Paid,Income Tax,-2418.46
