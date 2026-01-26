@@ -4,5 +4,46 @@
   "displayName": "EDNA_Income Statements",
   "displayOption": "FitToPage",
   "height": 720,
-  "width": 1280
+  "width": 1280,
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "403ec7c71c500b171b86",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Template Income Statement"
+              }
+            },
+            "Property": "Income Statement Items"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User",
+        "objects": {
+          "general": [
+            {
+              "properties": {
+                "isInvertedSelectionMode": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "true"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "visualInteractions": [
+    {
+      "source": "efffc63045042da2001e",
+      "target": "d6e62e7976407e4d5478",
+      "type": "NoFilter"
+    }
+  ]
 }

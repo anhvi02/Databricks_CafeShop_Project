@@ -1,12 +1,12 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
-  "name": "98d53bc23568b07436c6",
+  "name": "e93b244da40952c43d48",
   "position": {
     "x": 0,
-    "y": 318.72712808273667,
+    "y": 168.3116883116883,
     "z": 0,
-    "height": 401.20922832140013,
-    "width": 538.67939538583926,
+    "height": 551.68831168831173,
+    "width": 581.81818181818176,
     "tabOrder": 0
   },
   "visual": {
@@ -39,13 +39,13 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Template Balance Sheet"
+                      "Entity": "Template Cash Flow"
                     }
                   },
                   "Property": "Row Index"
                 }
               },
-              "queryRef": "Template Balance Sheet.Row Index",
+              "queryRef": "Template Cash Flow.Row Index",
               "nativeQueryRef": "Row Index",
               "active": true
             },
@@ -54,14 +54,14 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Template Balance Sheet"
+                      "Entity": "Template Cash Flow"
                     }
                   },
-                  "Property": "Balance Sheet Items"
+                  "Property": "Cash Flow Items"
                 }
               },
-              "queryRef": "Template Balance Sheet.Balance Sheet Items",
-              "nativeQueryRef": "Balance Sheet Items",
+              "queryRef": "Template Cash Flow.Cash Flow Items",
+              "nativeQueryRef": "Cash Flow Items",
               "active": true
             }
           ],
@@ -74,17 +74,34 @@
                 "Measure": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Balance Sheet Analysis"
+                      "Entity": "Cash Flow Analysis"
                     }
                   },
-                  "Property": "B/S Values Switch Function"
+                  "Property": "C/F Values Switch Function"
                 }
               },
-              "queryRef": "Balance Sheet Analysis.B/S Values Switch Function",
-              "nativeQueryRef": "B/S Values Switch Function"
+              "queryRef": "Cash Flow Analysis.C/F Values Switch Function",
+              "nativeQueryRef": "C/F Values Switch Function"
             }
           ]
         }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Template Cash Flow"
+                  }
+                },
+                "Property": "Row Index"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ]
       }
     },
     "expansionStates": [
@@ -95,13 +112,13 @@
         "levels": [
           {
             "queryRefs": [
-              "Template Balance Sheet.Row Index"
+              "Template Cash Flow.Row Index"
             ],
             "isPinned": true
           },
           {
             "queryRefs": [
-              "Template Balance Sheet.Balance Sheet Items"
+              "Template Cash Flow.Cash Flow Items"
             ],
             "isCollapsed": true,
             "isPinned": true
@@ -154,7 +171,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "97.88776137090585D"
+                  "Value": "97.21450938934211D"
                 }
               }
             }
@@ -197,7 +214,95 @@
             }
           },
           "selector": {
-            "metadata": "Template Balance Sheet.Row Index"
+            "metadata": "Template Cash Flow.Row Index"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "205.40260869696507D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Cash Flow Analysis.C/F Values Switch Function"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "93.48988619549478D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "dim_date"
+                          }
+                        },
+                        "Property": "Year"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "2024L"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "92.46753246753246D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "dim_date"
+                          }
+                        },
+                        "Property": "Year"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "2025L"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
           }
         }
       ],
@@ -339,72 +444,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "2f2cd5cbb50d95629021",
-        "type": "Exclude",
-        "filter": {
-          "Version": 2,
-          "From": [
-            {
-              "Name": "t",
-              "Entity": "Template Income Statement",
-              "Type": 0
-            }
-          ],
-          "Where": [
-            {
-              "Condition": {
-                "Not": {
-                  "Expression": {
-                    "In": {
-                      "Expressions": [
-                        {
-                          "Column": {
-                            "Expression": {
-                              "SourceRef": {
-                                "Source": "t"
-                              }
-                            },
-                            "Property": "Row Index"
-                          }
-                        },
-                        {
-                          "Column": {
-                            "Expression": {
-                              "SourceRef": {
-                                "Source": "t"
-                              }
-                            },
-                            "Property": "Income Statement Items"
-                          }
-                        }
-                      ],
-                      "Values": [
-                        [
-                          {
-                            "Literal": {
-                              "Value": "null"
-                            }
-                          },
-                          {
-                            "Literal": {
-                              "Value": "null"
-                            }
-                          }
-                        ]
-                      ]
-                    }
-                  }
-                }
-              }
-            }
-          ]
-        },
-        "howCreated": "Exclude"
-      }
-    ]
   }
 }

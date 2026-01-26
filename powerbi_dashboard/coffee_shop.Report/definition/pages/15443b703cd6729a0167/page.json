@@ -4,5 +4,17 @@
   "displayName": "EDNA_Cash Flow ",
   "displayOption": "FitToPage",
   "height": 720,
-  "width": 1280
+  "width": 1280,
+  "visualInteractions": [
+    {
+      "source": "5735ece63aa0366dd4de",
+      "target": "e93b244da40952c43d48",
+      "type": "NoFilter"
+    },
+    {
+      "source": "5735ece63aa0366dd4de",
+      "target": "302b9e187c20a011e980",
+      "type": "NoFilter"
+    }
+  ]
 }

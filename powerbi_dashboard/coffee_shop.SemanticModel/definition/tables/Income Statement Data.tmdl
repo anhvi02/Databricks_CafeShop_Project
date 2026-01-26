@@ -8,11 +8,6 @@ table 'Income Statement Data'
 		summarizeBy: none
 		sourceColumn: Month
 
-		variation Variation
-			isDefault
-			relationship: 44de591e-1fe3-47b3-ba35-a1f1920e2c5c
-			defaultHierarchy: LocalDateTable_c0f869c8-201c-493a-bd9e-f2940cbca605.'Date Hierarchy'
-
 		annotation SummarizationSetBy = Automatic
 
 		annotation UnderlyingDateTimeDataType = Date

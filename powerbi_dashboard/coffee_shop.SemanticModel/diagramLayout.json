@@ -4,8 +4,8 @@
     {
       "ordinal": 0,
       "scrollPosition": {
-        "x": 1401.5497187657181,
-        "y": 2068.3524034547072
+        "x": 1474.1624720118843,
+        "y": 2953.6913219776179
       },
       "nodes": [
         {
@@ -19,7 +19,7 @@
             "height": 300,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 1
         },
         {
           "location": {
@@ -32,7 +32,7 @@
             "height": 248,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 2
         },
         {
           "location": {
@@ -45,7 +45,7 @@
             "height": 284.19898851447897,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 3
         },
         {
           "location": {
@@ -58,7 +58,7 @@
             "height": 300,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 4
         },
         {
           "location": {
@@ -68,10 +68,10 @@
           "nodeIndex": "dim_date",
           "nodeLineageTag": "b47d4b9f-6c53-4d50-9f9f-0183e035212d",
           "size": {
-            "height": 200,
+            "height": 233.82399553373307,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 17
         },
         {
           "location": {
@@ -84,7 +84,7 @@
             "height": 104,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 5
         },
         {
           "location": {
@@ -97,7 +97,7 @@
             "height": 200,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 6
         },
         {
           "location": {
@@ -110,7 +110,7 @@
             "height": 200,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 7
         },
         {
           "location": {
@@ -123,7 +123,7 @@
             "height": 200,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 8
         },
         {
           "location": {
@@ -136,7 +136,7 @@
             "height": 176,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 9
         },
         {
           "location": {
@@ -146,10 +146,10 @@
           "nodeIndex": "Income Statement Data",
           "nodeLineageTag": "ccae6a89-c50e-40ae-85a6-7f53bd277f02",
           "size": {
-            "height": 176,
+            "height": 229.55465959507819,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 16
         },
         {
           "location": {
@@ -162,7 +162,7 @@
             "height": 104,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 10
         },
         {
           "location": {
@@ -174,7 +174,7 @@
             "height": 200,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 11
         },
         {
           "location": {
@@ -186,7 +186,7 @@
             "height": 200,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 12
         },
         {
           "location": {
@@ -199,7 +199,7 @@
             "height": 104,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 13
         },
         {
           "location": {
@@ -211,7 +211,7 @@
             "height": 200,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 14
         },
         {
           "location": {
@@ -224,11 +224,11 @@
             "height": 104,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 15
         }
       ],
       "name": "All tables",
-      "zoomValue": 63.287087723234038,
+      "zoomValue": 70.955543900968834,
       "pinKeyFieldsToTop": true,
       "showExtraHeaderInfo": false,
       "hideKeyFieldsWhenCollapsed": false,

@@ -55,7 +55,6 @@ ref table LocalDateTable_e422e940-bbc1-4833-9f04-a485467ad486
 ref table 'Company Expenses'
 ref table LocalDateTable_5420ee6b-87aa-44b4-9aeb-3866642b4b92
 ref table 'Income Statement Data'
-ref table LocalDateTable_c0f869c8-201c-493a-bd9e-f2940cbca605
 ref table 'Income Statement Analysis'
 ref table 'Template Balance Sheet'
 ref table 'Template Income Statement'

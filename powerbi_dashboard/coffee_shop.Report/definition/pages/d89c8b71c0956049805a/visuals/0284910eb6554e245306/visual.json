@@ -1,12 +1,12 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
   "name": "0284910eb6554e245306",
   "position": {
-    "x": 459.3728222996516,
-    "y": 414.77351916376307,
+    "x": 445.97285067873304,
+    "y": 415.8552036199095,
     "z": 7000,
-    "height": 304.76190476190476,
-    "width": 254.21602787456447,
+    "height": 304.65158371040724,
+    "width": 253.68325791855204,
     "tabOrder": 7000
   },
   "visual": {
@@ -106,5 +106,37 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "25a3c8e7a05496d280da",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "fact_transaction"
+              }
+            },
+            "Property": "category_name"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "7c301b0020c9bb603640",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Key Measures"
+              }
+            },
+            "Property": "Total Sales"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

@@ -9,11 +9,11 @@ table 'Cash Flow Analysis'
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
-	measure 'DEBUG_NEEDED_Cash Paid For - Investing' = ```
+	measure 'Cash Paid For - Investing' = ```
 			
 			CALCULATE([CF Values], 
 			    FILTER('Cash Flow Data',
-			        'Cash Flow Data'[Cash Flow Category] = "Cash paid for" && --could be not Cash paid for or Investing Activities
+			        'Cash Flow Data'[Cash Flow Category] = "Cash paid for" && --could be not Cash paid for or Financing Activities
 			        'Cash Flow Data'[Cash Flow Type] = "Investing Activities")) * -1
 			
 			        
@@ -22,7 +22,7 @@ table 'Cash Flow Analysis'
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
-	measure 'DEBGU NEEDED_Cash Paid For - Financing' = ```
+	measure 'Cash Paid For - Financing' = ```
 			
 			CALCULATE([CF Values], 
 			    FILTER('Cash Flow Data',
@@ -32,6 +32,104 @@ table 'Cash Flow Analysis'
 			        
 			```
 		lineageTag: 8322e59c-b73a-4a52-b1ed-cbbdff54082e
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Cash Paid For - Operations' = ```
+			
+			CALCULATE([CF Values], 
+			    FILTER('Cash Flow Data',
+			        'Cash Flow Data'[Cash Flow Category] = "Cash paid for" && --could be not Cash paid for or Financing Activities
+			        'Cash Flow Data'[Cash Flow Type] = "Operations")) * -1
+			
+			        
+			```
+		lineageTag: 327066e2-75e8-4122-8051-a829ccab952e
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Cash Receipts From - Financing' = ```
+			
+			CALCULATE([CF Values], 
+			    FILTER('Cash Flow Data',
+			        'Cash Flow Data'[Cash Flow Category] = "Cash receipts from" && --could be not Cash paid for or Financing Activities
+			        'Cash Flow Data'[Cash Flow Type] = "Financing Activities"))
+			
+			        
+			```
+		lineageTag: a824eb66-d811-4fe3-ab8c-32c99f16f1bd
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Cash Receipts From - Investing' = ```
+			
+			CALCULATE([CF Values], 
+			    FILTER('Cash Flow Data',
+			        'Cash Flow Data'[Cash Flow Category] = "Cash receipts from" && --could be not Cash paid for or Financing Activities
+			        'Cash Flow Data'[Cash Flow Type] = "Investing Activities")) 
+			
+			        
+			```
+		lineageTag: 5b367457-8f27-4eeb-b84e-6819811df8ef
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Cash Receipts From - Operations' = ```
+			
+			CALCULATE([CF Values], 
+			    FILTER('Cash Flow Data',
+			        'Cash Flow Data'[Cash Flow Category] = "Cash receipts from" && --could be not Cash paid for or Financing Activities
+			        'Cash Flow Data'[Cash Flow Type] = "Operations"))
+			
+			        
+			```
+		lineageTag: c1b5d21a-902e-4d69-8bb3-47f14d7efce5
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Net Cash Flow - Financing' = [Cash Receipts From - Financing] + [Cash Paid For - Financing]
+		lineageTag: 3b70bc4d-b0e2-4d8a-9e22-7bcc611009e3
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Net Cash Flow - Investing' = [Cash Receipts From - Investing] + [Cash Paid For - Investing]
+		lineageTag: 7b90fabb-902a-43ae-ba09-2db4f1b6b087
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Net Cash Flow - Operations' = [Cash Receipts From - Operations] + [Cash Paid For - Operations]
+		lineageTag: ddd67be1-941b-4665-b94e-6d2e18118365
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Cash at Beginning of Year' =
+			
+			CALCULATE([CF Values],
+			    FILTER('Cash Flow Data',
+			    'Cash Flow Data'[Cash Flow Sub Category] = "Cash at Beginning of Year"))
+		lineageTag: b349cdd7-8ddf-4e60-adef-c9c684a82f83
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'C/F Values Switch Function' =
+			
+			VAR CurrentItem = SELECTEDVALUE( 'Template Cash Flow'[Cash Flow Normalized] )
+			
+			RETURN
+			SWITCH( TRUE(),
+			        CurrentItem = "Net Cash Flow from Operations", [Net Cash Flow - Operations],
+			        CurrentItem = "Net Cash Flow from Investing Activities", [Net Cash Flow - Investing],
+			        CurrentItem = "Net Cash Flow from Financing Activities", [Net Cash Flow - Financing],
+			        CurrentItem = "Net Increase in Cash", [Net Cash Flow - Operations] + [Net Cash Flow - Investing] + [Net Cash Flow - Financing],
+			        CurrentItem = "Cash at Beginning of Year", [Cash at Beginning of Year],
+			        CurrentItem = "Cash at End of Year", [Cash at Beginning of Year] - ( [Net Cash Flow - Operations] + [Net Cash Flow - Investing] + [Net Cash Flow - Financing] ),
+			            CALCULATE ( [CF Values], FILTER( 'Cash Flow Data', 'Cash Flow Data' [Cash Flow Sub Category] = CurrentItem )))
+		lineageTag: 4847eda5-3947-45f2-9b8d-5ecdf25e6eb1
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Absolute CF Value' = ABS([CF Values])
+		lineageTag: 701ff032-952d-4052-b32f-4ea2f9cff8d7
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 

@@ -51,7 +51,7 @@ table 'Income Statement Analysis'
 
 	measure 'Other Expenses' =
 			
-			(CALCULATE([Income Values], 'Income Statement Data'[Type]="Expenses") + [COGS]) * -1 -- Supposed to subtract COGS since Expences includes COGS but in the formula, COGS is alreay in minus
+			(CALCULATE([Income Values], 'Income Statement Data'[Type]="Expenses") + [COGS]) * (-1) -- Supposed to subtract COGS since Expences includes COGS but in the formula, COGS is alreay in minus
 		lineageTag: bc74419f-6b20-4c23-b73e-9044e102a278
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
@@ -81,7 +81,7 @@ table 'Income Statement Analysis'
 			    CurrentItem = "Total Net Profit", DIVIDE( [Net Profit], 1000, 0),
 			    CurrentItem = "Net Profit %", FORMAT( [Net Profit Margin], "0.00%"),
 			    CALCULATE([Actuals (,000)], FILTER('Income Statement Data', 'Income Statement Data'[Expense Items] =  CurrentItem)))
-		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		formatString: \$#,0.00;(\$#,0.00);\$#,0.00
 		lineageTag: eb183936-998e-4a38-a915-dd700965e784
 
 	measure 'Revenues LY' =
@@ -146,7 +146,7 @@ table 'Income Statement Analysis'
 			    CurrentItem = "Net Profit %", FORMAT( [Net Profit Margin LY], "0.00%"),
 			    CALCULATE([Actuals (,000)], FILTER('Income Statement Data', 'Income Statement Data'[Expense Items] =  CurrentItem), DATEADD(dim_date[Date], -1, YEAR))
 			)
-		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		formatString: \$#,0.00;(\$#,0.00);\$#,0.00
 		displayFolder: Last Year
 		lineageTag: dd816f66-9541-4b56-87ea-e32558c995f4
 
@@ -177,10 +177,9 @@ table 'Income Statement Analysis'
 			    
 			)
 			```
+		formatString: \$#,0.00;(\$#,0.00);\$#,0.00
 		displayFolder: Last Year
 		lineageTag: 0318ed63-251b-4631-88ec-7120afba523c
-
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
 	measure 'DEBUG_Test Date Range' =
 			
@@ -208,10 +207,16 @@ table 'Income Statement Analysis'
 			        DATEADD(dim_date[Date], -1, YEAR)))
 			))
 			```
+		formatString: #,0.00%;-#,0.00%;#,0.00%
 		displayFolder: Last Year
 		lineageTag: 3294b2ef-2097-41ad-92f3-b9c16da4ebc9
 
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
+	measure 'DEBUG_Selected Year Actuals' =
+			
+			VAR CurrentItem = SELECTEDVALUE( 'Template Income Statement'[Items (Normalized)] )
+			RETURN
+			    CurrentItem
+		lineageTag: 81e4230f-3fea-407d-8eeb-ed52d327de1e
 
 	partition 'Income Statement Analysis' = m
 		mode: import

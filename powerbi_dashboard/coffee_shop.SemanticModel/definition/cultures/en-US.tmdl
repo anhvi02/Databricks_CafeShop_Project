@@ -25483,7 +25483,7 @@ cultureInfo en-US
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Cash Flow Analysis",
-			          "ConceptualProperty": "DEBUG_NEEDED_Cash Paid For - Investing"
+			          "ConceptualProperty": "Cash Paid For - Investing"
 			        }
 			      },
 			      "State": "Generated",
@@ -25505,7 +25505,7 @@ cultureInfo en-US
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Cash Flow Analysis",
-			          "ConceptualProperty": "DEBGU NEEDED_Cash Paid For - Financing"
+			          "ConceptualProperty": "Cash Paid For - Financing"
 			        }
 			      },
 			      "State": "Generated",

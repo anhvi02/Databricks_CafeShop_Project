@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
   "name": "05ac9d563081523ddb2e",
   "position": {
     "x": 713.58885017421608,
@@ -270,5 +270,65 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "25549568b0db55070b24",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "fact_transaction"
+              }
+            },
+            "Property": "derived_drink_by_ingredient"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "3297c85e202ab64bab73",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Key Measures"
+              }
+            },
+            "Property": "Total Sales"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "2dae7e98dd27269b3785",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Key Measures"
+              }
+            },
+            "Property": "Total Sales Last Week"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "d7ac904d201007087c01",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Key Measures"
+              }
+            },
+            "Property": "Sales Change For Sales By Product"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

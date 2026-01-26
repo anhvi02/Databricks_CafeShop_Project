@@ -1,0 +1,153 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "fe5b95b370b04b6e28dc",
+  "position": {
+    "x": 811.5831344470962,
+    "y": 0,
+    "z": 2000,
+    "height": 348.25775656324583,
+    "width": 468.41686555290374,
+    "tabOrder": 2000
+  },
+  "visual": {
+    "visualType": "waterfallChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Template Balance Sheet"
+                    }
+                  },
+                  "Property": "Balance Sheet Items"
+                }
+              },
+              "queryRef": "Template Balance Sheet.Balance Sheet Items",
+              "nativeQueryRef": "Balance Sheet Items",
+              "active": true
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Balance Sheet Analysis"
+                    }
+                  },
+                  "Property": "B/S Values Switch Function"
+                }
+              },
+              "queryRef": "Balance Sheet Analysis.B/S Values Switch Function",
+              "nativeQueryRef": "B/S Values Switch Function"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Balance Sheet Analysis"
+                  }
+                },
+                "Property": "B/S Values Switch Function"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "bea8cebb04189b665b95",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Template Balance Sheet"
+              }
+            },
+            "Property": "Balance Sheet Items"
+          }
+        },
+        "type": "Categorical",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "t",
+              "Entity": "Template Balance Sheet",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "In": {
+                  "Expressions": [
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "t"
+                          }
+                        },
+                        "Property": "Balance Sheet Items"
+                      }
+                    }
+                  ],
+                  "Values": [
+                    [
+                      {
+                        "Literal": {
+                          "Value": "'    Total Other Assets'"
+                        }
+                      }
+                    ],
+                    [
+                      {
+                        "Literal": {
+                          "Value": "'Total Assets'"
+                        }
+                      }
+                    ],
+                    [
+                      {
+                        "Literal": {
+                          "Value": "'Total Liabilities and Owner''s Equity'"
+                        }
+                      }
+                    ],
+                    [
+                      {
+                        "Literal": {
+                          "Value": "'    Total fixed assets'"
+                        }
+                      }
+                    ]
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

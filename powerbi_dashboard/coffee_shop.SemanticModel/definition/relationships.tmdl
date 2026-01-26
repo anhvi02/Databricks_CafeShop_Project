@@ -94,14 +94,6 @@ relationship 65d5eb08-fb3c-4a6b-91b1-923d1972c419
 	fromColumn: fact_transaction.transaction_datetime
 	toColumn: LocalDateTable_a8a38932-233f-4d33-ab60-5cb471b090dd.Date
 
-relationship d0f7eea1-4d4b-18af-5482-c5722f6a90d0
-	fromColumn: fact_roster.start_time
-	toColumn: dim_date.Date
-
-relationship 1001ae60-46fb-0860-fdd4-29f01d64ae61
-	fromColumn: fact_transaction.transaction_date
-	toColumn: dim_date.Date
-
 relationship 6d722e90-5fdb-4bca-bfea-d168b3ef459d
 	joinOnDateBehavior: datePartOnly
 	fromColumn: 'Channel Revenues'.'Month & Year'
@@ -117,11 +109,6 @@ relationship cb7182d7-e129-4c77-b417-1474931e0ee6
 	fromColumn: 'Company Expenses'.Month
 	toColumn: LocalDateTable_5420ee6b-87aa-44b4-9aeb-3866642b4b92.Date
 
-relationship 44de591e-1fe3-47b3-ba35-a1f1920e2c5c
-	joinOnDateBehavior: datePartOnly
-	fromColumn: 'Income Statement Data'.Month
-	toColumn: LocalDateTable_c0f869c8-201c-493a-bd9e-f2940cbca605.Date
-
 relationship AutoDetected_2c074ad5-b663-46b1-b672-896b4318023c
 	crossFilteringBehavior: bothDirections
 	fromCardinality: one
@@ -133,4 +120,16 @@ relationship AutoDetected_8f2a7470-f471-4835-8c7c-2eaa587d7dd6
 	fromCardinality: one
 	fromColumn: 'Template Cash Flow'.'Row Index'
 	toColumn: 'Template Balance Sheet'.'Row Index'
+
+relationship d0f7eea1-4d4b-18af-5482-c5722f6a90d0
+	fromColumn: fact_roster.start_time
+	toColumn: dim_date.Date
+
+relationship 1001ae60-46fb-0860-fdd4-29f01d64ae61
+	fromColumn: fact_transaction.transaction_date
+	toColumn: dim_date.Date
+
+relationship 85f0e414-324e-1b4f-5607-b2ced468aaa4
+	fromColumn: 'Income Statement Data'.Month
+	toColumn: dim_date.Date
 

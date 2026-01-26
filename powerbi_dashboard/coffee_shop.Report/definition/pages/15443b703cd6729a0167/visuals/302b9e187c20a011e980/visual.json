@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
-  "name": "98d53bc23568b07436c6",
+  "name": "302b9e187c20a011e980",
   "position": {
-    "x": 0,
-    "y": 318.72712808273667,
-    "z": 0,
-    "height": 401.20922832140013,
-    "width": 538.67939538583926,
-    "tabOrder": 0
+    "x": 737.66233766233768,
+    "y": 0,
+    "z": 1000,
+    "height": 187.012987012987,
+    "width": 542.33766233766232,
+    "tabOrder": 1000
   },
   "visual": {
     "visualType": "pivotTable",
@@ -39,13 +39,13 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Template Balance Sheet"
+                      "Entity": "Template Cash Flow"
                     }
                   },
                   "Property": "Row Index"
                 }
               },
-              "queryRef": "Template Balance Sheet.Row Index",
+              "queryRef": "Template Cash Flow.Row Index",
               "nativeQueryRef": "Row Index",
               "active": true
             },
@@ -54,14 +54,14 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Template Balance Sheet"
+                      "Entity": "Template Cash Flow"
                     }
                   },
-                  "Property": "Balance Sheet Items"
+                  "Property": "Cash Flow Items"
                 }
               },
-              "queryRef": "Template Balance Sheet.Balance Sheet Items",
-              "nativeQueryRef": "Balance Sheet Items",
+              "queryRef": "Template Cash Flow.Cash Flow Items",
+              "nativeQueryRef": "Cash Flow Items",
               "active": true
             }
           ],
@@ -74,17 +74,34 @@
                 "Measure": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Balance Sheet Analysis"
+                      "Entity": "Cash Flow Analysis"
                     }
                   },
-                  "Property": "B/S Values Switch Function"
+                  "Property": "C/F Values Switch Function"
                 }
               },
-              "queryRef": "Balance Sheet Analysis.B/S Values Switch Function",
-              "nativeQueryRef": "B/S Values Switch Function"
+              "queryRef": "Cash Flow Analysis.C/F Values Switch Function",
+              "nativeQueryRef": "C/F Values Switch Function"
             }
           ]
         }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Template Cash Flow"
+                  }
+                },
+                "Property": "Row Index"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ]
       }
     },
     "expansionStates": [
@@ -95,13 +112,13 @@
         "levels": [
           {
             "queryRefs": [
-              "Template Balance Sheet.Row Index"
+              "Template Cash Flow.Row Index"
             ],
             "isPinned": true
           },
           {
             "queryRefs": [
-              "Template Balance Sheet.Balance Sheet Items"
+              "Template Cash Flow.Cash Flow Items"
             ],
             "isCollapsed": true,
             "isPinned": true
@@ -154,7 +171,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "97.88776137090585D"
+                  "Value": "97.21450938934211D"
                 }
               }
             }
@@ -197,7 +214,95 @@
             }
           },
           "selector": {
-            "metadata": "Template Balance Sheet.Row Index"
+            "metadata": "Template Cash Flow.Row Index"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "205.40260869696507D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Cash Flow Analysis.C/F Values Switch Function"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "93.48988619549478D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "dim_date"
+                          }
+                        },
+                        "Property": "Year"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "2024L"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "92.46753246753246D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "dim_date"
+                          }
+                        },
+                        "Property": "Year"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "2025L"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
           }
         }
       ],
@@ -343,67 +448,92 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "2f2cd5cbb50d95629021",
-        "type": "Exclude",
+        "name": "1aa9f95006b82082a308",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Template Cash Flow"
+              }
+            },
+            "Property": "Cash Flow Items"
+          }
+        },
+        "type": "Categorical",
         "filter": {
           "Version": 2,
           "From": [
             {
               "Name": "t",
-              "Entity": "Template Income Statement",
+              "Entity": "Template Cash Flow",
               "Type": 0
             }
           ],
           "Where": [
             {
               "Condition": {
-                "Not": {
-                  "Expression": {
-                    "In": {
-                      "Expressions": [
-                        {
-                          "Column": {
-                            "Expression": {
-                              "SourceRef": {
-                                "Source": "t"
-                              }
-                            },
-                            "Property": "Row Index"
+                "In": {
+                  "Expressions": [
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "t"
                           }
                         },
-                        {
-                          "Column": {
-                            "Expression": {
-                              "SourceRef": {
-                                "Source": "t"
-                              }
-                            },
-                            "Property": "Income Statement Items"
-                          }
-                        }
-                      ],
-                      "Values": [
-                        [
-                          {
-                            "Literal": {
-                              "Value": "null"
-                            }
-                          },
-                          {
-                            "Literal": {
-                              "Value": "null"
-                            }
-                          }
-                        ]
-                      ]
+                        "Property": "Cash Flow Items"
+                      }
                     }
-                  }
+                  ],
+                  "Values": [
+                    [
+                      {
+                        "Literal": {
+                          "Value": "'Cash at Beginning of Year'"
+                        }
+                      }
+                    ],
+                    [
+                      {
+                        "Literal": {
+                          "Value": "'Net Cash Flow from Financing Activities'"
+                        }
+                      }
+                    ],
+                    [
+                      {
+                        "Literal": {
+                          "Value": "'Net Cash Flow from Investing Activities'"
+                        }
+                      }
+                    ],
+                    [
+                      {
+                        "Literal": {
+                          "Value": "'Net Cash Flow from Operations'"
+                        }
+                      }
+                    ],
+                    [
+                      {
+                        "Literal": {
+                          "Value": "'Net Increase in Cash'"
+                        }
+                      }
+                    ],
+                    [
+                      {
+                        "Literal": {
+                          "Value": "'Cash at End of Year'"
+                        }
+                      }
+                    ]
+                  ]
                 }
               }
             }
           ]
-        },
-        "howCreated": "Exclude"
+        }
       }
     ]
   }

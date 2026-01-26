@@ -1,12 +1,12 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
   "name": "6e726c10084786d70012",
   "position": {
-    "x": 598.56115107913672,
-    "y": 57.553956834532372,
+    "x": 699.65610859728508,
+    "y": 57.918552036199095,
     "z": 2000,
-    "height": 324.60431654676256,
-    "width": 649.20863309352512,
+    "height": 324.34389140271492,
+    "width": 547.90950226244343,
     "tabOrder": 2000
   },
   "visual": {
@@ -157,6 +157,13 @@
                   "Function": 1
                 }
               }
+            },
+            "dataLabelShow": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
             }
           },
           "selector": {
@@ -189,5 +196,56 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "5c052e7093cad5670160",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "dim_date"
+              }
+            },
+            "Property": "DayName"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "eb5a4a4c31abdc9cb260",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "fact_transaction"
+                  }
+                },
+                "Property": "line_total"
+              }
+            },
+            "Function": 0
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "6b2cc8e609ae04858503",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Key Measures"
+              }
+            },
+            "Property": "Total Sales Last Week"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

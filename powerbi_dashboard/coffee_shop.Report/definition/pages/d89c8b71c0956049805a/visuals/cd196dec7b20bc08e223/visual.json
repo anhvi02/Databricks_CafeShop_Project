@@ -1,12 +1,12 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
   "name": "cd196dec7b20bc08e223",
   "position": {
-    "x": 223.10871518418688,
+    "x": 245.57466063348417,
     "y": 0,
     "z": 4000,
-    "height": 133.40521114106019,
-    "width": 238.05929919137466,
+    "height": 133.21266968325793,
+    "width": 237.4660633484163,
     "tabOrder": 4000
   },
   "visual": {
@@ -54,5 +54,23 @@
       }
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "fa1ef60e21220576d0b9",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Key Measures"
+              }
+            },
+            "Property": "Number Of Transactions"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }
