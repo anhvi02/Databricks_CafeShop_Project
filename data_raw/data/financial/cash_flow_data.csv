@@ -1,79 +1,74 @@
 Year,Cash Flow Type,Cash Flow Category,Cash Flow Sub Category,Cash Flow Values
-2024,Financing,Loan Repayments,Principal Payments,-905.52
-2024,Financing,Loan Repayments,Principal Payments,-1135.33
-2024,Financing,Loan Repayments,Principal Payments,-928.18
-2024,Financing,Loan Repayments,Principal Payments,-900.21
-2024,Investing,Equipment Purchases,Coffee Machines,-16257.2
-2024,Investing,Equipment Purchases,Coffee Machines,-6625.95
-2024,Investing,Furniture Purchases,Furniture & Fixtures,-7009.72
-2024,Operating,Cash Paid for Operating Expenses,Rent & Utilities,-13589.27
-2024,Operating,Cash Paid for Operating Expenses,Rent & Utilities,-16114.7
-2024,Operating,Cash Paid for Operating Expenses,Rent & Utilities,-17217.42
-2024,Operating,Cash Paid for Operating Expenses,Rent & Utilities,-15685.05
-2024,Operating,Cash Paid to Employees,Salaries & Wages,-20696.82
-2024,Operating,Cash Paid to Employees,Salaries & Wages,-21213.01
-2024,Operating,Cash Paid to Employees,Salaries & Wages,-21017.34
-2024,Operating,Cash Paid to Employees,Salaries & Wages,-19633.49
-2024,Operating,Cash Paid to Suppliers,Inventory Purchases,-38528.05
-2024,Operating,Cash Paid to Suppliers,Inventory Purchases,-40796.56
-2024,Operating,Cash Paid to Suppliers,Inventory Purchases,-28548.84
-2024,Operating,Cash Paid to Suppliers,Inventory Purchases,-33362.47
-2024,Operating,Cash from Sales,Sales Revenue,103273.03
-2024,Operating,Cash from Sales,Sales Revenue,104426.85
-2024,Operating,Cash from Sales,Sales Revenue,108307.74
-2024,Operating,Cash from Sales,Sales Revenue,114049.34
-2024,Operating,Interest Paid,Interest Expense,-298.04
-2024,Operating,Interest Paid,Interest Expense,-378.97
-2024,Operating,Interest Paid,Interest Expense,-343.2
-2024,Operating,Interest Paid,Interest Expense,-332.04
-2024,Operating,Interest Received,Interest Income,99.68
-2024,Operating,Interest Received,Interest Income,82.06
-2024,Operating,Interest Received,Interest Income,90.13
-2024,Operating,Interest Received,Interest Income,52.7
-2024,Operating,Taxes Paid,Income Tax,-1695.67
-2024,Operating,Taxes Paid,Income Tax,-1574.35
-2024,Operating,Taxes Paid,Income Tax,-1804.2
-2024,Operating,Taxes Paid,Income Tax,-2148.78
-2025,Financing,Dividends Paid,Owner Distributions,-6234.29
-2025,Financing,Dividends Paid,Owner Distributions,-3688.42
-2025,Financing,Loan Repayments,Principal Payments,-1108.18
-2025,Financing,Loan Repayments,Principal Payments,-928.27
-2025,Financing,Loan Repayments,Principal Payments,-1239.82
-2025,Financing,Loan Repayments,Principal Payments,-950.98
-2025,Operating,Cash Paid for Operating Expenses,Rent & Utilities,-16938.25
-2025,Operating,Cash Paid for Operating Expenses,Rent & Utilities,-14188.95
-2025,Operating,Cash Paid for Operating Expenses,Rent & Utilities,-17314.49
-2025,Operating,Cash Paid for Operating Expenses,Rent & Utilities,-17260.12
-2025,Operating,Cash Paid to Employees,Salaries & Wages,-21657.54
-2025,Operating,Cash Paid to Employees,Salaries & Wages,-19966.77
-2025,Operating,Cash Paid to Employees,Salaries & Wages,-23377.83
-2025,Operating,Cash Paid to Employees,Salaries & Wages,-21409.41
-2025,Operating,Cash Paid to Suppliers,Inventory Purchases,-31489.38
-2025,Operating,Cash Paid to Suppliers,Inventory Purchases,-43877.13
-2025,Operating,Cash Paid to Suppliers,Inventory Purchases,-44971.99
-2025,Operating,Cash Paid to Suppliers,Inventory Purchases,-35700.6
-2025,Operating,Cash from Sales,Sales Revenue,121216.56
-2025,Operating,Cash from Sales,Sales Revenue,106859.04
-2025,Operating,Cash from Sales,Sales Revenue,101376.23
-2025,Operating,Cash from Sales,Sales Revenue,107741.71
-2025,Operating,Interest Paid,Interest Expense,-416.52
-2025,Operating,Interest Paid,Interest Expense,-300.91
-2025,Operating,Interest Paid,Interest Expense,-379.47
-2025,Operating,Interest Paid,Interest Expense,-283.62
-2025,Operating,Interest Received,Interest Income,100.82
-2025,Operating,Interest Received,Interest Income,157.87
-2025,Operating,Interest Received,Interest Income,155.22
-2025,Operating,Interest Received,Interest Income,95.66
-2025,Operating,Taxes Paid,Income Tax,-1784.37
-2025,Operating,Taxes Paid,Income Tax,-2346.89
-2025,Operating,Taxes Paid,Income Tax,-1993.82
-2025,Operating,Taxes Paid,Income Tax,-1785.44
-2026,Financing,Dividends Paid,Owner Distributions,-3905.54
-2026,Financing,Loan Repayments,Principal Payments,-840.52
-2026,Operating,Cash Paid for Operating Expenses,Rent & Utilities,-15000.01
-2026,Operating,Cash Paid to Employees,Salaries & Wages,-21074.63
-2026,Operating,Cash Paid to Suppliers,Inventory Purchases,-30871.17
-2026,Operating,Cash from Sales,Sales Revenue,95615.39
-2026,Operating,Interest Paid,Interest Expense,-289.46
-2026,Operating,Interest Received,Interest Income,66.22
-2026,Operating,Taxes Paid,Income Tax,-2418.46
+2024,Financing Activities,Cash paid for,Repayment of loans,-834.21
+2024,Financing Activities,Cash paid for,Repayment of loans,-1084.79
+2024,Financing Activities,Cash paid for,Repayment of loans,-1145.72
+2024,Financing Activities,Cash paid for,Repayment of loans,-1134.43
+2024,Financing Activities,Cash paid for,Dividends,-6779.21
+2024,Operations,Cash paid for,Inventory purchases,-37228.91
+2024,Operations,Cash paid for,General operating and administrative expenses,-16370.99
+2024,Operations,Cash paid for,Wage expenses,-19374.62
+2024,Operations,Cash paid for,Interest,-387.45
+2024,Operations,Cash paid for,Income taxes,-2155.23
+2024,Operations,Cash paid for,Inventory purchases,-31641.36
+2024,Operations,Cash paid for,General operating and administrative expenses,-14484.85
+2024,Operations,Cash paid for,Wage expenses,-21173.69
+2024,Operations,Cash paid for,Interest,-251.6
+2024,Operations,Cash paid for,Income taxes,-2376.26
+2024,Operations,Cash paid for,Inventory purchases,-31905.38
+2024,Operations,Cash paid for,General operating and administrative expenses,-16255.55
+2024,Operations,Cash paid for,Wage expenses,-20266.3
+2024,Operations,Cash paid for,Interest,-325.0
+2024,Operations,Cash paid for,Income taxes,-2042.96
+2024,Operations,Cash paid for,Inventory purchases,-41002.23
+2024,Operations,Cash paid for,General operating and administrative expenses,-13479.86
+2024,Operations,Cash paid for,Wage expenses,-20544.95
+2024,Operations,Cash paid for,Interest,-310.37
+2024,Operations,Cash paid for,Income taxes,-2180.64
+2024,Operations,Cash receipts from,customers,89853.88
+2024,Operations,Cash receipts from,customers,89159.07
+2024,Operations,Cash receipts from,customers,112956.85
+2024,Operations,Cash receipts from,customers,89660.8
+2024,Operations,Other,Interest received,116.41
+2024,Operations,Other,Interest received,119.1
+2024,Operations,Other,Interest received,71.55
+2024,Operations,Other,Interest received,137.68
+2025,Financing Activities,Cash paid for,Repayment of loans,-1165.18
+2025,Financing Activities,Cash paid for,Repayment of loans,-999.39
+2025,Financing Activities,Cash paid for,Repayment of loans,-1014.36
+2025,Financing Activities,Cash paid for,Repayment of loans,-1264.16
+2025,Operations,Cash paid for,Inventory purchases,-31848.79
+2025,Operations,Cash paid for,General operating and administrative expenses,-18736.34
+2025,Operations,Cash paid for,Wage expenses,-23872.33
+2025,Operations,Cash paid for,Interest,-354.08
+2025,Operations,Cash paid for,Income taxes,-1975.31
+2025,Operations,Cash paid for,Inventory purchases,-35389.17
+2025,Operations,Cash paid for,General operating and administrative expenses,-18139.04
+2025,Operations,Cash paid for,Wage expenses,-22360.86
+2025,Operations,Cash paid for,Interest,-263.83
+2025,Operations,Cash paid for,Income taxes,-2365.78
+2025,Operations,Cash paid for,Inventory purchases,-41032.99
+2025,Operations,Cash paid for,General operating and administrative expenses,-15790.53
+2025,Operations,Cash paid for,Wage expenses,-20822.22
+2025,Operations,Cash paid for,Interest,-397.07
+2025,Operations,Cash paid for,Income taxes,-2530.07
+2025,Operations,Cash paid for,Inventory purchases,-37797.53
+2025,Operations,Cash paid for,General operating and administrative expenses,-15638.49
+2025,Operations,Cash paid for,Wage expenses,-22015.82
+2025,Operations,Cash paid for,Interest,-283.27
+2025,Operations,Cash paid for,Income taxes,-2099.84
+2025,Operations,Cash receipts from,customers,114022.97
+2025,Operations,Cash receipts from,customers,108357.02
+2025,Operations,Cash receipts from,customers,95649.13
+2025,Operations,Cash receipts from,customers,123642.29
+2025,Operations,Other,Interest received,57.01
+2025,Operations,Other,Interest received,134.81
+2025,Operations,Other,Interest received,82.08
+2025,Operations,Other,Interest received,55.25
+2026,Financing Activities,Cash paid for,Repayment of loans,-864.84
+2026,Operations,Cash paid for,Inventory purchases,-38031.4
+2026,Operations,Cash paid for,General operating and administrative expenses,-14216.34
+2026,Operations,Cash paid for,Wage expenses,-19494.58
+2026,Operations,Cash paid for,Interest,-280.4
+2026,Operations,Cash paid for,Income taxes,-2353.72
+2026,Operations,Cash receipts from,customers,112999.17
+2026,Operations,Other,Interest received,142.38
